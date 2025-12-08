@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d1f3a"/>
+      <stop offset="100%" style="stop-color:#18101d"/>
+    </linearGradient>
+    <linearGradient id="parchment" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff8e7"/>
+      <stop offset="100%" style="stop-color:#e8d5b0"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0d78c"/>
+      <stop offset="100%" style="stop-color:#c9a227"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <!-- Torah scroll (larger, left) -->
+  <g transform="translate(250, 70)">
+    <rect x="0" y="0" width="25" height="150" rx="12" fill="#8B4513"/>
+    <rect x="125" y="0" width="25" height="150" rx="12" fill="#8B4513"/>
+    <rect x="25" y="10" width="100" height="130" fill="url(#parchment)"/>
+    <text x="75" y="80" text-anchor="middle" font-family="David, serif" font-size="16" fill="#4a3a2a" direction="rtl">תורה</text>
+  </g>
+  <!-- Nevi'im scroll (smaller, right) -->
+  <g transform="translate(450, 90)">
+    <rect x="0" y="0" width="20" height="120" rx="10" fill="#6B3510"/>
+    <rect x="100" y="0" width="20" height="120" rx="10" fill="#6B3510"/>
+    <rect x="20" y="10" width="80" height="100" fill="url(#parchment)" opacity="0.9"/>
+    <text x="60" y="65" text-anchor="middle" font-family="David, serif" font-size="14" fill="#4a3a2a" direction="rtl">נביאים</text>
+  </g>
+  <!-- Arrow connecting them -->
+  <g stroke="url(#gold)" stroke-width="3" fill="none">
+    <path d="M380 145 L440 145"/>
+    <polygon points="435,140 445,145 435,150" fill="url(#gold)"/>
+  </g>
+  <!-- Title -->
+  <text x="400" y="290" text-anchor="middle" font-family="David, serif" font-size="32" fill="#f0e6d3" direction="rtl">מפטיר והפטרה</text>
+  <text x="400" y="330" text-anchor="middle" font-family="David, serif" font-size="20" fill="#9988aa" direction="rtl">דיני ההפטרה בנביאים</text>
+</svg>

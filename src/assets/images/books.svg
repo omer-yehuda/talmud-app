@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d1f1f"/>
+      <stop offset="100%" style="stop-color:#1a1010"/>
+    </linearGradient>
+    <linearGradient id="leather" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B4513"/>
+      <stop offset="50%" style="stop-color:#A0522D"/>
+      <stop offset="100%" style="stop-color:#8B4513"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0d78c"/>
+      <stop offset="100%" style="stop-color:#c9a227"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <!-- Stack of holy books -->
+  <g transform="translate(300, 80)">
+    <!-- Book 1 (bottom) -->
+    <rect x="0" y="120" width="200" height="30" fill="url(#leather)"/>
+    <rect x="5" y="123" width="190" height="24" fill="#fff8e7"/>
+    <text x="100" y="142" text-anchor="middle" font-family="David, serif" font-size="14" fill="#8B4513" direction="rtl">כתובים</text>
+    <!-- Book 2 -->
+    <rect x="10" y="85" width="180" height="30" fill="#2c3e50"/>
+    <rect x="15" y="88" width="170" height="24" fill="#fff8e7"/>
+    <text x="100" y="107" text-anchor="middle" font-family="David, serif" font-size="14" fill="#2c3e50" direction="rtl">נביאים</text>
+    <!-- Book 3 (top - Torah) -->
+    <rect x="20" y="45" width="160" height="35" fill="#1a5f2a"/>
+    <rect x="25" y="50" width="150" height="25" fill="#fff8e7"/>
+    <text x="100" y="69" text-anchor="middle" font-family="David, serif" font-size="16" fill="#1a5f2a" direction="rtl">תורה</text>
+    <!-- Crown on top -->
+    <path d="M80 35 L85 20 L100 30 L115 20 L120 35 Z" fill="url(#gold)"/>
+  </g>
+  <!-- Genizah box -->
+  <g transform="translate(550, 120)">
+    <rect x="0" y="0" width="100" height="80" fill="#6B3510" rx="5"/>
+    <rect x="10" y="10" width="80" height="60" fill="#4a2a08"/>
+    <text x="50" y="50" text-anchor="middle" font-family="David, serif" font-size="14" fill="#f0e6d3" direction="rtl">גניזה</text>
+  </g>
+  <!-- Title -->
+  <text x="400" y="280" text-anchor="middle" font-family="David, serif" font-size="32" fill="#f0e6d3" direction="rtl">קדושת ספרים</text>
+  <text x="400" y="320" text-anchor="middle" font-family="David, serif" font-size="20" fill="#8a7a7a" direction="rtl">דיני גניזה ושימוש</text>
+</svg>

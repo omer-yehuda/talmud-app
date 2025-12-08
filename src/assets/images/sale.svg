@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d2a1f"/>
+      <stop offset="100%" style="stop-color:#1a1810"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0d78c"/>
+      <stop offset="100%" style="stop-color:#c9a227"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <!-- Building (synagogue) -->
+  <g transform="translate(200, 80)">
+    <rect x="0" y="50" width="150" height="120" fill="#a89878"/>
+    <polygon points="0,50 75,0 150,50" fill="#8B4513"/>
+    <path d="M55 170 L55 100 Q75 80 95 100 L95 170 Z" fill="#5a3010"/>
+  </g>
+  <!-- Arrow -->
+  <g stroke="url(#gold)" stroke-width="4" fill="none">
+    <line x1="380" y1="140" x2="450" y2="140"/>
+    <polygon points="445,130 465,140 445,150" fill="url(#gold)"/>
+  </g>
+  <!-- Coins -->
+  <g transform="translate(520, 100)">
+    <circle cx="0" cy="0" r="35" fill="url(#gold)"/>
+    <circle cx="0" cy="0" r="28" fill="none" stroke="#c9a227" stroke-width="2"/>
+    <text x="0" y="8" text-anchor="middle" font-family="David, serif" font-size="24" fill="#8B4513">₪</text>
+    <circle cx="50" cy="20" r="30" fill="url(#gold)" opacity="0.8"/>
+    <circle cx="30" cy="50" r="25" fill="url(#gold)" opacity="0.6"/>
+  </g>
+  <!-- Up arrow for "maalin bakodesh" -->
+  <g transform="translate(620, 180)">
+    <line x1="0" y1="40" x2="0" y2="0" stroke="#2ecc71" stroke-width="4"/>
+    <polygon points="-10,10 0,-5 10,10" fill="#2ecc71"/>
+    <text x="0" y="60" text-anchor="middle" font-family="David, serif" font-size="12" fill="#2ecc71" direction="rtl">מעלין</text>
+  </g>
+  <!-- Title -->
+  <text x="400" y="290" text-anchor="middle" font-family="David, serif" font-size="32" fill="#f0e6d3" direction="rtl">מכירת בית הכנסת</text>
+  <text x="400" y="330" text-anchor="middle" font-family="David, serif" font-size="20" fill="#8a8a7a" direction="rtl">דיני מכירה ושימוש בדמים</text>
+</svg>

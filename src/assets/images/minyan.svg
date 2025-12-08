@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2a3a"/>
+      <stop offset="100%" style="stop-color:#0d151d"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0d78c"/>
+      <stop offset="100%" style="stop-color:#c9a227"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <!-- Ten figures representing the minyan -->
+  <g fill="url(#gold)">
+    <!-- Row 1 - 5 people -->
+    <g><circle cx="220" cy="90" r="18"/><path d="M200 115 L220 110 L240 115 L245 175 L195 175 Z"/></g>
+    <g><circle cx="310" cy="90" r="18"/><path d="M290 115 L310 110 L330 115 L335 175 L285 175 Z"/></g>
+    <g><circle cx="400" cy="90" r="18"/><path d="M380 115 L400 110 L420 115 L425 175 L375 175 Z"/></g>
+    <g><circle cx="490" cy="90" r="18"/><path d="M470 115 L490 110 L510 115 L515 175 L465 175 Z"/></g>
+    <g><circle cx="580" cy="90" r="18"/><path d="M560 115 L580 110 L600 115 L605 175 L555 175 Z"/></g>
+    <!-- Row 2 - 5 people -->
+    <g><circle cx="220" cy="195" r="18"/><path d="M200 220 L220 215 L240 220 L245 280 L195 280 Z"/></g>
+    <g><circle cx="310" cy="195" r="18"/><path d="M290 220 L310 215 L330 220 L335 280 L285 280 Z"/></g>
+    <g><circle cx="400" cy="195" r="18"/><path d="M380 220 L400 215 L420 220 L425 280 L375 280 Z"/></g>
+    <g><circle cx="490" cy="195" r="18"/><path d="M470 220 L490 215 L510 220 L515 280 L465 280 Z"/></g>
+    <g><circle cx="580" cy="195" r="18"/><path d="M560 220 L580 215 L600 220 L605 280 L555 280 Z"/></g>
+  </g>
+  <!-- Title -->
+  <text x="400" y="330" text-anchor="middle" font-family="David, serif" font-size="32" fill="#f0e6d3" direction="rtl">עשרה בטלנים</text>
+  <text x="400" y="370" text-anchor="middle" font-family="David, serif" font-size="20" fill="#8899aa" direction="rtl">הגדרת עיר גדולה</text>
+</svg>

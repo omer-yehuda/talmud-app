@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a1a1a"/>
+      <stop offset="100%" style="stop-color:#1a0d0d"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0d78c"/>
+      <stop offset="100%" style="stop-color:#c9a227"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <!-- Kohen figure -->
+  <circle cx="400" cy="80" r="35" fill="#e8d4b8"/> <!-- Head -->
+  <!-- Priestly garments -->
+  <path d="M340 120 L400 110 L460 120 L470 220 L330 220 Z" fill="#f0f0f0"/> <!-- White robe -->
+  <rect x="370" y="110" width="60" height="40" fill="url(#gold)"/> <!-- Breastplate hint -->
+  <!-- Shield -->
+  <ellipse cx="300" cy="160" rx="40" ry="50" fill="#8B4513" stroke="url(#gold)" stroke-width="3"/>
+  <path d="M300 120 L300 200" stroke="url(#gold)" stroke-width="2"/>
+  <path d="M265 160 L335 160" stroke="url(#gold)" stroke-width="2"/>
+  <!-- Shofar/Horn -->
+  <path d="M480 130 Q520 140 540 180 Q550 200 540 220" fill="none" stroke="#c9a227" stroke-width="8" stroke-linecap="round"/>
+  <!-- Army silhouettes in background -->
+  <g fill="#2a1515" opacity="0.5">
+    <rect x="150" y="200" width="20" height="50"/><circle cx="160" cy="190" r="12"/>
+    <rect x="190" y="195" width="20" height="55"/><circle cx="200" cy="185" r="12"/>
+    <rect x="230" y="200" width="20" height="50"/><circle cx="240" cy="190" r="12"/>
+    <rect x="550" y="200" width="20" height="50"/><circle cx="560" cy="190" r="12"/>
+    <rect x="590" y="195" width="20" height="55"/><circle cx="600" cy="185" r="12"/>
+    <rect x="630" y="200" width="20" height="50"/><circle cx="640" cy="190" r="12"/>
+  </g>
+  <!-- Title -->
+  <text x="400" y="300" text-anchor="middle" font-family="David, serif" font-size="32" fill="#f0e6d3" direction="rtl">כהן משוח מלחמה</text>
+  <text x="400" y="340" text-anchor="middle" font-family="David, serif" font-size="20" fill="#aa8888" direction="rtl">המשך דיני אין בין</text>
+</svg>

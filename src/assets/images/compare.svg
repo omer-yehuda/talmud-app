@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2a4a"/>
+      <stop offset="100%" style="stop-color:#0d1522"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0d78c"/>
+      <stop offset="100%" style="stop-color:#c9a227"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <!-- Scale base -->
+  <rect x="380" y="200" width="40" height="60" fill="url(#gold)"/>
+  <rect x="360" y="255" width="80" height="15" rx="3" fill="url(#gold)"/>
+  <!-- Scale top -->
+  <circle cx="400" cy="55" r="20" fill="url(#gold)"/>
+  <rect x="395" y="55" width="10" height="50" fill="url(#gold)"/>
+  <!-- Balance beam -->
+  <rect x="180" y="100" width="440" height="12" rx="6" fill="url(#gold)"/>
+  <!-- Left pan chains -->
+  <line x1="220" y1="106" x2="220" y2="170" stroke="#a08040" stroke-width="3"/>
+  <line x1="180" y1="106" x2="220" y2="170" stroke="#a08040" stroke-width="2"/>
+  <line x1="260" y1="106" x2="220" y2="170" stroke="#a08040" stroke-width="2"/>
+  <!-- Left pan -->
+  <ellipse cx="220" cy="185" rx="70" ry="20" fill="url(#gold)"/>
+  <text x="220" y="230" text-anchor="middle" font-family="David, serif" font-size="24" fill="#c9a227">א</text>
+  <!-- Right pan chains -->
+  <line x1="580" y1="106" x2="580" y2="170" stroke="#a08040" stroke-width="3"/>
+  <line x1="540" y1="106" x2="580" y2="170" stroke="#a08040" stroke-width="2"/>
+  <line x1="620" y1="106" x2="580" y2="170" stroke="#a08040" stroke-width="2"/>
+  <!-- Right pan -->
+  <ellipse cx="580" cy="185" rx="70" ry="20" fill="url(#gold)"/>
+  <text x="580" y="230" text-anchor="middle" font-family="David, serif" font-size="24" fill="#c9a227">ב</text>
+  <!-- Comparison arrows -->
+  <path d="M320 150 L380 150 L380 140 L410 155 L380 170 L380 160 L320 160 Z" fill="#4a6a8a"/>
+  <path d="M480 160 L420 160 L420 170 L390 155 L420 140 L420 150 L480 150 Z" fill="#4a6a8a"/>
+  <!-- Title -->
+  <text x="400" y="310" text-anchor="middle" font-family="David, serif" font-size="36" fill="#f0e6d3" direction="rtl">אין בין</text>
+  <text x="400" y="350" text-anchor="middle" font-family="David, serif" font-size="20" fill="#8899aa" direction="rtl">הבדלים הלכתיים</text>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a2d1f"/>
+      <stop offset="100%" style="stop-color:#15180d"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0d78c"/>
+      <stop offset="100%" style="stop-color:#c9a227"/>
+    </linearGradient>
+    <linearGradient id="parchment" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff8e7"/>
+      <stop offset="100%" style="stop-color:#e8d5b0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <!-- Four scrolls representing the four portions -->
+  <!-- Shekalim -->
+  <g transform="translate(150, 80)">
+    <rect x="0" y="0" width="120" height="100" rx="5" fill="url(#parchment)"/>
+    <text x="60" y="40" text-anchor="middle" font-family="David, serif" font-size="18" fill="#4a3a2a" direction="rtl">שקלים</text>
+    <circle cx="60" cy="70" r="15" fill="url(#gold)"/>
+    <text x="60" y="75" text-anchor="middle" font-family="David, serif" font-size="12" fill="#8B4513">½</text>
+  </g>
+  <!-- Zachor -->
+  <g transform="translate(300, 80)">
+    <rect x="0" y="0" width="120" height="100" rx="5" fill="url(#parchment)"/>
+    <text x="60" y="40" text-anchor="middle" font-family="David, serif" font-size="18" fill="#4a3a2a" direction="rtl">זכור</text>
+    <text x="60" y="75" text-anchor="middle" font-family="David, serif" font-size="24" fill="#e74c3c">⚔</text>
+  </g>
+  <!-- Parah -->
+  <g transform="translate(450, 80)">
+    <rect x="0" y="0" width="120" height="100" rx="5" fill="url(#parchment)"/>
+    <text x="60" y="40" text-anchor="middle" font-family="David, serif" font-size="18" fill="#4a3a2a" direction="rtl">פרה</text>
+    <ellipse cx="60" cy="70" rx="20" ry="12" fill="#8B4513"/>
+    <circle cx="50" cy="62" r="3" fill="#8B4513"/>
+    <circle cx="70" cy="62" r="3" fill="#8B4513"/>
+  </g>
+  <!-- HaChodesh -->
+  <g transform="translate(600, 80)">
+    <rect x="0" y="0" width="120" height="100" rx="5" fill="url(#parchment)"/>
+    <text x="60" y="40" text-anchor="middle" font-family="David, serif" font-size="18" fill="#4a3a2a" direction="rtl">החודש</text>
+    <circle cx="60" cy="70" r="18" fill="none" stroke="#f0d78c" stroke-width="3"/>
+    <circle cx="52" cy="70" r="15" fill="url(#bg)"/>
+  </g>
+  <!-- Numbers -->
+  <g font-family="David, serif" font-size="24" fill="url(#gold)">
+    <text x="210" y="210" text-anchor="middle">א</text>
+    <text x="360" y="210" text-anchor="middle">ב</text>
+    <text x="510" y="210" text-anchor="middle">ג</text>
+    <text x="660" y="210" text-anchor="middle">ד</text>
+  </g>
+  <!-- Title -->
+  <text x="400" y="280" text-anchor="middle" font-family="David, serif" font-size="32" fill="#f0e6d3" direction="rtl">ארבע פרשיות</text>
+  <text x="400" y="320" text-anchor="middle" font-family="David, serif" font-size="20" fill="#8a9a7a" direction="rtl">שקלים, זכור, פרה והחודש</text>
+</svg>

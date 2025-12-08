@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run build:*)",
+      "Bash(npx tsc:*)",
+      "Bash(pnpm test:*)",
+      "Bash(pnpm build:*)",
+      "Bash(dir /s /b \"c:\\Users\\omery\\Desktop\\Projects\\talmud-app\\src\\components\\*.tsx\")",
+      "Bash(dir /s /b \"c:\\Users\\omery\\Desktop\\Projects\\talmud-app\\src\\lib\\*.ts\")",
+      "Bash(pnpm lint:*)",
+      "Bash(wc:*)",
+      "Bash(pnpm install:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

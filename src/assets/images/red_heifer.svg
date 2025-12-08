@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a2d1f"/>
+      <stop offset="100%" style="stop-color:#1d1810"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c0392b"/>
+      <stop offset="100%" style="stop-color:#8e2c1f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <!-- Red heifer -->
+  <g transform="translate(300, 100)">
+    <!-- Body -->
+    <ellipse cx="100" cy="80" rx="80" ry="50" fill="url(#red)"/>
+    <!-- Head -->
+    <ellipse cx="190" cy="60" rx="35" ry="30" fill="url(#red)"/>
+    <!-- Horns -->
+    <path d="M200 35 Q210 15 205 5" stroke="url(#red)" stroke-width="6" fill="none"/>
+    <path d="M210 35 Q220 15 225 5" stroke="url(#red)" stroke-width="6" fill="none"/>
+    <!-- Eye -->
+    <circle cx="200" cy="55" r="5" fill="#1a1a1a"/>
+    <!-- Legs -->
+    <rect x="50" y="120" width="15" height="50" fill="url(#red)"/>
+    <rect x="80" y="120" width="15" height="50" fill="url(#red)"/>
+    <rect x="120" y="120" width="15" height="50" fill="url(#red)"/>
+    <rect x="150" y="120" width="15" height="50" fill="url(#red)"/>
+    <!-- Tail -->
+    <path d="M20 70 Q0 90 10 110" stroke="url(#red)" stroke-width="8" fill="none"/>
+  </g>
+  <!-- Purification water drops -->
+  <g fill="#3498db" opacity="0.7">
+    <circle cx="550" cy="120" r="8"/>
+    <circle cx="580" cy="140" r="6"/>
+    <circle cx="560" cy="160" r="7"/>
+    <circle cx="590" cy="170" r="5"/>
+  </g>
+  <!-- Vessel -->
+  <path d="M530 200 L520 150 L600 150 L590 200 Z" fill="#a89878" stroke="#6a5a4a" stroke-width="2"/>
+  <!-- Title -->
+  <text x="400" y="290" text-anchor="middle" font-family="David, serif" font-size="32" fill="#f0e6d3" direction="rtl">פרשת פרה</text>
+  <text x="400" y="330" text-anchor="middle" font-family="David, serif" font-size="20" fill="#8a7a6a" direction="rtl">טהרה והכנה לפסח</text>
+</svg>
