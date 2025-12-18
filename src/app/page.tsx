@@ -15,6 +15,7 @@ import {
 } from "@/components";
 import { usePages, usePageContent } from "@/hooks/use-pages";
 import { isStudyPage, isComparisonPage } from "@/types";
+import Box from "@mui/material/Box";
 
 export default function HomePage(): React.ReactElement {
   const { pages, isLoading: loadingPages, error: pagesError } = usePages();
@@ -52,18 +53,32 @@ export default function HomePage(): React.ReactElement {
 
       <MobileNav pages={pages} activePageId={activePageId} onPageChange={setActivePageId} />
 
-      <main className="grow max-w-7xl mx-auto w-full px-4 py-8 pb-24 md:pb-8 flex flex-col gap-8">
+      <Box
+        component="main"
+        sx={{
+          flexGrow: 1,
+          maxWidth: "80rem",
+          mx: "auto",
+          width: "100%",
+          px: 2,
+          py: 4,
+          pb: { xs: 12, md: 4 },
+          display: "flex",
+          flexDirection: "column",
+          gap: 4,
+        }}
+      >
         {isHome ? (
           <WelcomePage pages={pages} onPageSelect={setActivePageId} />
         ) : (
           <>
             <PageNavigation pages={pages} activePageId={activePageId} onPageChange={setActivePageId} />
-            <div className="transition-all duration-300">
+            <Box sx={{ transition: "all 0.3s" }}>
               <PageContent content={content} isLoading={loadingContent} error={contentError} onRetry={refetch} />
-            </div>
+            </Box>
           </>
         )}
-      </main>
+      </Box>
     </>
   );
 }

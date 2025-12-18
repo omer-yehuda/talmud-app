@@ -1,0 +1,5 @@
+# Code Owners for talmud-app
+# These users are required to review and approve PRs
+
+# Global rule - omer-yehuda owns all files
+* @omer-yehuda

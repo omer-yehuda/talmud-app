@@ -1,15 +1,22 @@
 "use client";
 
+import Box from "@mui/material/Box";
+import type { SxProps, Theme } from "@mui/material/styles";
+
 interface IconProps {
   name: string;
   className?: string;
-  style?: React.CSSProperties;
+  sx?: SxProps<Theme>;
 }
 
-export function Icon({ name, className = "", style }: IconProps): React.ReactElement {
+export function Icon({ name, className = "", sx }: IconProps): React.ReactElement {
   return (
-    <span className={`material-symbols-outlined ${className}`} style={style}>
+    <Box
+      component="span"
+      className={`material-symbols-outlined ${className}`}
+      sx={sx}
+    >
       {name}
-    </span>
+    </Box>
   );
 }

@@ -2,9 +2,12 @@
 
 import type { PageInfo } from "@/types";
 import { LABELS } from "@/lib/constants";
-import { colors } from "@/lib/styles";
 import { useNavigationState } from "@/hooks";
 import { Icon } from "./ui";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import MenuItem from "@mui/material/MenuItem";
 
 interface MobileNavProps {
   pages: PageInfo[];
@@ -20,64 +23,136 @@ export function MobileNav({ pages, activePageId, onPageChange }: MobileNavProps)
   });
 
   return (
-    <nav className="block md:hidden fixed bottom-0 left-0 right-0 z-50">
+    <Box
+      component="nav"
+      sx={{
+        display: { xs: "block", md: "none" },
+        position: "fixed",
+        bottom: 0,
+        left: 0,
+        right: 0,
+        zIndex: 50,
+      }}
+    >
       {isOpen && (
-        <div
+        <Box
           onClick={() => setIsOpen(false)}
-          className="fixed inset-0 bg-black/50 z-40"
+          sx={{
+            position: "fixed",
+            inset: 0,
+            bgcolor: "rgba(0, 0, 0, 0.5)",
+            zIndex: 40,
+          }}
         />
       )}
 
       {isOpen && (
-        <div className="absolute bottom-full left-0 right-0 bg-white border-t border-slate-200 max-h-80 overflow-auto z-50 shadow-lg">
+        <Box
+          sx={{
+            position: "absolute",
+            bottom: "100%",
+            left: 0,
+            right: 0,
+            bgcolor: "white",
+            borderTop: "1px solid",
+            borderColor: "grey.200",
+            maxHeight: 320,
+            overflow: "auto",
+            zIndex: 50,
+            boxShadow: 3,
+          }}
+        >
           {pages.map((page) => (
-            <button
+            <MenuItem
               key={page.id}
               onClick={() => handlePageSelect(page.id)}
-              className={`w-full flex items-center gap-3 px-4 py-3 text-right border-b border-slate-100 ${
-                activePageId === page.id ? "bg-indigo-50 text-blue-900" : ""
-              }`}
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                gap: 1.5,
+                px: 2,
+                py: 1.5,
+                textAlign: "right",
+                borderBottom: "1px solid",
+                borderColor: "grey.100",
+                bgcolor: activePageId === page.id ? "#eef2ff" : "transparent",
+                color: activePageId === page.id ? "#1e3a8a" : "inherit",
+              }}
             >
               <Icon
                 name={page.icon}
-                style={{ color: activePageId === page.id ? colors.secondary.main : colors.text.secondary }}
+                sx={{ color: activePageId === page.id ? "secondary.main" : "#94a3b8" }}
               />
-              <div className="flex-1">
-                <p className="font-medium text-sm">{page.title}</p>
-                <p className="text-xs text-slate-400 truncate">{page.description}</p>
-              </div>
+              <Box sx={{ flex: 1 }}>
+                <Typography sx={{ fontWeight: 500, fontSize: "0.875rem" }}>
+                  {page.title}
+                </Typography>
+                <Typography
+                  variant="caption"
+                  sx={{
+                    color: "#94a3b8",
+                    display: "block",
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                    whiteSpace: "nowrap",
+                  }}
+                >
+                  {page.description}
+                </Typography>
+              </Box>
               {activePageId === page.id && (
-                <Icon name="check" style={{ color: colors.secondary.main }} />
+                <Icon name="check" sx={{ color: "secondary.main" }} />
               )}
-            </button>
+            </MenuItem>
           ))}
-        </div>
+        </Box>
       )}
 
-      <div className="bg-white border-t border-slate-200 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]">
-        <button
+      <Box
+        sx={{
+          bgcolor: "white",
+          borderTop: "1px solid",
+          borderColor: "grey.200",
+          boxShadow: "0 -4px 6px -1px rgba(0,0,0,0.1)",
+        }}
+      >
+        <Button
           onClick={toggleOpen}
-          className="w-full flex items-center justify-between px-4 py-3"
+          sx={{
+            width: "100%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            px: 2,
+            py: 1.5,
+            color: "inherit",
+          }}
         >
-          <div className="flex items-center gap-3">
+          <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
             {activePage ? (
               <>
-                <Icon name={activePage.icon} style={{ color: colors.secondary.main }} />
-                <div className="text-right">
-                  <p className="font-medium text-sm text-slate-900">{activePage.title}</p>
-                  <p className="text-xs text-slate-400">{activePage.description}</p>
-                </div>
+                <Icon name={activePage.icon} sx={{ color: "secondary.main" }} />
+                <Box sx={{ textAlign: "right" }}>
+                  <Typography sx={{ fontWeight: 500, fontSize: "0.875rem", color: "#0f172a" }}>
+                    {activePage.title}
+                  </Typography>
+                  <Typography variant="caption" sx={{ color: "#94a3b8" }}>
+                    {activePage.description}
+                  </Typography>
+                </Box>
               </>
             ) : (
-              <span className="text-muted">{LABELS.selectPage}</span>
+              <Typography component="span" sx={{ color: "text.secondary" }}>
+                {LABELS.selectPage}
+              </Typography>
             )}
-          </div>
+          </Box>
           <Icon
             name={isOpen ? "expand_more" : "expand_less"}
-            className="text-2xl text-slate-400"
+            sx={{ fontSize: "1.5rem", color: "#94a3b8" }}
           />
-        </button>
-      </div>
-    </nav>
+        </Button>
+      </Box>
+    </Box>
   );
 }

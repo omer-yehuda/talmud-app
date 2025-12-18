@@ -4,7 +4,9 @@ import type { StudyTopic } from "@/types";
 
 jest.mock("next/image", () => ({
   __esModule: true,
-  default: ({ alt, src }: { alt: string; src: string }) => <img alt={alt} src={src} />,
+  default: function MockImage({ alt, src }: { alt: string; src: string }): React.ReactElement {
+    return <img alt={alt} src={src} />;
+  },
 }));
 
 const mockTopic: StudyTopic = {
@@ -15,11 +17,11 @@ const mockTopic: StudyTopic = {
   caption: "טבריה העתיקה על שפת הכינרת",
   gemara: "אמר רבי יוחנן: למה נקרא שמה רקת? משום שאפילו ריקנין שבה מלאים מצוות כרימון.",
   rashi: {
-    title: 'רש"י (ד"ה רקת):',
+    title: 'רש"י (רקת:',
     text: "למה נקרא שמה רקת - משום שיושבת על שפת הים",
   },
   tosafot: {
-    title: 'תוספות (ד"ה ורקת):',
+    title: 'ורקת:',
     text: "תוספות מקשים: אם רקת היא טבריה, איך היא נחשבת מוקפת חומה?",
   },
   question: {
@@ -73,26 +75,26 @@ describe("StudyCard", () => {
   it("renders rashi commentary", () => {
     render(<StudyCard topic={mockTopic} />);
 
-    expect(screen.getByText('רש"י מבאר')).toBeInTheDocument();
+    expect(screen.getByText('רש"י')).toBeInTheDocument();
   });
 
   it("renders tosafot commentary", () => {
     render(<StudyCard topic={mockTopic} />);
 
-    expect(screen.getByText("תוספות מקשה")).toBeInTheDocument();
+    expect(screen.getByText("תוספות")).toBeInTheDocument();
   });
 
   it("renders without rashi when not provided", () => {
     const topicWithoutRashi = { ...mockTopic, rashi: undefined };
     render(<StudyCard topic={topicWithoutRashi} />);
 
-    expect(screen.queryByText('רש"י מבאר')).not.toBeInTheDocument();
+    expect(screen.queryByText('רש"י')).not.toBeInTheDocument();
   });
 
   it("renders without tosafot when not provided", () => {
     const topicWithoutTosafot = { ...mockTopic, tosafot: undefined };
     render(<StudyCard topic={topicWithoutTosafot} />);
 
-    expect(screen.queryByText("תוספות מקשה")).not.toBeInTheDocument();
+    expect(screen.queryByText("תוספות")).not.toBeInTheDocument();
   });
 });

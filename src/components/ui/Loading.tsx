@@ -1,23 +1,58 @@
 "use client";
 
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 import { Icon } from "./Icon";
 
 export function Loading({ text = "טוען...", icon = "menu_book" }: { text?: string; icon?: string }): React.ReactElement {
   return (
-    <div className="flex items-center justify-center p-8">
-      <div className="flex flex-col items-center gap-4 text-center">
+    <Box
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        p: 4,
+      }}
+    >
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: 2,
+          textAlign: "center",
+        }}
+      >
         <Icon name={icon} className="text-6xl text-primary-main animate-pulse" />
-        {text && <p className="text-lg text-muted font-medium">{text}</p>}
-      </div>
-    </div>
+        {text && (
+          <Typography
+            sx={{
+              fontSize: "1.125rem",
+              color: "text.secondary",
+              fontWeight: 500,
+            }}
+          >
+            {text}
+          </Typography>
+        )}
+      </Box>
+    </Box>
   );
 }
 
 export function LoadingPage(): React.ReactElement {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-50">
+    <Box
+      sx={{
+        minHeight: "100vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        bgcolor: "grey.50",
+      }}
+    >
       <Loading />
-    </div>
+    </Box>
   );
 }
 

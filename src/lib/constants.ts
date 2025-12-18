@@ -15,7 +15,7 @@ export const LABELS = {
 } as const;
 
 export const WELCOME_TEXT = {
-  intro: `בואו נלמד ביחד! כאן אתם יכולים לחקור את דפי ב' עד ל"ב במסכת מגילה, עם פשט, רש"י ותוספות.`,
+  intro: `בואו נלמד ביחד! כאן אתם יכולים לחקור את במסכת מגילה, עם פשט, רש"י ותוספות.`,
 } as const;
 
 export const ALT_TEXT = {

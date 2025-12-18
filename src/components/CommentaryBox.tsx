@@ -3,6 +3,10 @@
 import { useState } from "react";
 import type { Commentary } from "@/types";
 import { Icon } from "./ui";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import Collapse from "@mui/material/Collapse";
 
 type CommentaryType = "rashi" | "tosafot";
 
@@ -14,7 +18,7 @@ interface CommentaryBoxProps {
 const config: Record<CommentaryType, {
   icon: string;
   text: string;
-  buttonHover: string;
+  hoverBg: string;
   iconColor: string;
   titleColor: string;
   contentBg: string;
@@ -22,21 +26,21 @@ const config: Record<CommentaryType, {
 }> = {
   rashi: {
     icon: "lightbulb",
-    text: 'רש"י מבאר',
-    buttonHover: "hover:bg-amber-50",
-    iconColor: "text-amber-600",
-    titleColor: "text-amber-800",
-    contentBg: "bg-amber-50",
-    contentBorder: "border-r-2 border-amber-300",
+    text: 'רש"י',
+    hoverBg: "#fffbeb",
+    iconColor: "#d97706",
+    titleColor: "#92400e",
+    contentBg: "#fffbeb",
+    contentBorder: "#fcd34d",
   },
   tosafot: {
     icon: "quiz",
-    text: "תוספות מקשה",
-    buttonHover: "hover:bg-blue-50",
-    iconColor: "text-blue-600",
-    titleColor: "text-blue-800",
-    contentBg: "bg-indigo-50",
-    contentBorder: "border-r-2 border-blue-300",
+    text: "תוספות",
+    hoverBg: "#eff6ff",
+    iconColor: "#2563eb",
+    titleColor: "#1e40af",
+    contentBg: "#eef2ff",
+    contentBorder: "#93c5fd",
   },
 };
 
@@ -45,25 +49,60 @@ export function CommentaryBox({ commentary, type }: CommentaryBoxProps): React.R
   const styles = config[type];
 
   return (
-    <div>
-      <button
+    <Box>
+      <Button
         onClick={() => setExpanded(!expanded)}
         aria-expanded={expanded}
-        className={`flex items-center gap-2 mb-2 w-full p-1 rounded transition-colors ${styles.buttonHover}`}
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          gap: 1,
+          mb: 1,
+          width: "100%",
+          p: 0.5,
+          borderRadius: 1,
+          justifyContent: "flex-start",
+          color: "inherit",
+          "&:hover": {
+            bgcolor: styles.hoverBg,
+          },
+        }}
       >
-        <Icon name={styles.icon} className={styles.iconColor} />
-        <span className={`font-bold ${styles.titleColor}`}>{styles.text}</span>
-        <Icon
-          name="expand_more"
-          className={`text-sm mr-auto transition-transform duration-200 ${expanded ? "rotate-180" : ""}`}
-        />
-      </button>
+        <Icon name={styles.icon} sx={{ color: styles.iconColor }} />
+        <Typography
+          component="span"
+          sx={{ fontWeight: 700, color: styles.titleColor }}
+        >
+          {styles.text}
+        </Typography>
+        <Box
+          component="span"
+          sx={{
+            ml: "auto",
+            transition: "transform 0.2s",
+            transform: expanded ? "rotate(180deg)" : "rotate(0deg)",
+          }}
+        >
+          <Icon name="expand_more" sx={{ fontSize: "0.875rem" }} />
+        </Box>
+      </Button>
 
-      {expanded && (
-        <div className={`text-muted p-3 rounded ${styles.contentBg} ${styles.contentBorder}`}>
-          <span className="font-bold">{commentary.title}</span> {commentary.text}
-        </div>
-      )}
-    </div>
+      <Collapse in={expanded}>
+        <Box
+          sx={{
+            color: "text.secondary",
+            p: 1.5,
+            borderRadius: 1,
+            bgcolor: styles.contentBg,
+            borderRight: `2px solid ${styles.contentBorder}`,
+          }}
+        >
+          <Typography component="span" sx={{ fontWeight: 700 }}>
+            {commentary.title}
+          </Typography>{" "}
+          {commentary.text}
+        </Box>
+      </Collapse>
+    </Box>
   );
 }

@@ -2,9 +2,13 @@
 
 import type { PageInfo } from "@/types";
 import { MASECHET, LABELS } from "@/lib/constants";
-import { colors } from "@/lib/styles";
 import { useNavigationState } from "@/hooks";
 import { Icon } from "./ui";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import MenuItem from "@mui/material/MenuItem";
 
 interface HeaderProps {
   pages: PageInfo[];
@@ -22,69 +26,165 @@ export function Header({ pages, activePageId, onPageChange, onGoHome }: HeaderPr
   });
 
   return (
-    <header className="bg-dark sticky top-0 z-50 shadow-lg text-amber-50">
-      <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-        <button
+    <AppBar
+      position="sticky"
+      sx={{
+        bgcolor: "#0f172a",
+        boxShadow: 3,
+      }}
+    >
+      <Box
+        sx={{
+          maxWidth: "80rem",
+          mx: "auto",
+          px: 2,
+          py: 2,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          width: "100%",
+        }}
+      >
+        <Button
           onClick={onGoHome}
-          className="flex items-center gap-3 hover:opacity-80 transition-opacity"
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            gap: 1.5,
+            color: "#fef3c7",
+            "&:hover": {
+              opacity: 0.8,
+            },
+          }}
         >
-          <Icon name="menu_book" className="text-3xl text-primary-light" />
-          <div>
-            <h1 className="text-2xl font-bold font-gemara tracking-wide">
+          <Icon name="menu_book" sx={{ fontSize: "1.875rem", color: "primary.light" }} />
+          <Box>
+            <Typography
+              variant="h6"
+              sx={{
+                fontWeight: 700,
+                fontFamily: '"Amiri", serif',
+                letterSpacing: "0.05em",
+              }}
+            >
               {MASECHET.title}
-            </h1>
-            <p className="text-sm text-slate-400">
+            </Typography>
+            <Typography
+              variant="caption"
+              sx={{ color: "#94a3b8" }}
+            >
               {MASECHET.pageRange}
-            </p>
-          </div>
-        </button>
+            </Typography>
+          </Box>
+        </Button>
 
-        <div ref={dropdownRef} className="relative hidden md:block">
-          <button
+        <Box
+          ref={dropdownRef}
+          sx={{
+            position: "relative",
+            display: { xs: "none", md: "block" },
+          }}
+        >
+          <Button
             onClick={toggleOpen}
-            className="flex items-center gap-2 bg-dark-medium hover:bg-dark-light px-4 py-2 rounded-lg border border-slate-600 min-w-[200px] justify-between text-amber-50 transition-colors"
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              gap: 1,
+              bgcolor: "#1e293b",
+              "&:hover": {
+                bgcolor: "#334155",
+              },
+              px: 2,
+              py: 1,
+              borderRadius: 2,
+              border: "1px solid #475569",
+              minWidth: 200,
+              justifyContent: "space-between",
+              color: "#fef3c7",
+            }}
           >
-            <div className="flex items-center gap-2">
+            <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
               {activePage && (
-                <Icon name={activePage.icon} style={{ color: colors.primary.light }} />
+                <Icon name={activePage.icon} sx={{ color: "primary.light" }} />
               )}
-              <span className="font-medium">
+              <Typography component="span" sx={{ fontWeight: 500 }}>
                 {activePage ? activePage.title : LABELS.selectPage}
-              </span>
-            </div>
+              </Typography>
+            </Box>
             <Icon
               name={isOpen ? "expand_less" : "expand_more"}
-              className="text-slate-400"
+              sx={{ color: "#94a3b8" }}
             />
-          </button>
+          </Button>
 
           {isOpen && (
-            <div className="absolute top-full right-0 mt-2 w-72 bg-dark-medium border border-slate-600 rounded-lg shadow-xl max-h-96 overflow-auto z-50">
+            <Box
+              sx={{
+                position: "absolute",
+                top: "100%",
+                right: 0,
+                mt: 1,
+                width: 288,
+                bgcolor: "#1e293b",
+                border: "1px solid #475569",
+                borderRadius: 2,
+                boxShadow: 6,
+                maxHeight: 384,
+                overflow: "auto",
+                zIndex: 50,
+              }}
+            >
               {pages.map((page) => (
-                <button
+                <MenuItem
                   key={page.id}
                   onClick={() => handlePageSelect(page.id)}
-                  className={`w-full flex items-center gap-3 px-4 py-3 text-right border-b border-dark-light last:border-b-0 hover:bg-dark-light transition-colors ${
-                    activePageId === page.id ? "bg-dark-light text-primary-light" : "text-amber-50"
-                  }`}
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 1.5,
+                    px: 2,
+                    py: 1.5,
+                    textAlign: "right",
+                    borderBottom: "1px solid #334155",
+                    "&:last-child": {
+                      borderBottom: 0,
+                    },
+                    "&:hover": {
+                      bgcolor: "#334155",
+                    },
+                    bgcolor: activePageId === page.id ? "#334155" : "transparent",
+                    color: activePageId === page.id ? "#fbbf24" : "#fef3c7",
+                  }}
                 >
                   <Icon
                     name={page.icon}
-                    style={{ color: activePageId === page.id ? colors.primary.light : colors.text.secondary }}
+                    sx={{ color: activePageId === page.id ? "primary.light" : "#94a3b8" }}
                   />
-                  <div className="flex-1">
-                    <p className="font-medium">{page.title}</p>
-                    <p className="text-xs text-slate-400 truncate">{page.description}</p>
-                  </div>
+                  <Box sx={{ flex: 1 }}>
+                    <Typography sx={{ fontWeight: 500 }}>{page.title}</Typography>
+                    <Typography
+                      variant="caption"
+                      sx={{
+                        color: "#94a3b8",
+                        display: "block",
+                        overflow: "hidden",
+                        textOverflow: "ellipsis",
+                        whiteSpace: "nowrap",
+                      }}
+                    >
+                      {page.description}
+                    </Typography>
+                  </Box>
                   {activePageId === page.id && (
-                    <Icon name="check" style={{ color: colors.primary.light }} />
+                    <Icon name="check" sx={{ color: "primary.light" }} />
                   )}
-                </button>
+                </MenuItem>
               ))}
-            </div>
+            </Box>
           )}
-        </div>
-      </div>
-    </header>
+        </Box>
+      </Box>
+    </AppBar>
   );
 }

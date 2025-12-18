@@ -3,12 +3,12 @@ import { CommentaryBox } from "@/components/CommentaryBox";
 import type { Commentary } from "@/types";
 
 const mockRashiCommentary: Commentary = {
-  title: 'רש"י (ד"ה רקת):',
+  title: 'רש"י (רקת:',
   text: "למה נקרא שמה רקת - משום שיושבת על שפת הים",
 };
 
 const mockTosafotCommentary: Commentary = {
-  title: 'תוספות (ד"ה ורקת):',
+  title: 'ורקת:',
   text: "תוספות מקשים: אם רקת היא טבריה, איך היא נחשבת מוקפת חומה?",
 };
 
@@ -19,7 +19,7 @@ describe("CommentaryBox Component", () => {
         <CommentaryBox commentary={mockRashiCommentary} type="rashi" />
       );
 
-      expect(screen.getByText('רש"י מבאר')).toBeInTheDocument();
+      expect(screen.getByText('רש"י')).toBeInTheDocument();
     });
 
     it("should display lightbulb icon for Rashi", () => {
@@ -48,14 +48,11 @@ describe("CommentaryBox Component", () => {
 
       const header = screen.getByRole("button");
 
-      // Initially collapsed
       expect(header).toHaveAttribute("aria-expanded", "false");
 
-      // First click - expand
       fireEvent.click(header);
       expect(header).toHaveAttribute("aria-expanded", "true");
 
-      // Second click - collapse
       fireEvent.click(header);
       expect(header).toHaveAttribute("aria-expanded", "false");
     });
@@ -67,7 +64,7 @@ describe("CommentaryBox Component", () => {
         <CommentaryBox commentary={mockTosafotCommentary} type="tosafot" />
       );
 
-      expect(screen.getByText("תוספות מקשה")).toBeInTheDocument();
+      expect(screen.getByText("תוספות")).toBeInTheDocument();
     });
 
     it("should display quiz icon for Tosafot", () => {

@@ -2,9 +2,13 @@
 
 import Image from "next/image";
 import { MASECHET, LABELS, WELCOME_TEXT, ALT_TEXT, getImagePath } from "@/lib/constants";
-import { colors } from "@/lib/styles";
 import { Icon } from "./ui";
 import type { PageInfo } from "@/types";
+import Box from "@mui/material/Box";
+import Card from "@mui/material/Card";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import Grid from "@mui/material/Grid";
 
 interface WelcomePageProps {
   pages: PageInfo[];
@@ -13,9 +17,15 @@ interface WelcomePageProps {
 
 export function WelcomePage({ pages, onPageSelect }: WelcomePageProps): React.ReactElement {
   return (
-    <div className="bg-white rounded-xl shadow-md overflow-hidden">
-      <div className="relative h-72 overflow-hidden">
-        <div className="absolute inset-0">
+    <Card
+      sx={{
+        borderRadius: 3,
+        boxShadow: 2,
+        overflow: "hidden",
+      }}
+    >
+      <Box sx={{ position: "relative", height: 288, overflow: "hidden" }}>
+        <Box sx={{ position: "absolute", inset: 0 }}>
           <Image
             src={getImagePath("beit-midrash")}
             alt={ALT_TEXT.beitMidrash}
@@ -24,62 +34,160 @@ export function WelcomePage({ pages, onPageSelect }: WelcomePageProps): React.Re
             sizes="100vw"
             priority
           />
-          <div className="absolute inset-0 bg-slate-900/70" />
-        </div>
-        <div className="relative h-full flex flex-col items-center justify-center gap-2 text-white text-center px-4">
-          <Icon name="menu_book" className="text-6xl text-primary-light mb-2" />
-          <h1 className="text-3xl md:text-4xl font-bold font-gemara">
+          <Box sx={{ position: "absolute", inset: 0, bgcolor: "rgba(15, 23, 42, 0.7)" }} />
+        </Box>
+        <Box
+          sx={{
+            position: "relative",
+            height: "100%",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: 1,
+            color: "white",
+            textAlign: "center",
+            px: 2,
+          }}
+        >
+          <Icon name="menu_book" sx={{ fontSize: "3.75rem", color: "primary.light", mb: 1 }} />
+          <Typography
+            variant="h3"
+            sx={{
+              fontWeight: 700,
+              fontFamily: '"Amiri", serif',
+              fontSize: { xs: "1.875rem", md: "2.25rem" },
+            }}
+          >
             {MASECHET.fullName}
-          </h1>
-          <p className="text-lg text-slate-400">
+          </Typography>
+          <Typography sx={{ fontSize: "1.125rem", color: "#94a3b8" }}>
             {MASECHET.pageRange}
-          </p>
-        </div>
-      </div>
+          </Typography>
+        </Box>
+      </Box>
 
-      <div className="p-6 md:p-8">
-        <h2 className="text-2xl font-bold text-slate-900 mb-4 text-center">
+      <Box sx={{ p: { xs: 3, md: 4 } }}>
+        <Typography
+          variant="h5"
+          sx={{
+            fontWeight: 700,
+            color: "#0f172a",
+            mb: 2,
+            textAlign: "center",
+          }}
+        >
           {LABELS.journeyTitle}
-        </h2>
-        <p className="text-muted leading-relaxed mb-6 text-center max-w-xl mx-auto">
+        </Typography>
+        <Typography
+          sx={{
+            color: "text.secondary",
+            lineHeight: 1.75,
+            mb: 3,
+            textAlign: "center",
+            maxWidth: 576,
+            mx: "auto",
+          }}
+        >
           {WELCOME_TEXT.intro}
-        </p>
+        </Typography>
 
-        <div className="flex justify-center gap-6 text-sm text-muted font-medium bg-amber-50 p-4 rounded-lg mb-8">
-          <div className="flex items-center gap-1">
-            <span
-              className="w-2.5 h-2.5 rounded-full"
-              style={{ backgroundColor: colors.primary.main }}
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            gap: 3,
+            fontSize: "0.875rem",
+            color: "text.secondary",
+            fontWeight: 500,
+            bgcolor: "#fffbeb",
+            p: 2,
+            borderRadius: 2,
+            mb: 4,
+          }}
+        >
+          <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
+            <Box
+              component="span"
+              sx={{
+                width: 10,
+                height: 10,
+                borderRadius: "50%",
+                bgcolor: "primary.main",
+              }}
             />
-            <span>{LABELS.rashiExplains}</span>
-          </div>
-          <div className="flex items-center gap-1">
-            <span
-              className="w-2.5 h-2.5 rounded-full"
-              style={{ backgroundColor: colors.secondary.main }}
+            <Typography component="span">{LABELS.rashiExplains}</Typography>
+          </Box>
+          <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
+            <Box
+              component="span"
+              sx={{
+                width: 10,
+                height: 10,
+                borderRadius: "50%",
+                bgcolor: "secondary.main",
+              }}
             />
-            <span>{LABELS.tosafotDeepens}</span>
-          </div>
-        </div>
+            <Typography component="span">{LABELS.tosafotDeepens}</Typography>
+          </Box>
+        </Box>
 
-        <h3 className="text-lg font-bold text-slate-900 mb-4 text-center">
+        <Typography
+          variant="h6"
+          sx={{
+            fontWeight: 700,
+            color: "#0f172a",
+            mb: 2,
+            textAlign: "center",
+          }}
+        >
           {LABELS.selectPage}
-        </h3>
+        </Typography>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <Grid container spacing={2}>
           {pages.map((page) => (
-            <button
-              key={page.id}
-              onClick={() => onPageSelect(page.id)}
-              className="flex flex-col items-center gap-2 p-6 rounded-lg border border-slate-200 bg-white transition-all duration-200 hover:border-secondary-main hover:bg-slate-50 hover:-translate-y-0.5 hover:shadow-md"
-            >
-              <Icon name={page.icon} className="text-3xl text-secondary-main" />
-              <span className="font-bold text-slate-900">{page.title}</span>
-              <span className="text-sm text-muted text-center">{page.description}</span>
-            </button>
+            <Grid key={page.id} size={{ xs: 12, sm: 6, md: 4 }}>
+              <Button
+                onClick={() => onPageSelect(page.id)}
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  gap: 1,
+                  p: 3,
+                  borderRadius: 2,
+                  border: "1px solid",
+                  borderColor: "grey.200",
+                  bgcolor: "white",
+                  transition: "all 0.2s",
+                  width: "100%",
+                  "&:hover": {
+                    borderColor: "secondary.main",
+                    bgcolor: "grey.50",
+                    transform: "translateY(-2px)",
+                    boxShadow: 2,
+                  },
+                }}
+              >
+                <Icon name={page.icon} sx={{ fontSize: "1.875rem", color: "secondary.main" }} />
+                <Typography component="span" sx={{ fontWeight: 700, color: "#0f172a" }}>
+                  {page.title}
+                </Typography>
+                <Typography
+                  component="span"
+                  sx={{
+                    fontSize: "0.875rem",
+                    color: "text.secondary",
+                    textAlign: "center",
+                  }}
+                >
+                  {page.description}
+                </Typography>
+              </Button>
+            </Grid>
           ))}
-        </div>
-      </div>
-    </div>
+        </Grid>
+      </Box>
+    </Card>
   );
 }

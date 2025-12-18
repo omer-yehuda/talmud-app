@@ -2,6 +2,9 @@
 
 import type { PageInfo } from "@/types";
 import { Icon } from "./ui";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
 
 interface PageNavigationProps {
   pages: PageInfo[];
@@ -23,7 +26,14 @@ export function PageNavigation({
   const nextPage = currentIndex < pages.length - 1 ? pages[currentIndex + 1] : null;
 
   return (
-    <div className="flex justify-between items-stretch gap-4">
+    <Box
+      sx={{
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "stretch",
+        gap: 2,
+      }}
+    >
       <NavButton
         page={prevPage}
         direction="prev"
@@ -34,7 +44,7 @@ export function PageNavigation({
         direction="next"
         onClick={() => nextPage && onPageChange(nextPage.id)}
       />
-    </div>
+    </Box>
   );
 }
 
@@ -49,35 +59,65 @@ function NavButton({ page, direction, onClick }: NavButtonProps): React.ReactEle
   const isPrev = direction === "prev";
 
   return (
-    <button
+    <Button
       onClick={onClick}
       disabled={isDisabled}
-      className={`flex-1 flex flex-col items-center gap-1 p-4 rounded-lg border border-slate-200 bg-white transition-all duration-200 ${
-        isDisabled
-          ? "opacity-40 cursor-not-allowed"
-          : "hover:bg-slate-50 hover:border-secondary-main"
-      }`}
+      sx={{
+        flex: 1,
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        gap: 0.5,
+        p: 2,
+        borderRadius: 2,
+        border: "1px solid",
+        borderColor: "grey.200",
+        bgcolor: "white",
+        transition: "all 0.2s",
+        opacity: isDisabled ? 0.4 : 1,
+        cursor: isDisabled ? "not-allowed" : "pointer",
+        "&:hover": isDisabled
+          ? {}
+          : {
+              bgcolor: "grey.50",
+              borderColor: "secondary.main",
+            },
+      }}
     >
-      <div className="flex items-center gap-2">
+      <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
         {isPrev && (
           <Icon
             name="arrow_forward"
-            className={isDisabled ? "text-muted" : "text-secondary-main"}
+            sx={{ color: isDisabled ? "text.secondary" : "secondary.main" }}
           />
         )}
-        <span className="text-xs text-muted font-medium">
+        <Typography
+          component="span"
+          sx={{
+            fontSize: "0.75rem",
+            color: "text.secondary",
+            fontWeight: 500,
+          }}
+        >
           {isPrev ? "הדף הקודם" : "הדף הבא"}
-        </span>
+        </Typography>
         {!isPrev && (
           <Icon
             name="arrow_back"
-            className={isDisabled ? "text-muted" : "text-secondary-main"}
+            sx={{ color: isDisabled ? "text.secondary" : "secondary.main" }}
           />
         )}
-      </div>
-      <span className="text-sm font-bold text-slate-900">
+      </Box>
+      <Typography
+        component="span"
+        sx={{
+          fontSize: "0.875rem",
+          fontWeight: 700,
+          color: "#0f172a",
+        }}
+      >
         {page ? page.title : "—"}
-      </span>
-    </button>
+      </Typography>
+    </Button>
   );
 }

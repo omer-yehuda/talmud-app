@@ -7,12 +7,9 @@ const IMAGES_DIR = path.join(process.cwd(), "src", "assets", "images");
 type ImageEntry = { filename: string; type: "png" | "svg" };
 
 const VALID_IMAGES: Record<string, ImageEntry> = {
-  // Original PNG images
   "beit-midrash": { filename: "6bdf1127-745a-41cd-99e0-f1a6f4ffca73.png", type: "png" },
   "tiberias": { filename: "dfb5f465-22db-4a91-9cfe-ecf00f069d78.png", type: "png" },
-  "ptolemy": { filename: "7ce3b6d0-f16e-4b21-8e8e-e5e76eea188c.png", type: "png" },
   "ahasuerus": { filename: "8b434647-0756-4189-8bd9-a4c70e90e2e1.png", type: "png" },
-  // SVG images for study topics (pages 2-14)
   "calendar": { filename: "calendar.svg", type: "svg" },
   "walls": { filename: "walls.svg", type: "svg" },
   "minyan": { filename: "minyan.svg", type: "svg" },
@@ -24,8 +21,6 @@ const VALID_IMAGES: Record<string, ImageEntry> = {
   "vashti": { filename: "vashti.svg", type: "svg" },
   "justice": { filename: "justice.svg", type: "svg" },
   "prophets": { filename: "prophets.svg", type: "svg" },
-  "salvation": { filename: "salvation.svg", type: "svg" },
-  // SVG images for study topics (pages 15-32)
   "prophetesses": { filename: "prophetesses.svg", type: "svg" },
   "reading": { filename: "reading.svg", type: "svg" },
   "languages": { filename: "languages.svg", type: "svg" },

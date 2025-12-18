@@ -2,7 +2,6 @@ import {
   studyTopics,
   comparisonItems,
   pages,
-  getPageById,
   getPageContent,
 } from "@/lib/data";
 import { isStudyPage } from "@/types";
@@ -63,7 +62,6 @@ describe("Talmud Data Library", () => {
     });
 
     it("should have valid Hebrew page letters", () => {
-      // Page field is now Hebrew letters (ב, ג, ד, etc.)
       const hebrewLetters = ["ב", "ג", "ד", "ה", "ו", "ז", "ח", "ט", "י", "יא", "יב", "יג", "יד", "טו", "טז", "יז", "יח", "יט", "כ", "כא", "כב", "כג", "כד", "כה", "כו", "כז", "כח", "כט", "ל", "לא", "לב"];
       studyTopics.forEach((topic) => {
         expect(hebrewLetters).toContain(topic.page);
@@ -129,47 +127,16 @@ describe("Talmud Data Library", () => {
     });
   });
 
-  describe("getPageById", () => {
-    it("should return page for valid ID (first page)", () => {
-      const page = getPageById("2");
-      expect(page).toBeDefined();
-      expect(page?.title).toBe("דף ב");
-      expect(page?.description).toBe("זמנים לקריאת המגילה");
-    });
-
-    it("should return page for valid ID (last page)", () => {
-      const page = getPageById("32");
-      expect(page).toBeDefined();
-      expect(page?.title).toBe("דף לב");
-      expect(page?.description).toBe("סיום המסכת – כבוד התורה");
-    });
-
-    it("should return page for valid ID (middle page)", () => {
-      const page = getPageById("15");
-      expect(page).toBeDefined();
-      expect(page?.title).toBe("דף טו");
-    });
-
-    it("should return undefined for invalid ID", () => {
-      const page = getPageById("invalid_id");
-      expect(page).toBeUndefined();
-    });
-
-    it("should return undefined for out of range ID", () => {
-      const page = getPageById("1");
-      expect(page).toBeUndefined();
-    });
-  });
-
   describe("getPageContent", () => {
     it("should return study content for first page", () => {
       const content = getPageContent("2");
       expect(content).toBeDefined();
       expect(content?.info.type).toBe("study");
+      expect(content?.info.title).toBe("דף ב");
       if (content && isStudyPage(content)) {
         expect(content.studyTopic).toBeDefined();
         expect(content.studyTopic.id).toBe(2);
-        expect(content.studyTopic.page).toBe("ב"); // Hebrew letter
+        expect(content.studyTopic.page).toBe("ב");
       }
     });
 
@@ -177,9 +144,10 @@ describe("Talmud Data Library", () => {
       const content = getPageContent("15");
       expect(content).toBeDefined();
       expect(content?.info.type).toBe("study");
+      expect(content?.info.title).toBe("דף טו");
       if (content && isStudyPage(content)) {
         expect(content.studyTopic).toBeDefined();
-        expect(content.studyTopic.page).toBe("טו"); // Hebrew letter
+        expect(content.studyTopic.page).toBe("טו");
       }
     });
 
@@ -187,16 +155,18 @@ describe("Talmud Data Library", () => {
       const content = getPageContent("32");
       expect(content).toBeDefined();
       expect(content?.info.type).toBe("study");
+      expect(content?.info.title).toBe("דף לב");
       if (content && isStudyPage(content)) {
         expect(content.studyTopic).toBeDefined();
         expect(content.studyTopic.id).toBe(32);
-        expect(content.studyTopic.page).toBe("לב"); // Hebrew letter
+        expect(content.studyTopic.page).toBe("לב");
       }
     });
 
     it("should return undefined for invalid ID", () => {
-      const content = getPageContent("invalid_id");
-      expect(content).toBeUndefined();
+      expect(getPageContent("invalid_id")).toBeUndefined();
+      expect(getPageContent("1")).toBeUndefined();
+      expect(getPageContent("33")).toBeUndefined();
     });
 
     it("should have matching ID between info and studyTopic", () => {
@@ -204,7 +174,6 @@ describe("Talmud Data Library", () => {
         const content = getPageContent(page.id);
         expect(content).toBeDefined();
         if (content && isStudyPage(content)) {
-          // studyTopic.id should match the numeric page.id
           expect(content.studyTopic.id).toBe(parseInt(page.id, 10));
         }
       });
