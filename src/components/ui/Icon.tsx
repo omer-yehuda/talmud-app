@@ -3,12 +3,11 @@
 interface IconProps {
   name: string;
   className?: string;
-  style?: React.CSSProperties;
 }
 
-export function Icon({ name, className = "", style }: IconProps): React.ReactElement {
+export function Icon({ name, className = "" }: IconProps): React.ReactElement {
   return (
-    <span className={`material-symbols-outlined ${className}`} style={style}>
+    <span className={`material-symbols-outlined ${className}`}>
       {name}
     </span>
   );

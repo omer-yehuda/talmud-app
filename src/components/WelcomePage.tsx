@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { MASECHET, LABELS, WELCOME_TEXT, ALT_TEXT, getImagePath } from "@/lib/constants";
-import { colors } from "@/lib/styles";
 import { Icon } from "./ui";
 import type { PageInfo } from "@/types";
 
@@ -47,17 +46,11 @@ export function WelcomePage({ pages, onPageSelect }: WelcomePageProps): React.Re
 
         <div className="flex justify-center gap-6 text-sm text-muted font-medium bg-amber-50 p-4 rounded-lg mb-8">
           <div className="flex items-center gap-1">
-            <span
-              className="w-2.5 h-2.5 rounded-full"
-              style={{ backgroundColor: colors.primary.main }}
-            />
+            <span className="w-2.5 h-2.5 rounded-full bg-primary-main" />
             <span>{LABELS.rashiExplains}</span>
           </div>
           <div className="flex items-center gap-1">
-            <span
-              className="w-2.5 h-2.5 rounded-full"
-              style={{ backgroundColor: colors.secondary.main }}
-            />
+            <span className="w-2.5 h-2.5 rounded-full bg-secondary-main" />
             <span>{LABELS.tosafotDeepens}</span>
           </div>
         </div>

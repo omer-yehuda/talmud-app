@@ -22,7 +22,7 @@ const config: Record<CommentaryType, {
 }> = {
   rashi: {
     icon: "lightbulb",
-    text: 'רש"י מבאר',
+    text: 'רש"י',
     buttonHover: "hover:bg-amber-50",
     iconColor: "text-amber-600",
     titleColor: "text-amber-800",
@@ -31,7 +31,7 @@ const config: Record<CommentaryType, {
   },
   tosafot: {
     icon: "quiz",
-    text: "תוספות מקשה",
+    text: "תוספות",
     buttonHover: "hover:bg-blue-50",
     iconColor: "text-blue-600",
     titleColor: "text-blue-800",

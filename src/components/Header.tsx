@@ -2,7 +2,6 @@
 
 import type { PageInfo } from "@/types";
 import { MASECHET, LABELS } from "@/lib/constants";
-import { colors } from "@/lib/styles";
 import { useNavigationState } from "@/hooks";
 import { Icon } from "./ui";
 
@@ -46,7 +45,7 @@ export function Header({ pages, activePageId, onPageChange, onGoHome }: HeaderPr
           >
             <div className="flex items-center gap-2">
               {activePage && (
-                <Icon name={activePage.icon} style={{ color: colors.primary.light }} />
+                <Icon name={activePage.icon} className="text-primary-light" />
               )}
               <span className="font-medium">
                 {activePage ? activePage.title : LABELS.selectPage}
@@ -70,14 +69,14 @@ export function Header({ pages, activePageId, onPageChange, onGoHome }: HeaderPr
                 >
                   <Icon
                     name={page.icon}
-                    style={{ color: activePageId === page.id ? colors.primary.light : colors.text.secondary }}
+                    className={activePageId === page.id ? "text-primary-light" : "text-slate-400"}
                   />
                   <div className="flex-1">
                     <p className="font-medium">{page.title}</p>
                     <p className="text-xs text-slate-400 truncate">{page.description}</p>
                   </div>
                   {activePageId === page.id && (
-                    <Icon name="check" style={{ color: colors.primary.light }} />
+                    <Icon name="check" className="text-primary-light" />
                   )}
                 </button>
               ))}

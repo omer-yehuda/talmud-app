@@ -2,7 +2,6 @@
 
 import type { PageInfo } from "@/types";
 import { LABELS } from "@/lib/constants";
-import { colors } from "@/lib/styles";
 import { useNavigationState } from "@/hooks";
 import { Icon } from "./ui";
 
@@ -40,14 +39,14 @@ export function MobileNav({ pages, activePageId, onPageChange }: MobileNavProps)
             >
               <Icon
                 name={page.icon}
-                style={{ color: activePageId === page.id ? colors.secondary.main : colors.text.secondary }}
+                className={activePageId === page.id ? "text-secondary-main" : "text-slate-400"}
               />
               <div className="flex-1">
                 <p className="font-medium text-sm">{page.title}</p>
                 <p className="text-xs text-slate-400 truncate">{page.description}</p>
               </div>
               {activePageId === page.id && (
-                <Icon name="check" style={{ color: colors.secondary.main }} />
+                <Icon name="check" className="text-secondary-main" />
               )}
             </button>
           ))}
@@ -62,7 +61,7 @@ export function MobileNav({ pages, activePageId, onPageChange }: MobileNavProps)
           <div className="flex items-center gap-3">
             {activePage ? (
               <>
-                <Icon name={activePage.icon} style={{ color: colors.secondary.main }} />
+                <Icon name={activePage.icon} className="text-secondary-main" />
                 <div className="text-right">
                   <p className="font-medium text-sm text-slate-900">{activePage.title}</p>
                   <p className="text-xs text-slate-400">{activePage.description}</p>

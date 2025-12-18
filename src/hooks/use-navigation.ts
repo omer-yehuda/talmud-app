@@ -2,7 +2,6 @@
 
 import { useState, useRef, useEffect, useCallback } from "react";
 import type { PageInfo } from "@/types";
-import { createClickOutsideHandler } from "@/lib/utils";
 
 interface UseNavigationStateOptions {
   pages: PageInfo[];
@@ -43,7 +42,12 @@ export function useNavigationState({
   useEffect(() => {
     if (!closeOnClickOutside) return;
 
-    const handleClickOutside = createClickOutsideHandler(dropdownRef, () => setIsOpen(false));
+    const handleClickOutside = (event: MouseEvent): void => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
     document.addEventListener("mousedown", handleClickOutside);
     return (): void => document.removeEventListener("mousedown", handleClickOutside);
   }, [closeOnClickOutside]);
