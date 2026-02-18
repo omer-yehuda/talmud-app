@@ -4,10 +4,13 @@ import type { PageInfo } from "@/types";
 import { LABELS } from "@/lib/constants";
 import { useNavigationState } from "@/hooks";
 import { Icon } from "./ui";
+import { motion, AnimatePresence } from "framer-motion";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import MenuItem from "@mui/material/MenuItem";
+
+const MotionBox = motion(Box);
 
 interface MobileNavProps {
   pages: PageInfo[];
@@ -34,86 +37,117 @@ export function MobileNav({ pages, activePageId, onPageChange }: MobileNavProps)
         zIndex: 50,
       }}
     >
-      {isOpen && (
-        <Box
-          onClick={() => setIsOpen(false)}
-          sx={{
-            position: "fixed",
-            inset: 0,
-            bgcolor: "rgba(0, 0, 0, 0.5)",
-            zIndex: 40,
-          }}
-        />
-      )}
+      <AnimatePresence>
+        {isOpen && (
+          <MotionBox
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            onClick={() => setIsOpen(false)}
+            sx={{
+              position: "fixed",
+              inset: 0,
+              bgcolor: "rgba(0, 0, 0, 0.4)",
+              backdropFilter: "blur(4px)",
+              WebkitBackdropFilter: "blur(4px)",
+              zIndex: 40,
+            }}
+          />
+        )}
+      </AnimatePresence>
 
-      {isOpen && (
-        <Box
-          sx={{
-            position: "absolute",
-            bottom: "100%",
-            left: 0,
-            right: 0,
-            bgcolor: "white",
-            borderTop: "1px solid",
-            borderColor: "grey.200",
-            maxHeight: 320,
-            overflow: "auto",
-            zIndex: 50,
-            boxShadow: 3,
-          }}
-        >
-          {pages.map((page) => (
-            <MenuItem
-              key={page.id}
-              onClick={() => handlePageSelect(page.id)}
+      <AnimatePresence>
+        {isOpen && (
+          <MotionBox
+            initial={{ y: "100%", opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: "100%", opacity: 0 }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
+            sx={{
+              position: "absolute",
+              bottom: "100%",
+              left: 0,
+              right: 0,
+              bgcolor: "white",
+              borderTop: "1px solid",
+              borderColor: "grey.100",
+              maxHeight: 360,
+              overflow: "auto",
+              zIndex: 50,
+              borderRadius: "16px 16px 0 0",
+              boxShadow: "0 -8px 30px rgba(0,0,0,0.12)",
+            }}
+          >
+            <Box
               sx={{
-                display: "flex",
-                alignItems: "center",
-                gap: 1.5,
-                px: 2,
-                py: 1.5,
-                textAlign: "right",
-                borderBottom: "1px solid",
-                borderColor: "grey.100",
-                bgcolor: activePageId === page.id ? "#eef2ff" : "transparent",
-                color: activePageId === page.id ? "#1e3a8a" : "inherit",
+                width: 36,
+                height: 4,
+                bgcolor: "grey.300",
+                borderRadius: 2,
+                mx: "auto",
+                mt: 1.5,
+                mb: 1,
               }}
-            >
-              <Icon
-                name={page.icon}
-                sx={{ color: activePageId === page.id ? "secondary.main" : "#94a3b8" }}
-              />
-              <Box sx={{ flex: 1 }}>
-                <Typography sx={{ fontWeight: 500, fontSize: "0.875rem" }}>
-                  {page.title}
-                </Typography>
-                <Typography
-                  variant="caption"
+            />
+            {pages.map((page) => (
+              <MenuItem
+                key={page.id}
+                onClick={() => handlePageSelect(page.id)}
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 1.5,
+                  px: 2.5,
+                  py: 1.5,
+                  textAlign: "right",
+                  borderBottom: "1px solid",
+                  borderColor: "grey.50",
+                  bgcolor: activePageId === page.id ? "rgba(238, 242, 255, 0.5)" : "transparent",
+                  color: activePageId === page.id ? "#1e3a8a" : "inherit",
+                  transition: "all 0.15s ease",
+                }}
+              >
+                <Icon
+                  name={page.icon}
                   sx={{
-                    color: "#94a3b8",
-                    display: "block",
-                    overflow: "hidden",
-                    textOverflow: "ellipsis",
-                    whiteSpace: "nowrap",
+                    color: activePageId === page.id ? "secondary.main" : "rgba(148, 163, 184, 0.7)",
+                    fontSize: "1.2rem",
                   }}
-                >
-                  {page.description}
-                </Typography>
-              </Box>
-              {activePageId === page.id && (
-                <Icon name="check" sx={{ color: "secondary.main" }} />
-              )}
-            </MenuItem>
-          ))}
-        </Box>
-      )}
+                />
+                <Box sx={{ flex: 1, minWidth: 0 }}>
+                  <Typography sx={{ fontWeight: 500, fontSize: "0.875rem" }}>
+                    {page.title}
+                  </Typography>
+                  <Typography
+                    variant="caption"
+                    sx={{
+                      color: "rgba(148, 163, 184, 0.8)",
+                      display: "block",
+                      overflow: "hidden",
+                      textOverflow: "ellipsis",
+                      whiteSpace: "nowrap",
+                    }}
+                  >
+                    {page.description}
+                  </Typography>
+                </Box>
+                {activePageId === page.id && (
+                  <Icon name="check" sx={{ color: "secondary.main", fontSize: "1rem" }} />
+                )}
+              </MenuItem>
+            ))}
+          </MotionBox>
+        )}
+      </AnimatePresence>
 
       <Box
         sx={{
-          bgcolor: "white",
+          bgcolor: "rgba(255, 255, 255, 0.9)",
+          backdropFilter: "blur(12px)",
+          WebkitBackdropFilter: "blur(12px)",
           borderTop: "1px solid",
-          borderColor: "grey.200",
-          boxShadow: "0 -4px 6px -1px rgba(0,0,0,0.1)",
+          borderColor: "grey.100",
         }}
       >
         <Button
@@ -123,7 +157,7 @@ export function MobileNav({ pages, activePageId, onPageChange }: MobileNavProps)
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
-            px: 2,
+            px: 2.5,
             py: 1.5,
             color: "inherit",
           }}
@@ -131,26 +165,29 @@ export function MobileNav({ pages, activePageId, onPageChange }: MobileNavProps)
           <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
             {activePage ? (
               <>
-                <Icon name={activePage.icon} sx={{ color: "secondary.main" }} />
+                <Icon name={activePage.icon} sx={{ color: "secondary.main", fontSize: "1.2rem" }} />
                 <Box sx={{ textAlign: "right" }}>
                   <Typography sx={{ fontWeight: 500, fontSize: "0.875rem", color: "#0f172a" }}>
                     {activePage.title}
                   </Typography>
-                  <Typography variant="caption" sx={{ color: "#94a3b8" }}>
+                  <Typography variant="caption" sx={{ color: "rgba(148, 163, 184, 0.8)" }}>
                     {activePage.description}
                   </Typography>
                 </Box>
               </>
             ) : (
-              <Typography component="span" sx={{ color: "text.secondary" }}>
+              <Typography component="span" sx={{ color: "text.secondary", fontSize: "0.9rem" }}>
                 {LABELS.selectPage}
               </Typography>
             )}
           </Box>
-          <Icon
-            name={isOpen ? "expand_more" : "expand_less"}
-            sx={{ fontSize: "1.5rem", color: "#94a3b8" }}
-          />
+          <MotionBox
+            animate={{ rotate: isOpen ? 180 : 0 }}
+            transition={{ duration: 0.25 }}
+            sx={{ display: "inline-flex" }}
+          >
+            <Icon name="expand_less" sx={{ fontSize: "1.5rem", color: "rgba(148, 163, 184, 0.7)" }} />
+          </MotionBox>
         </Button>
       </Box>
     </Box>

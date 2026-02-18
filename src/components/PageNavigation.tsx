@@ -2,9 +2,13 @@
 
 import type { PageInfo } from "@/types";
 import { Icon } from "./ui";
+import { motion } from "framer-motion";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+
+const MotionButton = motion(Button);
+const MotionBox = motion(Box);
 
 interface PageNavigationProps {
   pages: PageInfo[];
@@ -26,7 +30,10 @@ export function PageNavigation({
   const nextPage = currentIndex < pages.length - 1 ? pages[currentIndex + 1] : null;
 
   return (
-    <Box
+    <MotionBox
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3, delay: 0.1 }}
       sx={{
         display: "flex",
         justifyContent: "space-between",
@@ -44,7 +51,7 @@ export function PageNavigation({
         direction="next"
         onClick={() => nextPage && onPageChange(nextPage.id)}
       />
-    </Box>
+    </MotionBox>
   );
 }
 
@@ -59,9 +66,12 @@ function NavButton({ page, direction, onClick }: NavButtonProps): React.ReactEle
   const isPrev = direction === "prev";
 
   return (
-    <Button
+    <MotionButton
       onClick={onClick}
       disabled={isDisabled}
+      whileHover={isDisabled ? undefined : { y: -2, scale: 1.01 }}
+      whileTap={isDisabled ? undefined : { scale: 0.98 }}
+      transition={{ duration: 0.2 }}
       sx={{
         flex: 1,
         display: "flex",
@@ -69,18 +79,19 @@ function NavButton({ page, direction, onClick }: NavButtonProps): React.ReactEle
         alignItems: "center",
         gap: 0.5,
         p: 2,
-        borderRadius: 2,
+        borderRadius: 3,
         border: "1px solid",
         borderColor: "grey.200",
         bgcolor: "white",
-        transition: "all 0.2s",
-        opacity: isDisabled ? 0.4 : 1,
+        opacity: isDisabled ? 0.35 : 1,
         cursor: isDisabled ? "not-allowed" : "pointer",
+        boxShadow: "0 1px 3px rgba(0,0,0,0.04)",
         "&:hover": isDisabled
           ? {}
           : {
-              bgcolor: "grey.50",
-              borderColor: "secondary.main",
+              bgcolor: "rgba(37, 99, 235, 0.02)",
+              borderColor: "secondary.light",
+              boxShadow: "0 4px 12px rgba(37, 99, 235, 0.08)",
             },
       }}
     >
@@ -88,15 +99,17 @@ function NavButton({ page, direction, onClick }: NavButtonProps): React.ReactEle
         {isPrev && (
           <Icon
             name="arrow_forward"
-            sx={{ color: isDisabled ? "text.secondary" : "secondary.main" }}
+            sx={{ color: isDisabled ? "text.secondary" : "secondary.main", fontSize: "1.1rem" }}
           />
         )}
         <Typography
           component="span"
           sx={{
-            fontSize: "0.75rem",
+            fontSize: "0.7rem",
             color: "text.secondary",
-            fontWeight: 500,
+            fontWeight: 600,
+            textTransform: "uppercase",
+            letterSpacing: "0.05em",
           }}
         >
           {isPrev ? "הדף הקודם" : "הדף הבא"}
@@ -104,20 +117,20 @@ function NavButton({ page, direction, onClick }: NavButtonProps): React.ReactEle
         {!isPrev && (
           <Icon
             name="arrow_back"
-            sx={{ color: isDisabled ? "text.secondary" : "secondary.main" }}
+            sx={{ color: isDisabled ? "text.secondary" : "secondary.main", fontSize: "1.1rem" }}
           />
         )}
       </Box>
       <Typography
         component="span"
         sx={{
-          fontSize: "0.875rem",
+          fontSize: "0.9rem",
           fontWeight: 700,
           color: "#0f172a",
         }}
       >
         {page ? page.title : "—"}
       </Typography>
-    </Button>
+    </MotionButton>
   );
 }
