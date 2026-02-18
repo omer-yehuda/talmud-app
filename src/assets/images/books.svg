@@ -1,44 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#2d1f1f"/>
-      <stop offset="100%" style="stop-color:#1a1010"/>
-    </linearGradient>
-    <linearGradient id="leather" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#8B4513"/>
-      <stop offset="50%" style="stop-color:#A0522D"/>
-      <stop offset="100%" style="stop-color:#8B4513"/>
-    </linearGradient>
-    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#f0d78c"/>
-      <stop offset="100%" style="stop-color:#c9a227"/>
-    </linearGradient>
-  </defs>
-  <rect width="800" height="400" fill="url(#bg)"/>
-  <!-- Stack of holy books -->
-  <g transform="translate(300, 80)">
-    <!-- Book 1 (bottom) -->
-    <rect x="0" y="120" width="200" height="30" fill="url(#leather)"/>
-    <rect x="5" y="123" width="190" height="24" fill="#fff8e7"/>
-    <text x="100" y="142" text-anchor="middle" font-family="David, serif" font-size="14" fill="#8B4513" direction="rtl">כתובים</text>
-    <!-- Book 2 -->
-    <rect x="10" y="85" width="180" height="30" fill="#2c3e50"/>
-    <rect x="15" y="88" width="170" height="24" fill="#fff8e7"/>
-    <text x="100" y="107" text-anchor="middle" font-family="David, serif" font-size="14" fill="#2c3e50" direction="rtl">נביאים</text>
-    <!-- Book 3 (top - Torah) -->
-    <rect x="20" y="45" width="160" height="35" fill="#1a5f2a"/>
-    <rect x="25" y="50" width="150" height="25" fill="#fff8e7"/>
-    <text x="100" y="69" text-anchor="middle" font-family="David, serif" font-size="16" fill="#1a5f2a" direction="rtl">תורה</text>
-    <!-- Crown on top -->
-    <path d="M80 35 L85 20 L100 30 L115 20 L120 35 Z" fill="url(#gold)"/>
-  </g>
-  <!-- Genizah box -->
-  <g transform="translate(550, 120)">
-    <rect x="0" y="0" width="100" height="80" fill="#6B3510" rx="5"/>
-    <rect x="10" y="10" width="80" height="60" fill="#4a2a08"/>
-    <text x="50" y="50" text-anchor="middle" font-family="David, serif" font-size="14" fill="#f0e6d3" direction="rtl">גניזה</text>
-  </g>
-  <!-- Title -->
-  <text x="400" y="280" text-anchor="middle" font-family="David, serif" font-size="32" fill="#f0e6d3" direction="rtl">קדושת ספרים</text>
-  <text x="400" y="320" text-anchor="middle" font-family="David, serif" font-size="20" fill="#8a7a7a" direction="rtl">דיני גניזה ושימוש</text>
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f5e6d3"/>
+  <!-- Shelf -->
+  <rect x="50" y="248" width="300" height="14" fill="#744210" rx="3"/>
+  <!-- BOOK 1 - deep blue -->
+  <rect x="70" y="110" width="38" height="140" fill="#1a365d" rx="3 3 0 0"/>
+  <rect x="76" y="120" width="26" height="3" fill="#8B6914" rx="1"/>
+  <rect x="76" y="130" width="26" height="3" fill="#8B6914" rx="1"/>
+  <rect x="78" y="142" width="22" height="60" fill="#f5e6d3" rx="1" opacity="0.15"/>
+  <rect x="76" y="215" width="26" height="3" fill="#8B6914" rx="1"/>
+  <rect x="107" y="112" width="3" height="136" fill="#e8d5bc" rx="1"/>
+  <!-- BOOK 2 - brown -->
+  <rect x="112" y="128" width="34" height="122" fill="#744210" rx="3 3 0 0"/>
+  <rect x="118" y="138" width="22" height="3" fill="#f5e6d3" rx="1" opacity="0.6"/>
+  <rect x="118" y="148" width="22" height="3" fill="#f5e6d3" rx="1" opacity="0.6"/>
+  <rect x="120" y="160" width="18" height="55" fill="#8B6914" rx="1" opacity="0.4"/>
+  <rect x="118" y="228" width="22" height="3" fill="#f5e6d3" rx="1" opacity="0.6"/>
+  <rect x="145" y="130" width="3" height="118" fill="#e8d5bc" rx="1"/>
+  <!-- BOOK 3 - gold, wider -->
+  <rect x="152" y="105" width="48" height="145" fill="#8B6914" rx="3 3 0 0"/>
+  <rect x="157" y="110" width="38" height="135" fill="none" stroke="#f5e6d3" stroke-width="1.5" rx="2" opacity="0.5"/>
+  <rect x="162" y="122" width="28" height="4" fill="#f5e6d3" rx="1" opacity="0.7"/>
+  <rect x="162" y="132" width="28" height="4" fill="#f5e6d3" rx="1" opacity="0.7"/>
+  <rect x="164" y="145" width="24" height="70" fill="#744210" rx="1" opacity="0.35"/>
+  <rect x="162" y="228" width="28" height="4" fill="#f5e6d3" rx="1" opacity="0.7"/>
+  <circle cx="200" cy="178" r="5" fill="#f5e6d3" opacity="0.6"/>
+  <rect x="199" y="107" width="3" height="141" fill="#e8d5bc" rx="1"/>
+  <!-- BOOK 4 - dark -->
+  <rect x="206" y="135" width="30" height="115" fill="#2d3748" rx="3 3 0 0"/>
+  <rect x="212" y="145" width="18" height="3" fill="#8B6914" rx="1"/>
+  <rect x="212" y="155" width="18" height="3" fill="#8B6914" rx="1"/>
+  <rect x="212" y="225" width="18" height="3" fill="#8B6914" rx="1"/>
+  <rect x="235" y="137" width="3" height="111" fill="#e8d5bc" rx="1"/>
+  <!-- BOOK 5 - blue -->
+  <rect x="242" y="118" width="42" height="132" fill="#1a365d" rx="3 3 0 0" opacity="0.85"/>
+  <rect x="248" y="130" width="30" height="4" fill="#8B6914" rx="1"/>
+  <rect x="248" y="142" width="30" height="4" fill="#8B6914" rx="1"/>
+  <rect x="250" y="156" width="26" height="55" fill="#f5e6d3" rx="1" opacity="0.12"/>
+  <rect x="248" y="230" width="30" height="4" fill="#8B6914" rx="1"/>
+  <rect x="283" y="120" width="3" height="128" fill="#e8d5bc" rx="1"/>
+  <!-- BOOK 6 - tallest -->
+  <rect x="290" y="100" width="40" height="150" fill="#744210" rx="3 3 0 0"/>
+  <rect x="296" y="112" width="28" height="3" fill="#8B6914" rx="1"/>
+  <rect x="296" y="122" width="28" height="3" fill="#8B6914" rx="1"/>
+  <rect x="298" y="135" width="24" height="75" fill="#8B6914" rx="1" opacity="0.3"/>
+  <rect x="296" y="236" width="28" height="3" fill="#8B6914" rx="1"/>
+  <rect x="329" y="102" width="3" height="146" fill="#e8d5bc" rx="1"/>
+  <!-- TORAH SCROLL resting on books -->
+  <rect x="130" y="75" width="140" height="38" fill="#e8d0a0" rx="4" stroke="#8B6914" stroke-width="1.5"/>
+  <rect x="118" y="72" width="16" height="44" fill="#8B6914" rx="8"/>
+  <rect x="266" y="72" width="16" height="44" fill="#8B6914" rx="8"/>
+  <circle cx="126" cy="72" r="10" fill="#744210"/>
+  <circle cx="126" cy="116" r="10" fill="#744210"/>
+  <circle cx="274" cy="72" r="10" fill="#744210"/>
+  <circle cx="274" cy="116" r="10" fill="#744210"/>
+  <rect x="148" y="85" width="104" height="4" fill="#744210" rx="2" opacity="0.5"/>
+  <rect x="148" y="95" width="104" height="4" fill="#744210" rx="2" opacity="0.5"/>
+  <rect x="148" y="105" width="80" height="4" fill="#744210" rx="2" opacity="0.5"/>
+  <rect x="193" y="68" width="14" height="52" fill="#8B6914" rx="3" opacity="0.7"/>
+  <circle cx="200" cy="94" r="10" fill="none" stroke="#744210" stroke-width="2" opacity="0.7"/>
+  <polygon points="200,63 203,68 209,68 204,72 206,78 200,74 194,78 196,72 191,68 197,68" fill="#744210" opacity="0.6"/>
 </svg>

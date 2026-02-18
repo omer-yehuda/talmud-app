@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <!-- Background - Palace interior -->
+  <rect width="400" height="300" fill="#FDF6E3"/>
+
+  <!-- Palace walls -->
+  <rect x="0" y="0" width="400" height="250" fill="#F5E6D3"/>
+
+  <!-- Floor -->
+  <rect x="0" y="250" width="400" height="50" fill="#C4956A" opacity="0.5"/>
+  <line x1="0" y1="250" x2="400" y2="250" stroke="#8B6914" stroke-width="1"/>
+
+  <!-- Ornate columns -->
+  <rect x="30" y="40" width="20" height="210" fill="#D4A574" stroke="#8B6914" stroke-width="1" rx="3"/>
+  <rect x="25" y="35" width="30" height="10" fill="#C4956A" stroke="#8B6914" stroke-width="0.5" rx="2"/>
+  <rect x="25" y="245" width="30" height="10" fill="#C4956A" stroke="#8B6914" stroke-width="0.5" rx="2"/>
+
+  <rect x="350" y="40" width="20" height="210" fill="#D4A574" stroke="#8B6914" stroke-width="1" rx="3"/>
+  <rect x="345" y="35" width="30" height="10" fill="#C4956A" stroke="#8B6914" stroke-width="0.5" rx="2"/>
+  <rect x="345" y="245" width="30" height="10" fill="#C4956A" stroke="#8B6914" stroke-width="0.5" rx="2"/>
+
+  <!-- Decorative arch -->
+  <path d="M60 35 Q200 0 340 35" fill="none" stroke="#DAA520" stroke-width="2"/>
+  <path d="M60 40 Q200 5 340 40" fill="none" stroke="#DAA520" stroke-width="1" opacity="0.5"/>
+
+  <!-- Royal curtains -->
+  <path d="M60 35 Q80 60 60 90 L60 35" fill="#800020" opacity="0.7"/>
+  <path d="M340 35 Q320 60 340 90 L340 35" fill="#800020" opacity="0.7"/>
+
+  <!-- Throne platform -->
+  <rect x="130" y="170" width="140" height="15" fill="#DAA520" stroke="#B8860B" stroke-width="1" rx="3"/>
+  <rect x="140" y="160" width="120" height="15" fill="#DAA520" stroke="#B8860B" stroke-width="1" rx="3"/>
+
+  <!-- Throne -->
+  <rect x="165" y="100" width="70" height="65" fill="#800020" stroke="#DAA520" stroke-width="1.5" rx="4"/>
+  <rect x="160" y="90" width="80" height="15" fill="#DAA520" stroke="#B8860B" stroke-width="1" rx="4"/>
+  <!-- Throne back -->
+  <rect x="170" y="60" width="60" height="35" fill="#800020" stroke="#DAA520" stroke-width="1" rx="8"/>
+
+  <!-- Crown on throne back -->
+  <path d="M185 55 L190 40 L200 50 L210 40 L215 55" fill="#FFD700" stroke="#DAA520" stroke-width="1"/>
+  <rect x="185" y="55" width="30" height="8" fill="#FFD700" stroke="#DAA520" stroke-width="0.5" rx="2"/>
+  <circle cx="193" cy="59" r="2" fill="#FF0000"/>
+  <circle cx="200" cy="57" r="2" fill="#0000FF"/>
+  <circle cx="207" cy="59" r="2" fill="#00FF00"/>
+
+  <!-- King figure (seated) -->
+  <circle cx="200" cy="105" r="15" fill="#F5DEB3" stroke="#8B6914" stroke-width="1"/>
+  <!-- Beard -->
+  <path d="M190 112 Q200 130 210 112" fill="#4A3728" opacity="0.6"/>
+  <!-- Robe -->
+  <rect x="182" y="118" width="36" height="45" fill="#800020" rx="4"/>
+  <rect x="182" y="118" width="36" height="8" fill="#DAA520" rx="2"/>
+
+  <!-- Scepter -->
+  <line x1="225" y1="100" x2="245" y2="80" stroke="#DAA520" stroke-width="2.5"/>
+  <circle cx="248" cy="77" r="5" fill="#FFD700" stroke="#DAA520" stroke-width="1"/>
+
+  <!-- Feast table -->
+  <rect x="60" y="200" width="120" height="8" fill="#8B6914" rx="2"/>
+  <rect x="70" y="208" width="5" height="35" fill="#8B6914" rx="1"/>
+  <rect x="165" y="208" width="5" height="35" fill="#8B6914" rx="1"/>
+
+  <rect x="220" y="200" width="120" height="8" fill="#8B6914" rx="2"/>
+  <rect x="230" y="208" width="5" height="35" fill="#8B6914" rx="1"/>
+  <rect x="325" y="208" width="5" height="35" fill="#8B6914" rx="1"/>
+
+  <!-- Goblets and plates -->
+  <ellipse cx="90" cy="197" rx="8" ry="4" fill="#DAA520"/>
+  <rect x="87" y="190" width="6" height="8" fill="#DAA520" rx="1"/>
+  <ellipse cx="130" cy="197" rx="12" ry="4" fill="#C0C0C0" opacity="0.6"/>
+
+  <ellipse cx="250" cy="197" rx="8" ry="4" fill="#DAA520"/>
+  <rect x="247" y="190" width="6" height="8" fill="#DAA520" rx="1"/>
+  <ellipse cx="300" cy="197" rx="12" ry="4" fill="#C0C0C0" opacity="0.6"/>
+
+  <!-- Attendant figures -->
+  <circle cx="85" cy="175" r="10" fill="#F5DEB3" stroke="#8B6914" stroke-width="0.5"/>
+  <rect x="78" y="185" width="14" height="18" fill="#2F4F4F" rx="2"/>
+
+  <circle cx="315" cy="175" r="10" fill="#F5DEB3" stroke="#8B6914" stroke-width="0.5"/>
+  <rect x="308" y="185" width="14" height="18" fill="#2F4F4F" rx="2"/>
+</svg>

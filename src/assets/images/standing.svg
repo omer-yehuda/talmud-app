@@ -1,51 +1,125 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a2a2d"/>
-      <stop offset="100%" style="stop-color:#0d1518"/>
-    </linearGradient>
-    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#f0d78c"/>
-      <stop offset="100%" style="stop-color:#c9a227"/>
-    </linearGradient>
+    <radialGradient id="standingBg" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#f5e6d3"/>
+      <stop offset="100%" stop-color="#dfc9a3"/>
+    </radialGradient>
   </defs>
-  <rect width="800" height="400" fill="url(#bg)"/>
-  <!-- Standing figures -->
-  <g fill="url(#gold)">
-    <g transform="translate(200, 80)">
-      <circle cx="0" cy="0" r="20"/>
-      <path d="M-15 25 L0 20 L15 25 L18 120 L-18 120 Z"/>
-      <line x1="-18" y1="120" x2="-18" y2="180" stroke="url(#gold)" stroke-width="8"/>
-      <line x1="18" y1="120" x2="18" y2="180" stroke="url(#gold)" stroke-width="8"/>
-    </g>
-    <g transform="translate(300, 80)">
-      <circle cx="0" cy="0" r="20"/>
-      <path d="M-15 25 L0 20 L15 25 L18 120 L-18 120 Z"/>
-      <line x1="-18" y1="120" x2="-18" y2="180" stroke="url(#gold)" stroke-width="8"/>
-      <line x1="18" y1="120" x2="18" y2="180" stroke="url(#gold)" stroke-width="8"/>
-    </g>
-  </g>
-  <!-- Sitting figures -->
-  <g fill="#c9a227">
-    <g transform="translate(500, 100)">
-      <circle cx="0" cy="0" r="20"/>
-      <path d="M-15 25 L0 20 L15 25 L18 80 L-18 80 Z"/>
-      <rect x="-25" y="80" width="50" height="15" rx="3"/>
-      <line x1="-18" y1="95" x2="-18" y2="140" stroke="#c9a227" stroke-width="8"/>
-      <line x1="18" y1="95" x2="18" y2="140" stroke="#c9a227" stroke-width="8"/>
-    </g>
-    <g transform="translate(600, 100)">
-      <circle cx="0" cy="0" r="20"/>
-      <path d="M-15 25 L0 20 L15 25 L18 80 L-18 80 Z"/>
-      <rect x="-25" y="80" width="50" height="15" rx="3"/>
-      <line x1="-18" y1="95" x2="-18" y2="140" stroke="#c9a227" stroke-width="8"/>
-      <line x1="18" y1="95" x2="18" y2="140" stroke="#c9a227" stroke-width="8"/>
-    </g>
-  </g>
-  <!-- Labels -->
-  <text x="250" y="230" text-anchor="middle" font-family="David, serif" font-size="16" fill="#f0e6d3" direction="rtl">עומדים</text>
-  <text x="550" y="230" text-anchor="middle" font-family="David, serif" font-size="16" fill="#f0e6d3" direction="rtl">יושבים</text>
-  <!-- Title -->
-  <text x="400" y="300" text-anchor="middle" font-family="David, serif" font-size="32" fill="#f0e6d3" direction="rtl">מעמדות ומושבות</text>
-  <text x="400" y="340" text-anchor="middle" font-family="David, serif" font-size="20" fill="#8899aa" direction="rtl">עמידה וישיבה בקריאה</text>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#standingBg)" rx="8"/>
+
+  <!-- Floor / ground plane -->
+  <rect x="0" y="262" width="400" height="38" rx="0" fill="#e0cba8"/>
+  <line x1="0" y1="262" x2="400" y2="262" stroke="#8B6914" stroke-width="1.2" stroke-opacity="0.5"/>
+
+  <!-- === BIMAH / AMUD PODIUM === -->
+  <!-- Podium back panel -->
+  <rect x="152" y="168" width="96" height="98" rx="4" fill="#744210"/>
+  <!-- Podium front face -->
+  <rect x="148" y="172" width="104" height="94" rx="4" fill="#8B6914"/>
+  <!-- Podium inset panel -->
+  <rect x="158" y="182" width="84" height="74" rx="3" fill="#744210" fill-opacity="0.6"/>
+  <!-- Podium center ornament -->
+  <ellipse cx="200" cy="219" rx="22" ry="18" fill="none" stroke="#8B6914" stroke-width="1.5"/>
+  <polygon points="200,205 209,220 191,220" fill="#8B6914" fill-opacity="0.7"/>
+  <polygon points="200,233 209,218 191,218" fill="#8B6914" fill-opacity="0.7"/>
+  <!-- Podium top ledge -->
+  <rect x="144" y="166" width="112" height="10" rx="3" fill="#2d3748"/>
+  <rect x="148" y="168" width="104" height="6" rx="2" fill="#8B6914" fill-opacity="0.5"/>
+  <!-- Open scroll/book on lectern -->
+  <rect x="158" y="152" width="38" height="28" rx="2" fill="#f5e6d3"/>
+  <rect x="198" y="152" width="38" height="28" rx="2" fill="#f5e6d3"/>
+  <!-- Scroll/book text lines -->
+  <rect x="162" y="158" width="28" height="3" rx="1" fill="#1a365d" fill-opacity="0.7"/>
+  <rect x="163" y="164" width="26" height="3" rx="1" fill="#1a365d" fill-opacity="0.7"/>
+  <rect x="162" y="170" width="28" height="3" rx="1" fill="#1a365d" fill-opacity="0.7"/>
+  <rect x="202" y="158" width="28" height="3" rx="1" fill="#1a365d" fill-opacity="0.7"/>
+  <rect x="203" y="164" width="26" height="3" rx="1" fill="#1a365d" fill-opacity="0.7"/>
+  <rect x="202" y="170" width="28" height="3" rx="1" fill="#1a365d" fill-opacity="0.7"/>
+  <!-- Book spine center -->
+  <rect x="195" y="150" width="10" height="32" rx="2" fill="#8B6914" fill-opacity="0.5"/>
+
+  <!-- === STANDING FIGURE (chazzan/reader) === -->
+  <!-- Tallit -->
+  <path d="M178 222 L162 265 L238 265 L222 222 Z" fill="#f5e6d3"/>
+  <!-- Tallit blue stripes -->
+  <rect x="162" y="232" width="76" height="4" rx="2" fill="#1a365d" fill-opacity="0.55"/>
+  <rect x="160" y="248" width="80" height="4" rx="2" fill="#1a365d" fill-opacity="0.55"/>
+  <!-- Robe / body -->
+  <rect x="180" y="196" width="40" height="55" rx="8" fill="#1a365d"/>
+  <!-- Tallit over shoulders -->
+  <path d="M162 235 L180 218 L180 230 L162 250 Z" fill="#f5e6d3"/>
+  <path d="M238 235 L220 218 L220 230 L238 250 Z" fill="#f5e6d3"/>
+  <rect x="180" y="218" width="40" height="5" rx="2" fill="#1a365d"/>
+
+  <!-- Left arm gesturing (pointing at scroll) -->
+  <rect x="148" y="204" width="36" height="12" rx="6" fill="#1a365d" transform="rotate(-20 166 210)"/>
+  <!-- Left hand -->
+  <circle cx="138" cy="196" r="8" fill="#8B6914"/>
+  <!-- Pointing finger extended -->
+  <rect x="126" y="189" width="20" height="6" rx="3" fill="#8B6914" transform="rotate(-15 136 192)"/>
+
+  <!-- Right arm (resting on podium) -->
+  <rect x="218" y="204" width="34" height="12" rx="6" fill="#1a365d" transform="rotate(15 235 210)"/>
+  <!-- Right hand on lectern -->
+  <circle cx="254" cy="198" r="8" fill="#8B6914"/>
+
+  <!-- Neck -->
+  <rect x="196" y="185" width="8" height="14" rx="4" fill="#8B6914"/>
+  <!-- Head -->
+  <circle cx="200" cy="178" r="14" fill="#8B6914"/>
+  <!-- Kippah -->
+  <path d="M188 178 Q200 164 212 178" fill="#2d3748"/>
+  <!-- Face direction hint — subtle nose bridge -->
+  <rect x="198" y="176" width="4" height="6" rx="2" fill="#744210" fill-opacity="0.4"/>
+
+  <!-- === SEATED FIGURES IN BACKGROUND === -->
+  <!-- Row of seated people on left -->
+  <circle cx="46" cy="220" r="9" fill="#8B6914"/>
+  <path d="M38 220 Q46 210 54 220" fill="#1a365d"/>
+  <rect x="37" y="228" width="18" height="18" rx="4" fill="#1a365d"/>
+
+  <circle cx="82" cy="220" r="9" fill="#8B6914"/>
+  <path d="M74 220 Q82 210 90 220" fill="#744210"/>
+  <rect x="73" y="228" width="18" height="18" rx="4" fill="#744210"/>
+
+  <circle cx="118" cy="220" r="9" fill="#8B6914"/>
+  <path d="M110 220 Q118 210 126 220" fill="#2d3748"/>
+  <rect x="109" y="228" width="18" height="18" rx="4" fill="#2d3748"/>
+
+  <!-- Row of seated people on right -->
+  <circle cx="282" cy="220" r="9" fill="#8B6914"/>
+  <path d="M274 220 Q282 210 290 220" fill="#1a365d"/>
+  <rect x="273" y="228" width="18" height="18" rx="4" fill="#1a365d"/>
+
+  <circle cx="318" cy="220" r="9" fill="#8B6914"/>
+  <path d="M310 220 Q318 210 326 220" fill="#744210"/>
+  <rect x="309" y="228" width="18" height="18" rx="4" fill="#744210"/>
+
+  <circle cx="354" cy="220" r="9" fill="#8B6914"/>
+  <path d="M346 220 Q354 210 362 220" fill="#2d3748"/>
+  <rect x="345" y="228" width="18" height="18" rx="4" fill="#2d3748"/>
+
+  <!-- Audience bench lines -->
+  <rect x="20" y="245" width="120" height="5" rx="2" fill="#744210"/>
+  <rect x="260" y="245" width="120" height="5" rx="2" fill="#744210"/>
+
+  <!-- Light emanating from speaker toward congregation -->
+  <line x1="160" y1="185" x2="124" y2="210" stroke="#8B6914" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="5 4"/>
+  <line x1="240" y1="185" x2="276" y2="210" stroke="#8B6914" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="5 4"/>
+
+  <!-- Architectural columns in background -->
+  <rect x="24" y="100" width="12" height="165" rx="4" fill="#e0cba8" stroke="#8B6914" stroke-width="0.8" stroke-opacity="0.4"/>
+  <rect x="18" y="96" width="24" height="10" rx="3" fill="#8B6914" fill-opacity="0.5"/>
+  <rect x="364" y="100" width="12" height="165" rx="4" fill="#e0cba8" stroke="#8B6914" stroke-width="0.8" stroke-opacity="0.4"/>
+  <rect x="358" y="96" width="24" height="10" rx="3" fill="#8B6914" fill-opacity="0.5"/>
+
+  <!-- Steps up to bimah -->
+  <rect x="138" y="255" width="124" height="8" rx="2" fill="#8B6914" fill-opacity="0.6"/>
+  <rect x="142" y="260" width="116" height="6" rx="2" fill="#744210" fill-opacity="0.5"/>
+
+  <!-- Gold border frame -->
+  <rect x="2" y="2" width="396" height="296" rx="8" fill="none" stroke="#8B6914" stroke-width="2.5"/>
+  <rect x="6" y="6" width="388" height="288" rx="6" fill="none" stroke="#8B6914" stroke-width="0.8" stroke-opacity="0.4"/>
 </svg>

@@ -1,41 +1,118 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1a2a4a"/>
-      <stop offset="100%" style="stop-color:#0d1522"/>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5e6d3"/>
+      <stop offset="100%" stop-color="#e8d5b8"/>
     </linearGradient>
-    <linearGradient id="gold" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#f0d78c"/>
-      <stop offset="100%" style="stop-color:#c9a227"/>
+    <linearGradient id="scaleBeamGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c8a878"/>
+      <stop offset="100%" stop-color="#8B6914"/>
     </linearGradient>
+    <linearGradient id="panGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4b896"/>
+      <stop offset="100%" stop-color="#a07848"/>
+    </linearGradient>
+    <linearGradient id="panLeftGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e0c9a6"/>
+      <stop offset="100%" stop-color="#b89a74"/>
+    </linearGradient>
+    <radialGradient id="pivotGrad" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#d4a830"/>
+      <stop offset="100%" stop-color="#8B6914"/>
+    </radialGradient>
   </defs>
-  <rect width="800" height="400" fill="url(#bg)"/>
-  <!-- Scale base -->
-  <rect x="380" y="200" width="40" height="60" fill="url(#gold)"/>
-  <rect x="360" y="255" width="80" height="15" rx="3" fill="url(#gold)"/>
-  <!-- Scale top -->
-  <circle cx="400" cy="55" r="20" fill="url(#gold)"/>
-  <rect x="395" y="55" width="10" height="50" fill="url(#gold)"/>
-  <!-- Balance beam -->
-  <rect x="180" y="100" width="440" height="12" rx="6" fill="url(#gold)"/>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bgGrad)"/>
+
+  <!-- Decorative frame -->
+  <rect x="6" y="6" width="388" height="288" rx="8" fill="none" stroke="#8B6914" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Base / pedestal -->
+  <rect x="182" y="255" width="36" height="18" rx="3" fill="#744210"/>
+  <rect x="170" y="268" width="60" height="10" rx="4" fill="#8B6914"/>
+  <rect x="158" y="275" width="84" height="8" rx="4" fill="#744210"/>
+
+  <!-- Center pole -->
+  <rect x="197" y="90" width="6" height="168" rx="3" fill="url(#scaleBeamGrad)"/>
+  <!-- Pole cap -->
+  <ellipse cx="200" cy="88" rx="10" ry="6" fill="url(#pivotGrad)"/>
+  <circle cx="200" cy="86" r="5" fill="#d4a830"/>
+  <circle cx="200" cy="86" r="2" fill="#f5e6d3"/>
+
+  <!-- ===== SCALE BEAM - slightly tilted left down ===== -->
+  <!-- The beam pivots at center; left pan hangs lower (left side heavier) -->
+  <line x1="60" y1="128" x2="340" y2="112" stroke="url(#scaleBeamGrad)" stroke-width="8" stroke-linecap="round"/>
+  <!-- Beam highlight -->
+  <line x1="60" y1="126" x2="340" y2="110" stroke="#d4b896" stroke-width="3" opacity="0.5" stroke-linecap="round"/>
+  <!-- Pivot point ring -->
+  <circle cx="200" cy="120" r="10" fill="url(#pivotGrad)"/>
+  <circle cx="200" cy="120" r="6" fill="#d4a830"/>
+  <circle cx="200" cy="120" r="3" fill="#f5e6d3"/>
+
+  <!-- ===== LEFT PAN (hangs lower - heavier) ===== -->
   <!-- Left pan chains -->
-  <line x1="220" y1="106" x2="220" y2="170" stroke="#a08040" stroke-width="3"/>
-  <line x1="180" y1="106" x2="220" y2="170" stroke="#a08040" stroke-width="2"/>
-  <line x1="260" y1="106" x2="220" y2="170" stroke="#a08040" stroke-width="2"/>
-  <!-- Left pan -->
-  <ellipse cx="220" cy="185" rx="70" ry="20" fill="url(#gold)"/>
-  <text x="220" y="230" text-anchor="middle" font-family="David, serif" font-size="24" fill="#c9a227">א</text>
+  <line x1="70" y1="128" x2="56" y2="168" stroke="#8B6914" stroke-width="2"/>
+  <line x1="80" y1="128" x2="80" y2="168" stroke="#8B6914" stroke-width="2"/>
+  <line x1="90" y1="128" x2="104" y2="168" stroke="#8B6914" stroke-width="2"/>
+  <!-- Left pan dish -->
+  <path d="M 50 168 Q 80 185 110 168" fill="url(#panGrad)" stroke="#744210" stroke-width="1.5"/>
+  <path d="M 52 170 Q 80 183 108 170" fill="url(#panLeftGrad)" opacity="0.7"/>
+
+  <!-- Contents on left pan (books / tablets) -->
+  <!-- Large tablet / stone -->
+  <rect x="60" y="148" width="26" height="20" rx="3" fill="#1a365d"/>
+  <rect x="62" y="150" width="22" height="16" rx="2" fill="#2d4a7a"/>
+  <!-- Lines on tablet -->
+  <line x1="65" y1="154" x2="82" y2="154" stroke="#f5e6d3" stroke-width="1" opacity="0.7"/>
+  <line x1="65" y1="158" x2="82" y2="158" stroke="#f5e6d3" stroke-width="1" opacity="0.7"/>
+  <line x1="65" y1="162" x2="78" y2="162" stroke="#f5e6d3" stroke-width="1" opacity="0.7"/>
+  <!-- Second tablet -->
+  <rect x="88" y="150" width="18" height="16" rx="2" fill="#1a365d" opacity="0.8"/>
+  <line x1="91" y1="154" x2="104" y2="154" stroke="#f5e6d3" stroke-width="0.8" opacity="0.6"/>
+  <line x1="91" y1="158" x2="104" y2="158" stroke="#f5e6d3" stroke-width="0.8" opacity="0.6"/>
+  <!-- Small dot weight -->
+  <circle cx="80" cy="163" r="5" fill="#8B6914"/>
+  <circle cx="80" cy="163" r="3" fill="#c8961a"/>
+
+  <!-- ===== RIGHT PAN (hangs higher - lighter) ===== -->
   <!-- Right pan chains -->
-  <line x1="580" y1="106" x2="580" y2="170" stroke="#a08040" stroke-width="3"/>
-  <line x1="540" y1="106" x2="580" y2="170" stroke="#a08040" stroke-width="2"/>
-  <line x1="620" y1="106" x2="580" y2="170" stroke="#a08040" stroke-width="2"/>
-  <!-- Right pan -->
-  <ellipse cx="580" cy="185" rx="70" ry="20" fill="url(#gold)"/>
-  <text x="580" y="230" text-anchor="middle" font-family="David, serif" font-size="24" fill="#c9a227">ב</text>
-  <!-- Comparison arrows -->
-  <path d="M320 150 L380 150 L380 140 L410 155 L380 170 L380 160 L320 160 Z" fill="#4a6a8a"/>
-  <path d="M480 160 L420 160 L420 170 L390 155 L420 140 L420 150 L480 150 Z" fill="#4a6a8a"/>
-  <!-- Title -->
-  <text x="400" y="310" text-anchor="middle" font-family="David, serif" font-size="36" fill="#f0e6d3" direction="rtl">אין בין</text>
-  <text x="400" y="350" text-anchor="middle" font-family="David, serif" font-size="20" fill="#8899aa" direction="rtl">הבדלים הלכתיים</text>
+  <line x1="318" y1="112" x2="304" y2="146" stroke="#8B6914" stroke-width="2"/>
+  <line x1="328" y1="112" x2="328" y2="146" stroke="#8B6914" stroke-width="2"/>
+  <line x1="338" y1="112" x2="352" y2="146" stroke="#8B6914" stroke-width="2"/>
+  <!-- Right pan dish -->
+  <path d="M 298 146 Q 328 163 358 146" fill="url(#panGrad)" stroke="#744210" stroke-width="1.5"/>
+  <path d="M 300 148 Q 328 161 356 148" fill="url(#panLeftGrad)" opacity="0.7"/>
+
+  <!-- Contents on right pan (single scroll - lighter) -->
+  <!-- Scroll -->
+  <rect x="310" y="128" width="35" height="18" rx="3" fill="#f0d9bc"/>
+  <rect x="308" y="125" width="6" height="24" rx="3" fill="#8B6914"/>
+  <rect x="343" y="125" width="6" height="24" rx="3" fill="#8B6914"/>
+  <circle cx="311" cy="125" r="4" fill="#744210"/>
+  <circle cx="311" cy="149" r="4" fill="#744210"/>
+  <circle cx="346" cy="125" r="4" fill="#744210"/>
+  <circle cx="346" cy="149" r="4" fill="#744210"/>
+  <!-- Scroll text lines -->
+  <line x1="314" y1="132" x2="342" y2="132" stroke="#8B6914" stroke-width="0.8" opacity="0.5"/>
+  <line x1="314" y1="137" x2="342" y2="137" stroke="#8B6914" stroke-width="0.8" opacity="0.5"/>
+  <line x1="314" y1="142" x2="335" y2="142" stroke="#8B6914" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Comparison arrows (decorative, at bottom) -->
+  <!-- Left arrow pointing right -->
+  <path d="M 60 255 L 160 255" stroke="#1a365d" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+  <polygon points="160,250 172,255 160,260" fill="#1a365d" opacity="0.5"/>
+  <!-- Right arrow pointing left -->
+  <path d="M 340 255 L 240 255" stroke="#1a365d" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+  <polygon points="240,250 228,255 240,260" fill="#1a365d" opacity="0.5"/>
+  <!-- vs dot in center -->
+  <circle cx="200" cy="255" r="12" fill="#1a365d" opacity="0.15"/>
+  <circle cx="200" cy="255" r="8" fill="#1a365d" opacity="0.2"/>
+  <circle cx="200" cy="255" r="4" fill="#8B6914" opacity="0.5"/>
+
+  <!-- Decorative corner ornaments -->
+  <path d="M 20 20 L 40 20 L 20 40" fill="none" stroke="#8B6914" stroke-width="1.5" opacity="0.35"/>
+  <path d="M 380 20 L 360 20 L 380 40" fill="none" stroke="#8B6914" stroke-width="1.5" opacity="0.35"/>
+  <path d="M 20 280 L 40 280 L 20 260" fill="none" stroke="#8B6914" stroke-width="1.5" opacity="0.35"/>
+  <path d="M 380 280 L 360 280 L 380 260" fill="none" stroke="#8B6914" stroke-width="1.5" opacity="0.35"/>
 </svg>

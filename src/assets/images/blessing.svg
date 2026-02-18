@@ -1,32 +1,97 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#2a1f3d"/>
-      <stop offset="100%" style="stop-color:#15102a"/>
-    </linearGradient>
-    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#f0d78c"/>
-      <stop offset="100%" style="stop-color:#c9a227"/>
-    </linearGradient>
-    <radialGradient id="glow" cx="50%" cy="30%" r="40%">
-      <stop offset="0%" style="stop-color:#f0d78c" stop-opacity="0.5"/>
-      <stop offset="100%" style="stop-color:#c9a227" stop-opacity="0"/>
+    <radialGradient id="blessingGlow" cx="50%" cy="35%" r="50%">
+      <stop offset="0%" stop-color="#fff8ee"/>
+      <stop offset="60%" stop-color="#f5e6d3"/>
+      <stop offset="100%" stop-color="#ddc9a8"/>
     </radialGradient>
   </defs>
-  <rect width="800" height="400" fill="url(#bg)"/>
-  <!-- Divine glow -->
-  <ellipse cx="400" cy="60" rx="200" ry="80" fill="url(#glow)"/>
-  <!-- Raised hands in blessing -->
-  <g fill="url(#gold)">
-    <!-- Left hand -->
-    <path d="M300 180 L280 100 L290 95 L305 160 L310 90 L320 90 L320 160 L330 85 L340 88 L335 165 L345 100 L355 105 L345 180 Z"/>
-    <!-- Right hand -->
-    <path d="M500 180 L520 100 L510 95 L495 160 L490 90 L480 90 L480 160 L470 85 L460 88 L465 165 L455 100 L445 105 L455 180 Z"/>
-  </g>
-  <!-- Blessing text box -->
-  <rect x="280" y="190" width="240" height="60" rx="5" fill="#fff8e7" opacity="0.9"/>
-  <text x="400" y="225" text-anchor="middle" font-family="David, serif" font-size="20" fill="#4a3a2a" direction="rtl">ברוך אתה ה׳</text>
-  <!-- Title -->
-  <text x="400" y="300" text-anchor="middle" font-family="David, serif" font-size="32" fill="#f0e6d3" direction="rtl">ברכות המגילה</text>
-  <text x="400" y="340" text-anchor="middle" font-family="David, serif" font-size="20" fill="#9988aa" direction="rtl">לפני ואחרי הקריאה</text>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#blessingGlow)" rx="8"/>
+
+  <!-- Light rays from above (divine light) -->
+  <line x1="200" y1="10" x2="160" y2="80" stroke="#8B6914" stroke-width="1.2" stroke-opacity="0.25" stroke-dasharray="8 5"/>
+  <line x1="200" y1="10" x2="180" y2="85" stroke="#8B6914" stroke-width="1.2" stroke-opacity="0.25" stroke-dasharray="8 5"/>
+  <line x1="200" y1="10" x2="200" y2="88" stroke="#8B6914" stroke-width="1.8" stroke-opacity="0.3" stroke-dasharray="8 5"/>
+  <line x1="200" y1="10" x2="220" y2="85" stroke="#8B6914" stroke-width="1.2" stroke-opacity="0.25" stroke-dasharray="8 5"/>
+  <line x1="200" y1="10" x2="240" y2="80" stroke="#8B6914" stroke-width="1.2" stroke-opacity="0.25" stroke-dasharray="8 5"/>
+
+  <!-- ===  LEFT ARM + HAND (priestly Shin split) === -->
+  <!-- Tallit sleeve left -->
+  <path d="M148 200 L90 155 L100 143 L158 188 Z" fill="#f5e6d3" stroke="#1a365d" stroke-width="0.5"/>
+  <!-- Tallit stripe on sleeve -->
+  <line x1="92" y1="153" x2="150" y2="198" stroke="#1a365d" stroke-width="2.5" stroke-opacity="0.5"/>
+  <!-- Upper arm under tallit -->
+  <path d="M160 195 L100 148 L110 136 L168 184 Z" fill="#1a365d"/>
+  <!-- Forearm left -->
+  <rect x="60" y="120" width="60" height="16" rx="8" fill="#1a365d" transform="rotate(-40 90 128)"/>
+  <!-- Left wrist/palm -->
+  <ellipse cx="68" cy="108" rx="16" ry="12" fill="#8B6914"/>
+  <!-- Left hand fingers — Shin split (2 | 2) -->
+  <!-- Outer two fingers -->
+  <rect x="40" y="72" width="11" height="34" rx="5" fill="#8B6914" transform="rotate(-12 45 89)"/>
+  <rect x="54" y="68" width="11" height="34" rx="5" fill="#8B6914" transform="rotate(-5 59 85)"/>
+  <!-- Gap between finger pairs -->
+  <!-- Inner two fingers -->
+  <rect x="70" y="68" width="11" height="34" rx="5" fill="#8B6914" transform="rotate(5 75 85)"/>
+  <rect x="84" y="72" width="11" height="34" rx="5" fill="#8B6914" transform="rotate(12 89 89)"/>
+  <!-- Thumb left -->
+  <ellipse cx="44" cy="112" rx="8" ry="5" fill="#8B6914" transform="rotate(40 44 112)"/>
+
+  <!-- === RIGHT ARM + HAND (mirror Shin split) === -->
+  <!-- Tallit sleeve right -->
+  <path d="M252 200 L310 155 L300 143 L242 188 Z" fill="#f5e6d3" stroke="#1a365d" stroke-width="0.5"/>
+  <!-- Tallit stripe on sleeve -->
+  <line x1="308" y1="153" x2="250" y2="198" stroke="#1a365d" stroke-width="2.5" stroke-opacity="0.5"/>
+  <!-- Upper arm under tallit -->
+  <path d="M240 195 L300 148 L290 136 L232 184 Z" fill="#1a365d"/>
+  <!-- Forearm right -->
+  <rect x="280" y="120" width="60" height="16" rx="8" fill="#1a365d" transform="rotate(40 310 128)"/>
+  <!-- Right wrist/palm -->
+  <ellipse cx="332" cy="108" rx="16" ry="12" fill="#8B6914"/>
+  <!-- Right hand fingers — Shin split (2 | 2) mirrored -->
+  <!-- Inner two fingers (right side) -->
+  <rect x="315" y="68" width="11" height="34" rx="5" fill="#8B6914" transform="rotate(-12 320 85)"/>
+  <rect x="329" y="68" width="11" height="34" rx="5" fill="#8B6914" transform="rotate(-5 334 85)"/>
+  <!-- Gap -->
+  <!-- Outer two fingers (right side) -->
+  <rect x="345" y="72" width="11" height="34" rx="5" fill="#8B6914" transform="rotate(5 350 89)"/>
+  <rect x="359" y="72" width="11" height="34" rx="5" fill="#8B6914" transform="rotate(12 364 89)"/>
+  <!-- Thumb right -->
+  <ellipse cx="356" cy="112" rx="8" ry="5" fill="#8B6914" transform="rotate(-40 356 112)"/>
+
+  <!-- === FIGURE BODY (Kohen in tallit) === -->
+  <!-- Tallit body (white with blue stripes) -->
+  <path d="M165 215 L142 290 L258 290 L235 215 Z" fill="#f5e6d3"/>
+  <!-- Tallit blue stripes -->
+  <rect x="142" y="225" width="116" height="4" rx="2" fill="#1a365d" fill-opacity="0.55"/>
+  <rect x="140" y="240" width="120" height="4" rx="2" fill="#1a365d" fill-opacity="0.55"/>
+  <rect x="142" y="275" width="116" height="4" rx="2" fill="#1a365d" fill-opacity="0.55"/>
+  <!-- Garment body (dark blue robe) -->
+  <rect x="168" y="186" width="64" height="60" rx="8" fill="#1a365d"/>
+  <!-- Tallit over shoulders -->
+  <path d="M142 222 L168 202 L168 215 L142 240 Z" fill="#f5e6d3"/>
+  <path d="M258 222 L232 202 L232 215 L258 240 Z" fill="#f5e6d3"/>
+  <!-- Collar stripe -->
+  <rect x="168" y="202" width="64" height="6" rx="2" fill="#1a365d"/>
+
+  <!-- Neck -->
+  <rect x="192" y="174" width="16" height="15" rx="7" fill="#8B6914"/>
+
+  <!-- Head -->
+  <circle cx="200" cy="162" r="20" fill="#8B6914"/>
+
+  <!-- Tallit draped over head -->
+  <path d="M174 152 Q200 132 226 152 L228 172 Q200 162 172 172 Z" fill="#f5e6d3"/>
+  <!-- Tallit head stripe -->
+  <path d="M177 160 Q200 148 223 160" stroke="#1a365d" stroke-width="3.5" fill="none" stroke-opacity="0.5"/>
+
+  <!-- Platform / bimah step -->
+  <rect x="120" y="288" width="160" height="8" rx="3" fill="#744210"/>
+  <rect x="100" y="293" width="200" height="6" rx="3" fill="#8B6914" fill-opacity="0.5"/>
+
+  <!-- Gold border frame -->
+  <rect x="2" y="2" width="396" height="296" rx="8" fill="none" stroke="#8B6914" stroke-width="2.5"/>
+  <rect x="6" y="6" width="388" height="288" rx="6" fill="none" stroke="#8B6914" stroke-width="0.8" stroke-opacity="0.4"/>
 </svg>

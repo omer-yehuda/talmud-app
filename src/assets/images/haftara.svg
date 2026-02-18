@@ -1,39 +1,94 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#2d1f3a"/>
-      <stop offset="100%" style="stop-color:#18101d"/>
-    </linearGradient>
-    <linearGradient id="parchment" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#fff8e7"/>
-      <stop offset="100%" style="stop-color:#e8d5b0"/>
-    </linearGradient>
-    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#f0d78c"/>
-      <stop offset="100%" style="stop-color:#c9a227"/>
-    </linearGradient>
+    <radialGradient id="haftaraBg" cx="45%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#f5e6d3"/>
+      <stop offset="100%" stop-color="#e0cba8"/>
+    </radialGradient>
   </defs>
-  <rect width="800" height="400" fill="url(#bg)"/>
-  <!-- Torah scroll (larger, left) -->
-  <g transform="translate(250, 70)">
-    <rect x="0" y="0" width="25" height="150" rx="12" fill="#8B4513"/>
-    <rect x="125" y="0" width="25" height="150" rx="12" fill="#8B4513"/>
-    <rect x="25" y="10" width="100" height="130" fill="url(#parchment)"/>
-    <text x="75" y="80" text-anchor="middle" font-family="David, serif" font-size="16" fill="#4a3a2a" direction="rtl">תורה</text>
-  </g>
-  <!-- Nevi'im scroll (smaller, right) -->
-  <g transform="translate(450, 90)">
-    <rect x="0" y="0" width="20" height="120" rx="10" fill="#6B3510"/>
-    <rect x="100" y="0" width="20" height="120" rx="10" fill="#6B3510"/>
-    <rect x="20" y="10" width="80" height="100" fill="url(#parchment)" opacity="0.9"/>
-    <text x="60" y="65" text-anchor="middle" font-family="David, serif" font-size="14" fill="#4a3a2a" direction="rtl">נביאים</text>
-  </g>
-  <!-- Arrow connecting them -->
-  <g stroke="url(#gold)" stroke-width="3" fill="none">
-    <path d="M380 145 L440 145"/>
-    <polygon points="435,140 445,145 435,150" fill="url(#gold)"/>
-  </g>
-  <!-- Title -->
-  <text x="400" y="290" text-anchor="middle" font-family="David, serif" font-size="32" fill="#f0e6d3" direction="rtl">מפטיר והפטרה</text>
-  <text x="400" y="330" text-anchor="middle" font-family="David, serif" font-size="20" fill="#9988aa" direction="rtl">דיני ההפטרה בנביאים</text>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#haftaraBg)" rx="8"/>
+
+  <!-- Drop shadow for book -->
+  <rect x="108" y="52" width="196" height="228" rx="8" fill="#2d3748" fill-opacity="0.2"/>
+
+  <!-- === CODEX / BOOK === -->
+
+  <!-- Back cover (visible at left edge) -->
+  <rect x="100" y="44" width="196" height="228" rx="8" fill="#744210"/>
+
+  <!-- Book spine (left binding) -->
+  <rect x="100" y="44" width="20" height="228" rx="4" fill="#2d3748"/>
+  <!-- Spine decoration lines -->
+  <rect x="104" y="60"  width="12" height="3" rx="1" fill="#8B6914" fill-opacity="0.7"/>
+  <rect x="104" y="80"  width="12" height="3" rx="1" fill="#8B6914" fill-opacity="0.7"/>
+  <rect x="104" y="220" width="12" height="3" rx="1" fill="#8B6914" fill-opacity="0.7"/>
+  <rect x="104" y="240" width="12" height="3" rx="1" fill="#8B6914" fill-opacity="0.7"/>
+  <!-- Spine center ornament -->
+  <ellipse cx="110" cy="158" rx="7" ry="10" fill="#8B6914" fill-opacity="0.8"/>
+
+  <!-- Front cover (main face) -->
+  <rect x="118" y="44" width="178" height="228" rx="4" fill="#1a365d"/>
+
+  <!-- Cover decorative border (inset frame) -->
+  <rect x="126" y="52" width="162" height="212" rx="3" fill="none" stroke="#8B6914" stroke-width="2"/>
+  <rect x="130" y="56" width="154" height="204" rx="2" fill="none" stroke="#8B6914" stroke-width="0.8" stroke-opacity="0.5"/>
+
+  <!-- Cover center decorative emblem -->
+  <!-- Outer circle -->
+  <circle cx="207" cy="140" r="48" fill="none" stroke="#8B6914" stroke-width="2"/>
+  <!-- Inner circle -->
+  <circle cx="207" cy="140" r="36" fill="#1a365d" stroke="#8B6914" stroke-width="1.2"/>
+  <!-- Star of David (two overlapping triangles) -->
+  <polygon points="207,108 230,150 184,150" fill="none" stroke="#8B6914" stroke-width="1.8"/>
+  <polygon points="207,172 184,130 230,130" fill="none" stroke="#8B6914" stroke-width="1.8"/>
+  <!-- Center dot -->
+  <circle cx="207" cy="140" r="5" fill="#8B6914"/>
+
+  <!-- Corner ornaments (stylized) -->
+  <!-- Top-left corner -->
+  <path d="M132 58 L148 58 L132 74 Z" fill="#8B6914" fill-opacity="0.5"/>
+  <!-- Top-right corner -->
+  <path d="M276 58 L276 74 L260 58 Z" fill="#8B6914" fill-opacity="0.5"/>
+  <!-- Bottom-left corner -->
+  <path d="M132 254 L132 238 L148 254 Z" fill="#8B6914" fill-opacity="0.5"/>
+  <!-- Bottom-right corner -->
+  <path d="M276 254 L260 254 L276 238 Z" fill="#8B6914" fill-opacity="0.5"/>
+
+  <!-- === BOOKMARK === -->
+  <!-- Bookmark ribbon hanging from top-right -->
+  <rect x="262" y="44" width="14" height="82" rx="0" fill="#8B6914"/>
+  <!-- Bookmark pointed tip (V-cut) -->
+  <polygon points="262,126 269,118 276,126" fill="#1a365d"/>
+  <!-- Bookmark decorative stripe -->
+  <rect x="265" y="52" width="8" height="4" rx="1" fill="#f5e6d3" fill-opacity="0.7"/>
+  <rect x="265" y="60" width="8" height="4" rx="1" fill="#f5e6d3" fill-opacity="0.7"/>
+  <rect x="265" y="68" width="8" height="4" rx="1" fill="#f5e6d3" fill-opacity="0.7"/>
+
+  <!-- Pages edge (right side — white stacked pages effect) -->
+  <rect x="294" y="48" width="6" height="220" rx="1" fill="#f5e6d3" fill-opacity="0.9"/>
+  <rect x="298" y="50" width="4" height="218" rx="1" fill="#e8d5bc"/>
+  <line x1="294" y1="70"  x2="302" y2="70"  stroke="#ddc9a8" stroke-width="0.5"/>
+  <line x1="294" y1="90"  x2="302" y2="90"  stroke="#ddc9a8" stroke-width="0.5"/>
+  <line x1="294" y1="110" x2="302" y2="110" stroke="#ddc9a8" stroke-width="0.5"/>
+  <line x1="294" y1="130" x2="302" y2="130" stroke="#ddc9a8" stroke-width="0.5"/>
+  <line x1="294" y1="150" x2="302" y2="150" stroke="#ddc9a8" stroke-width="0.5"/>
+  <line x1="294" y1="170" x2="302" y2="170" stroke="#ddc9a8" stroke-width="0.5"/>
+  <line x1="294" y1="190" x2="302" y2="190" stroke="#ddc9a8" stroke-width="0.5"/>
+  <line x1="294" y1="210" x2="302" y2="210" stroke="#ddc9a8" stroke-width="0.5"/>
+  <line x1="294" y1="230" x2="302" y2="230" stroke="#ddc9a8" stroke-width="0.5"/>
+
+  <!-- Top and bottom cover edges highlight -->
+  <rect x="118" y="44" width="178" height="6" rx="2" fill="#2d3748" fill-opacity="0.4"/>
+  <rect x="118" y="266" width="178" height="6" rx="2" fill="#2d3748" fill-opacity="0.4"/>
+
+  <!-- Small open scroll icon on cover bottom area -->
+  <rect x="180" y="204" width="14" height="26" rx="2" fill="#f5e6d3" fill-opacity="0.15"/>
+  <rect x="196" y="204" width="14" height="26" rx="2" fill="#f5e6d3" fill-opacity="0.15"/>
+  <rect x="177" y="202" width="4" height="30" rx="2" fill="#8B6914" fill-opacity="0.6"/>
+  <rect x="226" y="202" width="4" height="30" rx="2" fill="#8B6914" fill-opacity="0.6"/>
+
+  <!-- Gold border frame -->
+  <rect x="2" y="2" width="396" height="296" rx="8" fill="none" stroke="#8B6914" stroke-width="2.5"/>
+  <rect x="6" y="6" width="388" height="288" rx="6" fill="none" stroke="#8B6914" stroke-width="0.8" stroke-opacity="0.4"/>
 </svg>

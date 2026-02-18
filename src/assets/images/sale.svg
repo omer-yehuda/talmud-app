@@ -1,41 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#2d2a1f"/>
-      <stop offset="100%" style="stop-color:#1a1810"/>
-    </linearGradient>
-    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#f0d78c"/>
-      <stop offset="100%" style="stop-color:#c9a227"/>
-    </linearGradient>
-  </defs>
-  <rect width="800" height="400" fill="url(#bg)"/>
-  <!-- Building (synagogue) -->
-  <g transform="translate(200, 80)">
-    <rect x="0" y="50" width="150" height="120" fill="#a89878"/>
-    <polygon points="0,50 75,0 150,50" fill="#8B4513"/>
-    <path d="M55 170 L55 100 Q75 80 95 100 L95 170 Z" fill="#5a3010"/>
-  </g>
-  <!-- Arrow -->
-  <g stroke="url(#gold)" stroke-width="4" fill="none">
-    <line x1="380" y1="140" x2="450" y2="140"/>
-    <polygon points="445,130 465,140 445,150" fill="url(#gold)"/>
-  </g>
-  <!-- Coins -->
-  <g transform="translate(520, 100)">
-    <circle cx="0" cy="0" r="35" fill="url(#gold)"/>
-    <circle cx="0" cy="0" r="28" fill="none" stroke="#c9a227" stroke-width="2"/>
-    <text x="0" y="8" text-anchor="middle" font-family="David, serif" font-size="24" fill="#8B4513">₪</text>
-    <circle cx="50" cy="20" r="30" fill="url(#gold)" opacity="0.8"/>
-    <circle cx="30" cy="50" r="25" fill="url(#gold)" opacity="0.6"/>
-  </g>
-  <!-- Up arrow for "maalin bakodesh" -->
-  <g transform="translate(620, 180)">
-    <line x1="0" y1="40" x2="0" y2="0" stroke="#2ecc71" stroke-width="4"/>
-    <polygon points="-10,10 0,-5 10,10" fill="#2ecc71"/>
-    <text x="0" y="60" text-anchor="middle" font-family="David, serif" font-size="12" fill="#2ecc71" direction="rtl">מעלין</text>
-  </g>
-  <!-- Title -->
-  <text x="400" y="290" text-anchor="middle" font-family="David, serif" font-size="32" fill="#f0e6d3" direction="rtl">מכירת בית הכנסת</text>
-  <text x="400" y="330" text-anchor="middle" font-family="David, serif" font-size="20" fill="#8a8a7a" direction="rtl">דיני מכירה ושימוש בדמים</text>
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f5e6d3"/>
+  <!-- Table surface -->
+  <rect x="60" y="200" width="280" height="16" fill="#744210" rx="3"/>
+  <rect x="80" y="214" width="14" height="50" fill="#744210" rx="2"/>
+  <rect x="306" y="214" width="14" height="50" fill="#744210" rx="2"/>
+  <!-- Scroll body -->
+  <rect x="145" y="100" width="110" height="110" fill="#e8d0a0" rx="4" stroke="#8B6914" stroke-width="2"/>
+  <!-- Scroll roller top -->
+  <rect x="135" y="97" width="130" height="14" fill="#8B6914" rx="7"/>
+  <circle cx="142" cy="104" r="8" fill="#744210"/>
+  <circle cx="258" cy="104" r="8" fill="#744210"/>
+  <!-- Scroll roller bottom -->
+  <rect x="135" y="196" width="130" height="14" fill="#8B6914" rx="7"/>
+  <circle cx="142" cy="203" r="8" fill="#744210"/>
+  <circle cx="258" cy="203" r="8" fill="#744210"/>
+  <!-- Document text lines -->
+  <rect x="162" y="120" width="76" height="5" fill="#744210" rx="2" opacity="0.6"/>
+  <rect x="162" y="132" width="76" height="5" fill="#744210" rx="2" opacity="0.6"/>
+  <rect x="162" y="144" width="60" height="5" fill="#744210" rx="2" opacity="0.6"/>
+  <rect x="162" y="156" width="76" height="5" fill="#744210" rx="2" opacity="0.6"/>
+  <rect x="162" y="168" width="50" height="5" fill="#744210" rx="2" opacity="0.6"/>
+  <!-- Seal on document -->
+  <circle cx="230" cy="178" r="14" fill="none" stroke="#8B6914" stroke-width="2"/>
+  <circle cx="230" cy="178" r="8" fill="#8B6914" opacity="0.4"/>
+  <!-- LEFT HAND -->
+  <ellipse cx="95" cy="190" rx="32" ry="20" fill="#d4956a" transform="rotate(-15 95 190)"/>
+  <ellipse cx="70" cy="178" rx="9" ry="6" fill="#d4956a" transform="rotate(-40 70 178)"/>
+  <rect x="85" y="155" width="10" height="30" fill="#d4956a" rx="5" transform="rotate(-8 85 155)"/>
+  <rect x="96" y="152" width="10" height="33" fill="#d4956a" rx="5" transform="rotate(-2 96 152)"/>
+  <rect x="107" y="154" width="10" height="30" fill="#d4956a" rx="5" transform="rotate(4 107 154)"/>
+  <rect x="117" y="160" width="9" height="24" fill="#d4956a" rx="4" transform="rotate(10 117 160)"/>
+  <rect x="72" y="195" width="48" height="20" fill="#1a365d" rx="4"/>
+  <rect x="68" y="205" width="56" height="12" fill="#2d5a9e" rx="3"/>
+  <!-- RIGHT HAND -->
+  <ellipse cx="305" cy="190" rx="32" ry="20" fill="#c4855a" transform="rotate(15 305 190)"/>
+  <ellipse cx="330" cy="178" rx="9" ry="6" fill="#c4855a" transform="rotate(40 330 178)"/>
+  <rect x="305" y="155" width="10" height="30" fill="#c4855a" rx="5" transform="rotate(8 305 155)"/>
+  <rect x="294" y="152" width="10" height="33" fill="#c4855a" rx="5" transform="rotate(2 294 152)"/>
+  <rect x="283" y="154" width="10" height="30" fill="#c4855a" rx="5" transform="rotate(-4 283 154)"/>
+  <rect x="274" y="160" width="9" height="24" fill="#c4855a" rx="4" transform="rotate(-10 274 160)"/>
+  <rect x="280" y="195" width="48" height="20" fill="#8B6914" rx="4"/>
+  <rect x="276" y="205" width="56" height="12" fill="#a07820" rx="3"/>
+  <!-- Exchange arrows -->
+  <path d="M 135 88 Q 150 75 165 88" fill="none" stroke="#8B6914" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="163,84 169,91 156,91" fill="#8B6914"/>
+  <path d="M 235 88 Q 250 75 265 88" fill="none" stroke="#744210" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="237,84 231,91 244,91" fill="#744210"/>
 </svg>

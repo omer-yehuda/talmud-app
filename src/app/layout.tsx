@@ -5,12 +5,12 @@ import ThemeRegistry from "@/theme/ThemeRegistry";
 
 export const metadata: Metadata = {
   title: "מסכת מגילה",
-  description: "לימוד אינטראקטיבי של דפים ו-י במסכת מגילה - פשט, רשי ותוספות",
+  description: "לימוד אינטראקטיבי של מסכת מגילה - פשט, רשי ותוספות",
   keywords: ["תלמוד", "מגילה", "תורה", "לימוד", "רשי", "תוספות"],
   authors: [{ name: "Talmud App" }],
   openGraph: {
     title: "מסכת מגילה",
-    description: "לימוד אינטראקטיבי של דפים ו-י במסכת מגילה",
+    description: "לימוד אינטראקטיבי של מסכת מגילה",
     locale: "he_IL",
     type: "website",
   },

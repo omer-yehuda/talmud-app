@@ -1,48 +1,118 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#2d1f0e"/>
-      <stop offset="100%" style="stop-color:#1a1208"/>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a365d"/>
+      <stop offset="40%" stop-color="#2d4a7a"/>
+      <stop offset="100%" stop-color="#1a2a4a"/>
     </linearGradient>
-    <linearGradient id="parchment" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#e8d5b0"/>
-      <stop offset="50%" style="stop-color:#fff8e7"/>
-      <stop offset="100%" style="stop-color:#e8d5b0"/>
+    <linearGradient id="parchGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5e6d3"/>
+      <stop offset="100%" stop-color="#e8d0b0"/>
     </linearGradient>
-    <linearGradient id="wood" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#6B3510"/>
-      <stop offset="50%" style="stop-color:#8B4513"/>
-      <stop offset="100%" style="stop-color:#6B3510"/>
+    <linearGradient id="rodGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c8a878"/>
+      <stop offset="100%" stop-color="#744210"/>
     </linearGradient>
-    <radialGradient id="glow" cx="50%" cy="20%" r="60%">
-      <stop offset="0%" style="stop-color:#f0d78c" stop-opacity="0.6"/>
-      <stop offset="100%" style="stop-color:#c9a227" stop-opacity="0"/>
-    </radialGradient>
+    <linearGradient id="knobGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4a830"/>
+      <stop offset="100%" stop-color="#8B6914"/>
+    </linearGradient>
+    <filter id="scrollShadow">
+      <feDropShadow dx="4" dy="6" stdDeviation="5" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
   </defs>
-  <rect width="800" height="400" fill="url(#bg)"/>
-  <!-- Divine glow -->
-  <ellipse cx="400" cy="50" rx="200" ry="80" fill="url(#glow)"/>
-  <!-- Scroll rollers -->
-  <rect x="170" y="70" width="35" height="180" rx="17" fill="url(#wood)"/>
-  <rect x="595" y="70" width="35" height="180" rx="17" fill="url(#wood)"/>
-  <!-- Roller knobs -->
-  <ellipse cx="187" cy="65" rx="20" ry="10" fill="#5a3010"/>
-  <ellipse cx="187" cy="255" rx="20" ry="10" fill="#5a3010"/>
-  <ellipse cx="612" cy="65" rx="20" ry="10" fill="#5a3010"/>
-  <ellipse cx="612" cy="255" rx="20" ry="10" fill="#5a3010"/>
-  <!-- Parchment -->
-  <rect x="205" y="80" width="390" height="160" fill="url(#parchment)"/>
-  <!-- Hebrew text lines (simulated) -->
-  <g stroke="#4a3a2a" stroke-width="1" opacity="0.6">
-    <line x1="230" y1="105" x2="570" y2="105"/>
-    <line x1="230" y1="125" x2="570" y2="125"/>
-    <line x1="230" y1="145" x2="570" y2="145"/>
-    <line x1="230" y1="165" x2="570" y2="165"/>
-    <line x1="230" y1="185" x2="570" y2="185"/>
-    <line x1="230" y1="205" x2="570" y2="205"/>
-    <line x1="230" y1="225" x2="570" y2="225"/>
-  </g>
-  <!-- Title -->
-  <text x="400" y="300" text-anchor="middle" font-family="David, serif" font-size="32" fill="#f0e6d3" direction="rtl">כתיבת המגילה</text>
-  <text x="400" y="340" text-anchor="middle" font-family="David, serif" font-size="20" fill="#8a7a6a" direction="rtl">רוח הקודש במגילה</text>
+
+  <!-- Deep blue background -->
+  <rect width="400" height="300" fill="url(#bgGrad)"/>
+
+  <!-- Stars in background -->
+  <circle cx="30" cy="30" r="1.5" fill="#f5e6d3" opacity="0.7"/>
+  <circle cx="70" cy="15" r="1" fill="#f5e6d3" opacity="0.5"/>
+  <circle cx="350" cy="25" r="1.5" fill="#f5e6d3" opacity="0.7"/>
+  <circle cx="380" cy="50" r="1" fill="#f5e6d3" opacity="0.5"/>
+  <circle cx="20" cy="260" r="1" fill="#f5e6d3" opacity="0.4"/>
+  <circle cx="370" cy="270" r="1.5" fill="#f5e6d3" opacity="0.6"/>
+
+  <!-- Table / surface -->
+  <rect x="0" y="230" width="400" height="70" fill="#2d3748" opacity="0.6"/>
+  <rect x="0" y="228" width="400" height="6" rx="2" fill="#8B6914" opacity="0.5"/>
+
+  <!-- ===== MEGILLAH SCROLL UNFURLED ===== -->
+  <!-- Main parchment body - unfurled horizontal -->
+  <rect x="40" y="115" width="310" height="110" rx="4" fill="url(#parchGrad)" filter="url(#scrollShadow)"/>
+
+  <!-- Parchment texture / aging marks -->
+  <rect x="40" y="115" width="310" height="110" rx="4" fill="none" stroke="#c8a878" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Decorative parchment edge lines -->
+  <line x1="55" y1="115" x2="55" y2="225" stroke="#c8a878" stroke-width="0.5" opacity="0.4"/>
+  <line x1="335" y1="115" x2="335" y2="225" stroke="#c8a878" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Text lines on scroll -->
+  <line x1="70" y1="138" x2="325" y2="138" stroke="#2d3748" stroke-width="1.5" opacity="0.6"/>
+  <line x1="70" y1="152" x2="325" y2="152" stroke="#2d3748" stroke-width="1.5" opacity="0.6"/>
+  <line x1="70" y1="166" x2="325" y2="166" stroke="#2d3748" stroke-width="1.5" opacity="0.6"/>
+  <line x1="70" y1="180" x2="325" y2="180" stroke="#2d3748" stroke-width="1.5" opacity="0.6"/>
+  <line x1="70" y1="194" x2="325" y2="194" stroke="#2d3748" stroke-width="1.5" opacity="0.6"/>
+  <line x1="70" y1="208" x2="290" y2="208" stroke="#2d3748" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Column dividers suggesting Hebrew text columns -->
+  <line x1="160" y1="125" x2="160" y2="220" stroke="#c8a878" stroke-width="1" opacity="0.35"/>
+  <line x1="240" y1="125" x2="240" y2="220" stroke="#c8a878" stroke-width="1" opacity="0.35"/>
+
+  <!-- Decorative dots suggesting Hebrew letters in first line -->
+  <circle cx="80" cy="138" r="2" fill="#1a365d" opacity="0.5"/>
+  <circle cx="90" cy="138" r="2" fill="#1a365d" opacity="0.5"/>
+  <circle cx="100" cy="138" r="2" fill="#1a365d" opacity="0.5"/>
+  <circle cx="115" cy="138" r="2" fill="#1a365d" opacity="0.5"/>
+  <circle cx="125" cy="138" r="2" fill="#1a365d" opacity="0.5"/>
+  <circle cx="135" cy="138" r="2" fill="#1a365d" opacity="0.5"/>
+  <circle cx="170" cy="138" r="2" fill="#1a365d" opacity="0.5"/>
+  <circle cx="180" cy="138" r="2" fill="#1a365d" opacity="0.5"/>
+  <circle cx="195" cy="138" r="2" fill="#1a365d" opacity="0.5"/>
+  <circle cx="205" cy="138" r="2" fill="#1a365d" opacity="0.5"/>
+  <circle cx="215" cy="138" r="2" fill="#1a365d" opacity="0.5"/>
+  <circle cx="250" cy="138" r="2" fill="#1a365d" opacity="0.5"/>
+  <circle cx="260" cy="138" r="2" fill="#1a365d" opacity="0.5"/>
+  <circle cx="275" cy="138" r="2" fill="#1a365d" opacity="0.5"/>
+  <circle cx="290" cy="138" r="2" fill="#1a365d" opacity="0.5"/>
+  <circle cx="305" cy="138" r="2" fill="#1a365d" opacity="0.5"/>
+  <circle cx="315" cy="138" r="2" fill="#1a365d" opacity="0.5"/>
+
+  <!-- Left rolled end of megillah (visible scroll) -->
+  <!-- Rolled section shadow -->
+  <ellipse cx="50" cy="170" rx="18" ry="55" fill="#c8a878" opacity="0.4"/>
+  <!-- Rolled cylinder body -->
+  <rect x="30" y="115" width="24" height="110" rx="12" fill="url(#rodGrad)"/>
+  <!-- Cylinder highlight -->
+  <rect x="34" y="118" width="8" height="104" rx="4" fill="#d4b896" opacity="0.5"/>
+  <!-- Parchment curl into left rod -->
+  <path d="M 54 115 Q 42 135 42 170 Q 42 200 54 225" fill="none" stroke="#e8d0b0" stroke-width="3" opacity="0.6"/>
+
+  <!-- Left rod knobs -->
+  <ellipse cx="42" cy="110" rx="16" ry="10" fill="url(#knobGrad)"/>
+  <ellipse cx="42" cy="108" rx="13" ry="7" fill="#d4a830" opacity="0.6"/>
+  <ellipse cx="42" cy="230" rx="16" ry="10" fill="url(#knobGrad)"/>
+  <ellipse cx="42" cy="228" rx="13" ry="7" fill="#d4a830" opacity="0.6"/>
+
+  <!-- Right end - partial rolled (megillah partially unrolled) -->
+  <ellipse cx="358" cy="170" rx="12" ry="55" fill="#c8a878" opacity="0.3"/>
+  <!-- Right rod -->
+  <rect x="346" y="115" width="22" height="110" rx="11" fill="url(#rodGrad)"/>
+  <rect x="350" y="118" width="7" height="104" rx="3" fill="#d4b896" opacity="0.5"/>
+  <!-- Right rod knobs -->
+  <ellipse cx="357" cy="110" rx="14" ry="9" fill="url(#knobGrad)"/>
+  <ellipse cx="357" cy="108" rx="11" ry="6" fill="#d4a830" opacity="0.6"/>
+  <ellipse cx="357" cy="230" rx="14" ry="9" fill="url(#knobGrad)"/>
+  <ellipse cx="357" cy="228" rx="11" ry="6" fill="#d4a830" opacity="0.6"/>
+
+  <!-- Gold ornamental crown above megillah -->
+  <polygon points="200,55 212,75 228,65 220,82 240,82 220,92 228,108 200,95 172,108 180,92 160,82 180,82 172,65 188,75" fill="#8B6914" opacity="0.85"/>
+  <polygon points="200,60 210,76 224,67 217,82 234,82 217,90 224,104 200,93 176,104 183,90 166,82 183,82 176,67 190,76" fill="#c8961a" opacity="0.6"/>
+  <circle cx="200" cy="83" r="8" fill="#8B6914"/>
+  <circle cx="200" cy="83" r="5" fill="#d4a830"/>
+  <circle cx="200" cy="83" r="2" fill="#f5e6d3"/>
+
+  <!-- Light glow around megillah from candle / lamp -->
+  <ellipse cx="200" cy="170" rx="155" ry="60" fill="none" stroke="#f5e6d3" stroke-width="1" opacity="0.1"/>
 </svg>

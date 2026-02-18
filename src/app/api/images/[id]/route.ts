@@ -7,9 +7,9 @@ const IMAGES_DIR = path.join(process.cwd(), "src", "assets", "images");
 type ImageEntry = { filename: string; type: "png" | "svg" };
 
 const VALID_IMAGES: Record<string, ImageEntry> = {
-  "beit-midrash": { filename: "6bdf1127-745a-41cd-99e0-f1a6f4ffca73.png", type: "png" },
-  "tiberias": { filename: "dfb5f465-22db-4a91-9cfe-ecf00f069d78.png", type: "png" },
-  "ahasuerus": { filename: "8b434647-0756-4189-8bd9-a4c70e90e2e1.png", type: "png" },
+  "beit-midrash": { filename: "beit-midrash.svg", type: "svg" },
+  "tiberias": { filename: "tiberias.svg", type: "svg" },
+  "ahasuerus": { filename: "ahasuerus.svg", type: "svg" },
   "calendar": { filename: "calendar.svg", type: "svg" },
   "walls": { filename: "walls.svg", type: "svg" },
   "minyan": { filename: "minyan.svg", type: "svg" },

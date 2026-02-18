@@ -1,45 +1,81 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f5e6d3"/>
+  <!-- Radiant glow -->
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#2d2a3a"/>
-      <stop offset="100%" style="stop-color:#18151d"/>
-    </linearGradient>
-    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#f0d78c"/>
-      <stop offset="100%" style="stop-color:#c9a227"/>
-    </linearGradient>
-    <radialGradient id="glow" cx="50%" cy="30%" r="50%">
-      <stop offset="0%" style="stop-color:#f0d78c" stop-opacity="0.6"/>
-      <stop offset="100%" style="stop-color:#c9a227" stop-opacity="0"/>
+    <radialGradient id="glow" cx="50%" cy="45%" r="45%">
+      <stop offset="0%" stop-color="#8B6914" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#f5e6d3" stop-opacity="0"/>
     </radialGradient>
   </defs>
-  <rect width="800" height="400" fill="url(#bg)"/>
-  <!-- Celebratory glow -->
-  <ellipse cx="400" cy="100" rx="300" ry="120" fill="url(#glow)"/>
-  <!-- Crown/Trophy -->
-  <g transform="translate(400, 60)">
-    <!-- Cup -->
-    <path d="M-40 80 L-50 30 L50 30 L40 80 Z" fill="url(#gold)"/>
-    <ellipse cx="0" cy="30" rx="50" ry="12" fill="url(#gold)"/>
-    <!-- Handles -->
-    <path d="M-50 40 Q-80 40 -80 60 Q-80 80 -50 80" fill="none" stroke="url(#gold)" stroke-width="8"/>
-    <path d="M50 40 Q80 40 80 60 Q80 80 50 80" fill="none" stroke="url(#gold)" stroke-width="8"/>
-    <!-- Base -->
-    <rect x="-20" y="80" width="40" height="10" fill="url(#gold)"/>
-    <rect x="-35" y="90" width="70" height="8" fill="url(#gold)"/>
-    <!-- Star -->
-    <polygon points="0,45 5,55 15,55 7,62 10,72 0,66 -10,72 -7,62 -15,55 -5,55" fill="#fff8e7"/>
-  </g>
-  <!-- Decorative stars -->
-  <g fill="#f0d78c" opacity="0.5">
-    <polygon points="200,100 203,110 213,110 205,116 208,126 200,120 192,126 195,116 187,110 197,110"/>
-    <polygon points="600,100 603,110 613,110 605,116 608,126 600,120 592,126 595,116 587,110 597,110"/>
-    <polygon points="300,180 302,186 308,186 303,190 305,196 300,192 295,196 297,190 292,186 298,186"/>
-    <polygon points="500,180 502,186 508,186 503,190 505,196 500,192 495,196 497,190 492,186 498,186"/>
-  </g>
-  <!-- Hadran text -->
-  <text x="400" y="220" text-anchor="middle" font-family="David, serif" font-size="24" fill="#f0e6d3" direction="rtl">הדרן עלך מסכת מגילה</text>
-  <!-- Title -->
-  <text x="400" y="290" text-anchor="middle" font-family="David, serif" font-size="32" fill="#f0e6d3" direction="rtl">סיום המסכת</text>
-  <text x="400" y="330" text-anchor="middle" font-family="David, serif" font-size="20" fill="#9988aa" direction="rtl">כבוד התורה ולומדיה</text>
+  <ellipse cx="200" cy="140" rx="130" ry="110" fill="url(#glow)"/>
+  <!-- Trophy base plate -->
+  <rect x="145" y="252" width="110" height="14" fill="#744210" rx="4"/>
+  <rect x="155" y="248" width="90" height="8" fill="#8B6914" rx="3"/>
+  <!-- Trophy stem -->
+  <rect x="188" y="210" width="24" height="42" fill="#8B6914" rx="4"/>
+  <ellipse cx="200" cy="215" rx="28" ry="8" fill="#744210"/>
+  <ellipse cx="200" cy="215" rx="22" ry="5" fill="#a07820"/>
+  <!-- Trophy cup outer -->
+  <path d="M 120 115 Q 108 170 140 200 Q 165 215 200 215 Q 235 215 260 200 Q 292 170 280 115 Z" fill="#8B6914"/>
+  <!-- Trophy cup inner -->
+  <path d="M 135 118 Q 125 168 153 196 Q 173 210 200 210 Q 227 210 247 196 Q 275 168 265 118 Z" fill="#a07820"/>
+  <!-- Cup highlight -->
+  <path d="M 148 122 Q 140 165 160 192 Q 175 205 200 207" fill="none" stroke="#f5e6d3" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  <!-- Left handle -->
+  <path d="M 120 115 Q 80 130 82 168 Q 84 195 120 195" fill="none" stroke="#8B6914" stroke-width="14" stroke-linecap="round"/>
+  <path d="M 120 115 Q 88 132 90 168 Q 92 190 120 192" fill="none" stroke="#a07820" stroke-width="6" stroke-linecap="round"/>
+  <!-- Right handle -->
+  <path d="M 280 115 Q 320 130 318 168 Q 316 195 280 195" fill="none" stroke="#8B6914" stroke-width="14" stroke-linecap="round"/>
+  <path d="M 280 115 Q 312 132 310 168 Q 308 190 280 192" fill="none" stroke="#a07820" stroke-width="6" stroke-linecap="round"/>
+  <!-- Cup rim -->
+  <ellipse cx="200" cy="115" rx="80" ry="16" fill="#744210"/>
+  <ellipse cx="200" cy="113" rx="76" ry="12" fill="#a07820"/>
+  <!-- Crown base band -->
+  <rect x="152" y="70" width="96" height="30" fill="#8B6914" rx="4"/>
+  <rect x="156" y="74" width="88" height="22" fill="#a07820" rx="3"/>
+  <!-- Crown points -->
+  <polygon points="152,70 160,40 172,70" fill="#8B6914"/>
+  <polygon points="168,70 178,50 190,70" fill="#8B6914"/>
+  <polygon points="185,70 200,30 215,70" fill="#744210"/>
+  <polygon points="210,70 222,50 234,70" fill="#8B6914"/>
+  <polygon points="228,70 240,40 248,70" fill="#8B6914"/>
+  <!-- Crown jewels -->
+  <circle cx="162" cy="80" r="6" fill="#1a365d"/>
+  <circle cx="162" cy="80" r="3" fill="#2d5a9e"/>
+  <circle cx="182" cy="77" r="6" fill="#8B0000" opacity="0.8"/>
+  <circle cx="182" cy="77" r="3" fill="#cc3333" opacity="0.8"/>
+  <circle cx="200" cy="76" r="7" fill="#1a365d"/>
+  <circle cx="200" cy="76" r="3.5" fill="#f5e6d3"/>
+  <circle cx="218" cy="77" r="6" fill="#8B0000" opacity="0.8"/>
+  <circle cx="218" cy="77" r="3" fill="#cc3333" opacity="0.8"/>
+  <circle cx="238" cy="80" r="6" fill="#1a365d"/>
+  <circle cx="238" cy="80" r="3" fill="#2d5a9e"/>
+  <!-- Star atop crown -->
+  <polygon points="200,20 203,29 213,29 205,35 208,44 200,38 192,44 195,35 187,29 197,29" fill="#8B6914"/>
+  <polygon points="200,22 202,29 210,29 204,34 206,41 200,37 194,41 196,34 190,29 198,29" fill="#f5e6d3" opacity="0.7"/>
+  <!-- Left laurel -->
+  <path d="M 88 220 Q 72 180 80 140 Q 88 110 110 90" fill="none" stroke="#4a7a30" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="90" cy="215" rx="14" ry="7" fill="#4a7a30" transform="rotate(-40 90 215)"/>
+  <ellipse cx="84" cy="198" rx="14" ry="7" fill="#5a8a40" transform="rotate(-50 84 198)"/>
+  <ellipse cx="80" cy="180" rx="13" ry="7" fill="#4a7a30" transform="rotate(-55 80 180)"/>
+  <ellipse cx="79" cy="162" rx="13" ry="7" fill="#5a8a40" transform="rotate(-60 79 162)"/>
+  <ellipse cx="82" cy="144" rx="13" ry="7" fill="#4a7a30" transform="rotate(-65 82 144)"/>
+  <ellipse cx="90" cy="128" rx="12" ry="7" fill="#5a8a40" transform="rotate(-55 90 128)"/>
+  <ellipse cx="102" cy="112" rx="12" ry="6" fill="#4a7a30" transform="rotate(-45 102 112)"/>
+  <!-- Right laurel -->
+  <path d="M 312 220 Q 328 180 320 140 Q 312 110 290 90" fill="none" stroke="#4a7a30" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="310" cy="215" rx="14" ry="7" fill="#4a7a30" transform="rotate(40 310 215)"/>
+  <ellipse cx="316" cy="198" rx="14" ry="7" fill="#5a8a40" transform="rotate(50 316 198)"/>
+  <ellipse cx="320" cy="180" rx="13" ry="7" fill="#4a7a30" transform="rotate(55 320 180)"/>
+  <ellipse cx="321" cy="162" rx="13" ry="7" fill="#5a8a40" transform="rotate(60 321 162)"/>
+  <ellipse cx="318" cy="144" rx="13" ry="7" fill="#4a7a30" transform="rotate(65 318 144)"/>
+  <ellipse cx="310" cy="128" rx="12" ry="7" fill="#5a8a40" transform="rotate(55 310 128)"/>
+  <ellipse cx="298" cy="112" rx="12" ry="6" fill="#4a7a30" transform="rotate(45 298 112)"/>
+  <!-- Laurel bow -->
+  <path d="M 88 220 Q 140 235 200 230 Q 260 225 312 220" fill="none" stroke="#8B6914" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="200" cy="230" rx="16" ry="8" fill="#8B6914"/>
+  <path d="M 190 230 Q 180 220 172 228" fill="none" stroke="#8B6914" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 210 230 Q 220 220 228 228" fill="none" stroke="#8B6914" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="200" cy="230" r="5" fill="#f5e6d3" opacity="0.7"/>
 </svg>

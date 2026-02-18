@@ -1,44 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#3a2d1f"/>
-      <stop offset="100%" style="stop-color:#1d1810"/>
-    </linearGradient>
-    <linearGradient id="red" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#c0392b"/>
-      <stop offset="100%" style="stop-color:#8e2c1f"/>
-    </linearGradient>
-  </defs>
-  <rect width="800" height="400" fill="url(#bg)"/>
-  <!-- Red heifer -->
-  <g transform="translate(300, 100)">
-    <!-- Body -->
-    <ellipse cx="100" cy="80" rx="80" ry="50" fill="url(#red)"/>
-    <!-- Head -->
-    <ellipse cx="190" cy="60" rx="35" ry="30" fill="url(#red)"/>
-    <!-- Horns -->
-    <path d="M200 35 Q210 15 205 5" stroke="url(#red)" stroke-width="6" fill="none"/>
-    <path d="M210 35 Q220 15 225 5" stroke="url(#red)" stroke-width="6" fill="none"/>
-    <!-- Eye -->
-    <circle cx="200" cy="55" r="5" fill="#1a1a1a"/>
-    <!-- Legs -->
-    <rect x="50" y="120" width="15" height="50" fill="url(#red)"/>
-    <rect x="80" y="120" width="15" height="50" fill="url(#red)"/>
-    <rect x="120" y="120" width="15" height="50" fill="url(#red)"/>
-    <rect x="150" y="120" width="15" height="50" fill="url(#red)"/>
-    <!-- Tail -->
-    <path d="M20 70 Q0 90 10 110" stroke="url(#red)" stroke-width="8" fill="none"/>
-  </g>
-  <!-- Purification water drops -->
-  <g fill="#3498db" opacity="0.7">
-    <circle cx="550" cy="120" r="8"/>
-    <circle cx="580" cy="140" r="6"/>
-    <circle cx="560" cy="160" r="7"/>
-    <circle cx="590" cy="170" r="5"/>
-  </g>
-  <!-- Vessel -->
-  <path d="M530 200 L520 150 L600 150 L590 200 Z" fill="#a89878" stroke="#6a5a4a" stroke-width="2"/>
-  <!-- Title -->
-  <text x="400" y="290" text-anchor="middle" font-family="David, serif" font-size="32" fill="#f0e6d3" direction="rtl">פרשת פרה</text>
-  <text x="400" y="330" text-anchor="middle" font-family="David, serif" font-size="20" fill="#8a7a6a" direction="rtl">טהרה והכנה לפסח</text>
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f5e6d3"/>
+  <!-- Ground -->
+  <rect x="0" y="230" width="400" height="70" fill="#c4a882"/>
+  <ellipse cx="60" cy="230" rx="30" ry="8" fill="#8B6914" opacity="0.4"/>
+  <ellipse cx="170" cy="232" rx="25" ry="7" fill="#8B6914" opacity="0.3"/>
+  <ellipse cx="300" cy="231" rx="28" ry="7" fill="#8B6914" opacity="0.35"/>
+  <ellipse cx="360" cy="229" rx="22" ry="6" fill="#8B6914" opacity="0.3"/>
+  <!-- HEIFER BODY -->
+  <ellipse cx="205" cy="185" rx="95" ry="52" fill="#8B2500"/>
+  <ellipse cx="195" cy="172" rx="70" ry="32" fill="#a03010" opacity="0.5"/>
+  <!-- Neck -->
+  <ellipse cx="118" cy="170" rx="30" ry="22" fill="#8B2500" transform="rotate(-20 118 170)"/>
+  <!-- Head -->
+  <ellipse cx="92" cy="148" rx="36" ry="28" fill="#8B2500"/>
+  <ellipse cx="84" cy="142" rx="22" ry="18" fill="#a03010" opacity="0.4"/>
+  <!-- Snout -->
+  <ellipse cx="64" cy="162" rx="20" ry="14" fill="#7a2000"/>
+  <ellipse cx="57" cy="165" rx="5" ry="3" fill="#5a1500"/>
+  <ellipse cx="71" cy="165" rx="5" ry="3" fill="#5a1500"/>
+  <!-- Eye -->
+  <ellipse cx="84" cy="138" rx="8" ry="7" fill="#2d1a0a"/>
+  <circle cx="87" cy="136" r="2" fill="#ffffff" opacity="0.7"/>
+  <!-- Ears -->
+  <ellipse cx="102" cy="122" rx="10" ry="16" fill="#7a2000" transform="rotate(-20 102 122)"/>
+  <ellipse cx="102" cy="122" rx="6" ry="10" fill="#5a1500" transform="rotate(-20 102 122)" opacity="0.6"/>
+  <ellipse cx="120" cy="118" rx="8" ry="13" fill="#6a1800" transform="rotate(-10 120 118)"/>
+  <!-- Horns -->
+  <path d="M 100 115 Q 88 90 95 75" fill="none" stroke="#c4a882" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 118 112 Q 112 88 122 76" fill="none" stroke="#c4a882" stroke-width="5" stroke-linecap="round"/>
+  <!-- Legs -->
+  <rect x="135" y="225" width="18" height="40" fill="#7a2000" rx="6"/>
+  <ellipse cx="144" cy="265" rx="11" ry="6" fill="#3a1000"/>
+  <rect x="158" y="225" width="18" height="38" fill="#7a2000" rx="6"/>
+  <ellipse cx="167" cy="263" rx="11" ry="6" fill="#3a1000"/>
+  <rect x="250" y="225" width="18" height="42" fill="#7a2000" rx="6"/>
+  <ellipse cx="259" cy="267" rx="11" ry="6" fill="#3a1000"/>
+  <rect x="275" y="223" width="18" height="40" fill="#7a2000" rx="6"/>
+  <ellipse cx="284" cy="263" rx="11" ry="6" fill="#3a1000"/>
+  <!-- Tail -->
+  <path d="M 298 190 Q 330 175 325 155 Q 320 140 335 132" fill="none" stroke="#7a2000" stroke-width="8" stroke-linecap="round"/>
+  <ellipse cx="338" cy="128" rx="10" ry="14" fill="#5a1500" transform="rotate(15 338 128)"/>
+  <!-- Udder -->
+  <ellipse cx="215" cy="232" rx="18" ry="8" fill="#c4855a" opacity="0.6"/>
+  <!-- Water vessel -->
+  <ellipse cx="340" cy="218" rx="20" ry="8" fill="#8B6914" opacity="0.7"/>
+  <rect x="322" y="160" width="36" height="60" fill="#8B6914" rx="4" opacity="0.7"/>
+  <ellipse cx="340" cy="160" rx="18" ry="7" fill="#a07820" opacity="0.7"/>
+  <ellipse cx="340" cy="162" rx="14" ry="4" fill="#1a365d" opacity="0.6"/>
+  <!-- Hyssop branch -->
+  <rect x="348" y="140" width="4" height="50" fill="#744210" rx="2" opacity="0.8"/>
+  <ellipse cx="355" cy="145" rx="8" ry="4" fill="#4a7a30" opacity="0.7" transform="rotate(-20 355 145)"/>
+  <ellipse cx="360" cy="152" rx="7" ry="3" fill="#4a7a30" opacity="0.7" transform="rotate(10 360 152)"/>
+  <ellipse cx="352" cy="155" rx="7" ry="3" fill="#4a7a30" opacity="0.7" transform="rotate(-30 352 155)"/>
 </svg>
