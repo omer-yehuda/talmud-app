@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Background parchment -->
+  <rect width="400" height="300" fill="#f5e6d3" rx="8"/>
+
+  <!-- Synagogue arch interior backdrop -->
+  <path d="M80 280 L80 148 Q200 72 320 148 L320 280 Z" fill="#e8d5bc" fill-opacity="0.55"/>
+
+  <!-- Arch outline -->
+  <path d="M80 148 Q200 72 320 148" stroke="#8B6914" stroke-width="2" fill="none" stroke-opacity="0.5"/>
+
+  <!-- Torah ark / aron kodesh at back center -->
+  <rect x="166" y="90" width="68" height="88" rx="4" fill="#744210"/>
+  <rect x="170" y="94" width="60" height="80" rx="3" fill="#8B6914" fill-opacity="0.35"/>
+  <!-- Ark doors -->
+  <rect x="171" y="95" width="28" height="78" rx="2" fill="#744210" stroke="#8B6914" stroke-width="1"/>
+  <rect x="201" y="95" width="28" height="78" rx="2" fill="#744210" stroke="#8B6914" stroke-width="1"/>
+  <!-- Ark door handles -->
+  <circle cx="197" cy="134" r="3" fill="#8B6914"/>
+  <circle cx="203" cy="134" r="3" fill="#8B6914"/>
+  <!-- Ark top arch -->
+  <path d="M166 90 Q200 72 234 90" fill="#8B6914"/>
+
+  <!-- Bimah / reading platform (elevated rectangle) -->
+  <rect x="152" y="174" width="96" height="8" rx="3" fill="#8B6914"/>
+  <rect x="158" y="178" width="84" height="4" rx="2" fill="#744210"/>
+
+  <!-- Reader at bimah (standing, central figure) -->
+  <!-- Tallit -->
+  <path d="M186 205 L176 268 L224 268 L214 205 Z" fill="#f5e6d3"/>
+  <rect x="176" y="215" width="48" height="3" rx="1" fill="#1a365d" fill-opacity="0.6"/>
+  <rect x="176" y="258" width="48" height="3" rx="1" fill="#1a365d" fill-opacity="0.6"/>
+  <!-- Body -->
+  <rect x="188" y="188" width="24" height="30" rx="6" fill="#1a365d"/>
+  <!-- Neck -->
+  <rect x="196" y="183" width="8" height="8" rx="4" fill="#8B6914"/>
+  <!-- Head -->
+  <circle cx="200" cy="177" r="10" fill="#8B6914"/>
+  <!-- Kippah -->
+  <path d="M191 177 Q200 167 209 177" fill="#2d3748"/>
+  <!-- Lectern -->
+  <rect x="188" y="168" width="24" height="14" rx="2" fill="#744210"/>
+  <rect x="190" y="170" width="20" height="10" rx="1" fill="#8B6914" fill-opacity="0.3"/>
+
+  <!-- === BACK ROW (smaller, 7 people) === -->
+  <!-- Person B1 -->
+  <circle cx="62" cy="156" r="7" fill="#8B6914"/>
+  <path d="M56 156 Q62 148 68 156" fill="#1a365d"/>
+  <rect x="55" y="162" width="14" height="18" rx="4" fill="#1a365d"/>
+
+  <!-- Person B2 -->
+  <circle cx="96" cy="156" r="7" fill="#8B6914"/>
+  <path d="M90 156 Q96 148 102 156" fill="#744210"/>
+  <rect x="89" y="162" width="14" height="18" rx="4" fill="#744210"/>
+
+  <!-- Person B3 -->
+  <circle cx="130" cy="156" r="7" fill="#8B6914"/>
+  <path d="M124 156 Q130 148 136 156" fill="#2d3748"/>
+  <rect x="123" y="162" width="14" height="18" rx="4" fill="#2d3748"/>
+
+  <!-- Person B4 — left gap for central aisle -->
+
+  <!-- Person B5 -->
+  <circle cx="270" cy="156" r="7" fill="#8B6914"/>
+  <path d="M264 156 Q270 148 276 156" fill="#1a365d"/>
+  <rect x="263" y="162" width="14" height="18" rx="4" fill="#1a365d"/>
+
+  <!-- Person B6 -->
+  <circle cx="304" cy="156" r="7" fill="#8B6914"/>
+  <path d="M298 156 Q304 148 310 156" fill="#744210"/>
+  <rect x="297" y="162" width="14" height="18" rx="4" fill="#744210"/>
+
+  <!-- Person B7 -->
+  <circle cx="338" cy="156" r="7" fill="#8B6914"/>
+  <path d="M332 156 Q338 148 344 156" fill="#2d3748"/>
+  <rect x="331" y="162" width="14" height="18" rx="4" fill="#2d3748"/>
+
+  <!-- Back row bench -->
+  <rect x="44" y="179" width="312" height="5" rx="2" fill="#744210"/>
+
+  <!-- === MIDDLE ROW (6 people, larger) === -->
+  <!-- Person M1 -->
+  <circle cx="50" cy="207" r="9" fill="#8B6914"/>
+  <path d="M42 207 Q50 197 58 207" fill="#2d3748"/>
+  <rect x="41" y="215" width="18" height="22" rx="5" fill="#2d3748"/>
+
+  <!-- Person M2 -->
+  <circle cx="90" cy="207" r="9" fill="#8B6914"/>
+  <path d="M82 207 Q90 197 98 207" fill="#1a365d"/>
+  <rect x="81" y="215" width="18" height="22" rx="5" fill="#1a365d"/>
+
+  <!-- Person M3 -->
+  <circle cx="130" cy="207" r="9" fill="#8B6914"/>
+  <path d="M122 207 Q130 197 138 207" fill="#744210"/>
+  <rect x="121" y="215" width="18" height="22" rx="5" fill="#744210"/>
+
+  <!-- Person M4 -->
+  <circle cx="270" cy="207" r="9" fill="#8B6914"/>
+  <path d="M262 207 Q270 197 278 207" fill="#1a365d"/>
+  <rect x="261" y="215" width="18" height="22" rx="5" fill="#1a365d"/>
+
+  <!-- Person M5 -->
+  <circle cx="310" cy="207" r="9" fill="#8B6914"/>
+  <path d="M302 207 Q310 197 318 207" fill="#2d3748"/>
+  <rect x="301" y="215" width="18" height="22" rx="5" fill="#2d3748"/>
+
+  <!-- Person M6 -->
+  <circle cx="350" cy="207" r="9" fill="#8B6914"/>
+  <path d="M342 207 Q350 197 358 207" fill="#744210"/>
+  <rect x="341" y="215" width="18" height="22" rx="5" fill="#744210"/>
+
+  <!-- Middle row bench -->
+  <rect x="30" y="236" width="340" height="5" rx="2" fill="#744210"/>
+
+  <!-- === FRONT ROW (8 people, largest, most visible) === -->
+  <!-- Person F1 -->
+  <circle cx="26" cy="258" r="11" fill="#8B6914"/>
+  <path d="M16 258 Q26 246 36 258" fill="#1a365d"/>
+  <rect x="15" y="268" width="22" height="24" rx="6" fill="#1a365d"/>
+
+  <!-- Person F2 -->
+  <circle cx="68" cy="258" r="11" fill="#8B6914"/>
+  <path d="M58 258 Q68 246 78 258" fill="#744210"/>
+  <rect x="57" y="268" width="22" height="24" rx="6" fill="#744210"/>
+
+  <!-- Person F3 -->
+  <circle cx="110" cy="258" r="11" fill="#8B6914"/>
+  <path d="M100 258 Q110 246 120 258" fill="#2d3748"/>
+  <rect x="99" y="268" width="22" height="24" rx="6" fill="#2d3748"/>
+
+  <!-- Person F4 -->
+  <circle cx="152" cy="258" r="11" fill="#8B6914"/>
+  <path d="M142 258 Q152 246 162 258" fill="#1a365d"/>
+  <rect x="141" y="268" width="22" height="24" rx="6" fill="#1a365d"/>
+
+  <!-- Person F5 -->
+  <circle cx="248" cy="258" r="11" fill="#8B6914"/>
+  <path d="M238 258 Q248 246 258 258" fill="#744210"/>
+  <rect x="237" y="268" width="22" height="24" rx="6" fill="#744210"/>
+
+  <!-- Person F6 -->
+  <circle cx="290" cy="258" r="11" fill="#8B6914"/>
+  <path d="M280 258 Q290 246 300 258" fill="#2d3748"/>
+  <rect x="279" y="268" width="22" height="24" rx="6" fill="#2d3748"/>
+
+  <!-- Person F7 -->
+  <circle cx="332" cy="258" r="11" fill="#8B6914"/>
+  <path d="M322 258 Q332 246 342 258" fill="#1a365d"/>
+  <rect x="321" y="268" width="22" height="24" rx="6" fill="#1a365d"/>
+
+  <!-- Person F8 -->
+  <circle cx="374" cy="258" r="11" fill="#8B6914"/>
+  <path d="M364 258 Q374 246 384 258" fill="#744210"/>
+  <rect x="363" y="268" width="22" height="24" rx="6" fill="#744210"/>
+
+  <!-- Front row bench/floor line -->
+  <rect x="0" y="290" width="400" height="10" rx="0" fill="#e8d5bc"/>
+
+  <!-- Gold border frame -->
+  <rect x="2" y="2" width="396" height="296" rx="8" fill="none" stroke="#8B6914" stroke-width="2.5"/>
+  <rect x="6" y="6" width="388" height="288" rx="6" fill="none" stroke="#8B6914" stroke-width="0.8" stroke-opacity="0.4"/>
+</svg>

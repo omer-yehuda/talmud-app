@@ -1,0 +1,50 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f5e6d3"/>
+  <!-- Table surface -->
+  <rect x="60" y="200" width="280" height="16" fill="#744210" rx="3"/>
+  <rect x="80" y="214" width="14" height="50" fill="#744210" rx="2"/>
+  <rect x="306" y="214" width="14" height="50" fill="#744210" rx="2"/>
+  <!-- Scroll body -->
+  <rect x="145" y="100" width="110" height="110" fill="#e8d0a0" rx="4" stroke="#8B6914" stroke-width="2"/>
+  <!-- Scroll roller top -->
+  <rect x="135" y="97" width="130" height="14" fill="#8B6914" rx="7"/>
+  <circle cx="142" cy="104" r="8" fill="#744210"/>
+  <circle cx="258" cy="104" r="8" fill="#744210"/>
+  <!-- Scroll roller bottom -->
+  <rect x="135" y="196" width="130" height="14" fill="#8B6914" rx="7"/>
+  <circle cx="142" cy="203" r="8" fill="#744210"/>
+  <circle cx="258" cy="203" r="8" fill="#744210"/>
+  <!-- Document text lines -->
+  <rect x="162" y="120" width="76" height="5" fill="#744210" rx="2" opacity="0.6"/>
+  <rect x="162" y="132" width="76" height="5" fill="#744210" rx="2" opacity="0.6"/>
+  <rect x="162" y="144" width="60" height="5" fill="#744210" rx="2" opacity="0.6"/>
+  <rect x="162" y="156" width="76" height="5" fill="#744210" rx="2" opacity="0.6"/>
+  <rect x="162" y="168" width="50" height="5" fill="#744210" rx="2" opacity="0.6"/>
+  <!-- Seal on document -->
+  <circle cx="230" cy="178" r="14" fill="none" stroke="#8B6914" stroke-width="2"/>
+  <circle cx="230" cy="178" r="8" fill="#8B6914" opacity="0.4"/>
+  <!-- LEFT HAND -->
+  <ellipse cx="95" cy="190" rx="32" ry="20" fill="#d4956a" transform="rotate(-15 95 190)"/>
+  <ellipse cx="70" cy="178" rx="9" ry="6" fill="#d4956a" transform="rotate(-40 70 178)"/>
+  <rect x="85" y="155" width="10" height="30" fill="#d4956a" rx="5" transform="rotate(-8 85 155)"/>
+  <rect x="96" y="152" width="10" height="33" fill="#d4956a" rx="5" transform="rotate(-2 96 152)"/>
+  <rect x="107" y="154" width="10" height="30" fill="#d4956a" rx="5" transform="rotate(4 107 154)"/>
+  <rect x="117" y="160" width="9" height="24" fill="#d4956a" rx="4" transform="rotate(10 117 160)"/>
+  <rect x="72" y="195" width="48" height="20" fill="#1a365d" rx="4"/>
+  <rect x="68" y="205" width="56" height="12" fill="#2d5a9e" rx="3"/>
+  <!-- RIGHT HAND -->
+  <ellipse cx="305" cy="190" rx="32" ry="20" fill="#c4855a" transform="rotate(15 305 190)"/>
+  <ellipse cx="330" cy="178" rx="9" ry="6" fill="#c4855a" transform="rotate(40 330 178)"/>
+  <rect x="305" y="155" width="10" height="30" fill="#c4855a" rx="5" transform="rotate(8 305 155)"/>
+  <rect x="294" y="152" width="10" height="33" fill="#c4855a" rx="5" transform="rotate(2 294 152)"/>
+  <rect x="283" y="154" width="10" height="30" fill="#c4855a" rx="5" transform="rotate(-4 283 154)"/>
+  <rect x="274" y="160" width="9" height="24" fill="#c4855a" rx="4" transform="rotate(-10 274 160)"/>
+  <rect x="280" y="195" width="48" height="20" fill="#8B6914" rx="4"/>
+  <rect x="276" y="205" width="56" height="12" fill="#a07820" rx="3"/>
+  <!-- Exchange arrows -->
+  <path d="M 135 88 Q 150 75 165 88" fill="none" stroke="#8B6914" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="163,84 169,91 156,91" fill="#8B6914"/>
+  <path d="M 235 88 Q 250 75 265 88" fill="none" stroke="#744210" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="237,84 231,91 244,91" fill="#744210"/>
+</svg>

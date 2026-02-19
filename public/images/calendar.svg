@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Background parchment -->
+  <rect width="400" height="300" fill="#f5e6d3"/>
+  <!-- Scroll shadow -->
+  <ellipse cx="200" cy="285" rx="130" ry="8" fill="#744210" opacity="0.2"/>
+  <!-- Main scroll body -->
+  <rect x="60" y="40" width="280" height="210" rx="6" ry="6" fill="#f0d9bc" stroke="#8B6914" stroke-width="2"/>
+  <!-- Top roller bar -->
+  <rect x="45" y="35" width="310" height="18" rx="9" ry="9" fill="#744210"/>
+  <rect x="48" y="37" width="304" height="14" rx="7" ry="7" fill="#8B6914"/>
+  <rect x="55" y="39" width="290" height="5" rx="2" ry="2" fill="#c8961a" opacity="0.5"/>
+  <!-- Bottom roller bar -->
+  <rect x="45" y="247" width="310" height="18" rx="9" ry="9" fill="#744210"/>
+  <rect x="48" y="249" width="304" height="14" rx="7" ry="7" fill="#8B6914"/>
+  <rect x="55" y="251" width="290" height="5" rx="2" ry="2" fill="#c8961a" opacity="0.5"/>
+  <!-- Knobs top-left -->
+  <circle cx="48" cy="44" r="10" fill="#744210"/>
+  <circle cx="48" cy="44" r="7" fill="#8B6914"/>
+  <circle cx="48" cy="44" r="3" fill="#c8961a"/>
+  <!-- Knobs top-right -->
+  <circle cx="352" cy="44" r="10" fill="#744210"/>
+  <circle cx="352" cy="44" r="7" fill="#8B6914"/>
+  <circle cx="352" cy="44" r="3" fill="#c8961a"/>
+  <!-- Knobs bottom-left -->
+  <circle cx="48" cy="256" r="10" fill="#744210"/>
+  <circle cx="48" cy="256" r="7" fill="#8B6914"/>
+  <circle cx="48" cy="256" r="3" fill="#c8961a"/>
+  <!-- Knobs bottom-right -->
+  <circle cx="352" cy="256" r="10" fill="#744210"/>
+  <circle cx="352" cy="256" r="7" fill="#8B6914"/>
+  <circle cx="352" cy="256" r="3" fill="#c8961a"/>
+  <!-- Calendar header bar -->
+  <rect x="70" y="65" width="260" height="22" rx="3" ry="3" fill="#1a365d"/>
+  <circle cx="95" cy="76" r="4" fill="#f5e6d3" opacity="0.8"/>
+  <circle cx="132" cy="76" r="4" fill="#f5e6d3" opacity="0.8"/>
+  <circle cx="169" cy="76" r="4" fill="#f5e6d3" opacity="0.8"/>
+  <circle cx="200" cy="76" r="4" fill="#8B6914"/>
+  <circle cx="231" cy="76" r="4" fill="#f5e6d3" opacity="0.8"/>
+  <circle cx="268" cy="76" r="4" fill="#f5e6d3" opacity="0.8"/>
+  <circle cx="305" cy="76" r="4" fill="#f5e6d3" opacity="0.8"/>
+  <!-- Horizontal grid lines -->
+  <line x1="70" y1="97" x2="330" y2="97" stroke="#8B6914" stroke-width="0.8" opacity="0.5"/>
+  <line x1="70" y1="117" x2="330" y2="117" stroke="#8B6914" stroke-width="0.8" opacity="0.5"/>
+  <line x1="70" y1="137" x2="330" y2="137" stroke="#8B6914" stroke-width="0.8" opacity="0.5"/>
+  <line x1="70" y1="157" x2="330" y2="157" stroke="#8B6914" stroke-width="0.8" opacity="0.5"/>
+  <line x1="70" y1="177" x2="330" y2="177" stroke="#8B6914" stroke-width="0.8" opacity="0.5"/>
+  <line x1="70" y1="197" x2="330" y2="197" stroke="#8B6914" stroke-width="0.8" opacity="0.5"/>
+  <line x1="70" y1="217" x2="330" y2="217" stroke="#8B6914" stroke-width="0.8" opacity="0.5"/>
+  <line x1="70" y1="237" x2="330" y2="237" stroke="#8B6914" stroke-width="0.8" opacity="0.5"/>
+  <!-- Vertical grid lines -->
+  <line x1="113" y1="87" x2="113" y2="247" stroke="#8B6914" stroke-width="0.8" opacity="0.5"/>
+  <line x1="150" y1="87" x2="150" y2="247" stroke="#8B6914" stroke-width="0.8" opacity="0.5"/>
+  <line x1="187" y1="87" x2="187" y2="247" stroke="#8B6914" stroke-width="0.8" opacity="0.5"/>
+  <line x1="218" y1="87" x2="218" y2="247" stroke="#8B6914" stroke-width="0.8" opacity="0.5"/>
+  <line x1="255" y1="87" x2="255" y2="247" stroke="#8B6914" stroke-width="0.8" opacity="0.5"/>
+  <line x1="292" y1="87" x2="292" y2="247" stroke="#8B6914" stroke-width="0.8" opacity="0.5"/>
+  <!-- Day dots row 1 -->
+  <circle cx="95" cy="107" r="5" fill="#744210" opacity="0.4"/>
+  <circle cx="132" cy="107" r="5" fill="#744210" opacity="0.4"/>
+  <circle cx="169" cy="107" r="5" fill="#744210" opacity="0.4"/>
+  <circle cx="200" cy="107" r="5" fill="#744210" opacity="0.4"/>
+  <circle cx="231" cy="107" r="5" fill="#744210" opacity="0.4"/>
+  <circle cx="268" cy="107" r="5" fill="#744210" opacity="0.4"/>
+  <circle cx="305" cy="107" r="5" fill="#744210" opacity="0.4"/>
+  <!-- Day dots row 2 -->
+  <circle cx="95" cy="127" r="5" fill="#744210" opacity="0.4"/>
+  <circle cx="132" cy="127" r="5" fill="#744210" opacity="0.4"/>
+  <circle cx="169" cy="127" r="5" fill="#744210" opacity="0.4"/>
+  <circle cx="200" cy="127" r="5" fill="#744210" opacity="0.4"/>
+  <circle cx="231" cy="127" r="5" fill="#744210" opacity="0.4"/>
+  <circle cx="268" cy="127" r="5" fill="#744210" opacity="0.4"/>
+  <circle cx="305" cy="127" r="5" fill="#744210" opacity="0.4"/>
+  <!-- Day dots row 3 with highlighted cell -->
+  <circle cx="95" cy="147" r="5" fill="#744210" opacity="0.4"/>
+  <circle cx="132" cy="147" r="5" fill="#744210" opacity="0.4"/>
+  <circle cx="169" cy="147" r="5" fill="#744210" opacity="0.4"/>
+  <rect x="188" y="138" width="24" height="18" rx="3" ry="3" fill="#1a365d"/>
+  <circle cx="200" cy="147" r="5" fill="#f5e6d3"/>
+  <circle cx="231" cy="147" r="5" fill="#744210" opacity="0.4"/>
+  <circle cx="268" cy="147" r="5" fill="#744210" opacity="0.4"/>
+  <circle cx="305" cy="147" r="5" fill="#744210" opacity="0.4"/>
+  <!-- Day dots row 4 -->
+  <circle cx="95" cy="167" r="5" fill="#744210" opacity="0.4"/>
+  <circle cx="132" cy="167" r="5" fill="#744210" opacity="0.4"/>
+  <circle cx="169" cy="167" r="5" fill="#744210" opacity="0.4"/>
+  <circle cx="200" cy="167" r="5" fill="#744210" opacity="0.4"/>
+  <circle cx="231" cy="167" r="5" fill="#744210" opacity="0.4"/>
+  <circle cx="268" cy="167" r="5" fill="#744210" opacity="0.4"/>
+  <circle cx="305" cy="167" r="5" fill="#744210" opacity="0.4"/>
+  <!-- Day dots row 5 (partial) -->
+  <circle cx="95" cy="187" r="5" fill="#744210" opacity="0.4"/>
+  <circle cx="132" cy="187" r="5" fill="#744210" opacity="0.4"/>
+  <circle cx="169" cy="187" r="5" fill="#744210" opacity="0.4"/>
+  <circle cx="200" cy="187" r="5" fill="#744210" opacity="0.4"/>
+  <circle cx="231" cy="187" r="5" fill="#744210" opacity="0.4"/>
+  <!-- Bookmark ribbon -->
+  <polygon points="196,35 204,35 204,10 200,15 196,10" fill="#1a365d"/>
+  <!-- Decorative ring at ribbon tip -->
+  <circle cx="200" cy="25" r="5" fill="none" stroke="#8B6914" stroke-width="1.5" opacity="0.6"/>
+</svg>

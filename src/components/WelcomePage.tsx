@@ -51,6 +51,7 @@ export function WelcomePage({ pages, onPageSelect }: WelcomePageProps): React.Re
             src={getImagePath("beit-midrash")}
             alt={ALT_TEXT.beitMidrash}
             fill
+            unoptimized
             style={{ objectFit: "cover" }}
             sizes="100vw"
             priority

@@ -1,0 +1,76 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Background parchment -->
+  <rect width="400" height="300" fill="#f5e6d3" rx="12"/>
+  <!-- Subtle radial -->
+  <ellipse cx="200" cy="155" rx="120" ry="110" fill="#8B6914" opacity="0.05"/>
+
+  <!-- Ground shadow -->
+  <ellipse cx="200" cy="278" rx="70" ry="8" fill="#744210" opacity="0.15"/>
+
+  <!-- Robe / body -->
+  <ellipse cx="200" cy="255" rx="55" ry="22" fill="#1a365d" opacity="0.7"/>
+  <polygon points="155,255 175,160 225,160 245,255" fill="#1a365d"/>
+  <!-- Robe highlight -->
+  <polygon points="190,255 195,165 205,165 210,255" fill="#1a365d" opacity="0.4"/>
+  <!-- Robe border / hem detail -->
+  <path d="M 155,255 Q 200,240 245,255" stroke="#8B6914" stroke-width="2.5" fill="none"/>
+
+  <!-- Torso / upper robe -->
+  <ellipse cx="200" cy="162" rx="32" ry="22" fill="#1a365d"/>
+  <!-- Robe sash / belt -->
+  <rect x="175" y="178" width="50" height="8" rx="3" fill="#8B6914" opacity="0.7"/>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="122" rx="26" ry="28" fill="#f5e6d3"/>
+  <!-- Neck -->
+  <rect x="193" y="146" width="14" height="16" rx="4" fill="#f5e6d3"/>
+
+  <!-- Turban / head covering -->
+  <ellipse cx="200" cy="105" rx="28" ry="14" fill="#1a365d"/>
+  <ellipse cx="200" cy="98" rx="24" ry="10" fill="#1a365d"/>
+  <!-- Turban wrap detail -->
+  <path d="M 176,100 Q 200,90 224,100" stroke="#8B6914" stroke-width="2" fill="none"/>
+  <path d="M 178,106 Q 200,96 222,106" stroke="#8B6914" stroke-width="1.5" fill="none" opacity="0.6"/>
+
+  <!-- Left arm holding scroll -->
+  <path d="M 175,168 Q 148,180 138,200" stroke="#f5e6d3" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <path d="M 175,168 Q 148,180 138,200" stroke="#1a365d" stroke-width="10" fill="none" stroke-linecap="round"/>
+
+  <!-- Right arm gesturing -->
+  <path d="M 225,168 Q 256,172 268,158" stroke="#f5e6d3" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <path d="M 225,168 Q 256,172 268,158" stroke="#1a365d" stroke-width="10" fill="none" stroke-linecap="round"/>
+
+  <!-- Scroll / book in left hand -->
+  <!-- Scroll body -->
+  <rect x="108" y="195" width="60" height="38" rx="6" fill="#f5e6d3"/>
+  <rect x="110" y="197" width="56" height="34" rx="4" fill="#f5e6d3" opacity="0.8"/>
+  <!-- Scroll end rollers -->
+  <ellipse cx="108" cy="214" rx="6" ry="19" fill="#8B6914"/>
+  <ellipse cx="168" cy="214" rx="6" ry="19" fill="#8B6914"/>
+  <!-- Scroll text lines -->
+  <line x1="118" y1="205" x2="158" y2="205" stroke="#744210" stroke-width="1.8" opacity="0.6"/>
+  <line x1="118" y1="213" x2="158" y2="213" stroke="#744210" stroke-width="1.8" opacity="0.6"/>
+  <line x1="118" y1="221" x2="158" y2="221" stroke="#744210" stroke-width="1.8" opacity="0.6"/>
+  <!-- Scroll knob tops -->
+  <ellipse cx="108" cy="196" rx="6" ry="4" fill="#744210"/>
+  <ellipse cx="168" cy="196" rx="6" ry="4" fill="#744210"/>
+  <ellipse cx="108" cy="233" rx="6" ry="4" fill="#744210"/>
+  <ellipse cx="168" cy="233" rx="6" ry="4" fill="#744210"/>
+
+  <!-- Pointing hand / right hand detail -->
+  <ellipse cx="270" cy="156" rx="10" ry="7" fill="#f5e6d3"/>
+
+  <!-- Decorative stars in background -->
+  <circle cx="60" cy="55" r="4" fill="#8B6914" opacity="0.3"/>
+  <circle cx="340" cy="45" r="4" fill="#8B6914" opacity="0.3"/>
+  <circle cx="350" cy="120" r="3" fill="#1a365d" opacity="0.2"/>
+  <circle cx="55" cy="130" r="3" fill="#1a365d" opacity="0.2"/>
+  <circle cx="200" cy="40" r="5" fill="#8B6914" opacity="0.25"/>
+  <circle cx="120" cy="48" r="3" fill="#8B6914" opacity="0.2"/>
+  <circle cx="280" cy="52" r="3" fill="#8B6914" opacity="0.2"/>
+
+  <!-- Light rays behind figure -->
+  <line x1="200" y1="50" x2="200" y2="85" stroke="#8B6914" stroke-width="2" opacity="0.2"/>
+  <line x1="170" y1="55" x2="185" y2="88" stroke="#8B6914" stroke-width="1.5" opacity="0.15"/>
+  <line x1="230" y1="55" x2="215" y2="88" stroke="#8B6914" stroke-width="1.5" opacity="0.15"/>
+</svg>

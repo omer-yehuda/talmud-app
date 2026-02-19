@@ -1,0 +1,72 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Background parchment -->
+  <rect width="400" height="300" fill="#f5e6d3" rx="12"/>
+  <!-- Table -->
+  <ellipse cx="200" cy="220" rx="165" ry="22" fill="#744210" opacity="0.9"/>
+  <rect x="36" y="210" width="328" height="18" rx="4" fill="#8B6914"/>
+  <ellipse cx="200" cy="210" rx="164" ry="14" fill="#744210"/>
+  <rect x="70" y="226" width="14" height="40" rx="3" fill="#744210"/>
+  <rect x="316" y="226" width="14" height="40" rx="3" fill="#744210"/>
+  <!-- Tablecloth -->
+  <ellipse cx="200" cy="212" rx="160" ry="12" fill="#1a365d" opacity="0.85"/>
+  <ellipse cx="200" cy="209" rx="155" ry="7" fill="#1a365d" opacity="0.5"/>
+  <!-- Central goblet -->
+  <polygon points="190,150 210,150 218,210 182,210" fill="#8B6914"/>
+  <ellipse cx="200" cy="150" rx="22" ry="8" fill="#744210"/>
+  <ellipse cx="200" cy="150" rx="18" ry="5.5" fill="#8B6914"/>
+  <ellipse cx="200" cy="153" rx="16" ry="5" fill="#744210" opacity="0.7"/>
+  <rect x="196" y="190" width="8" height="12" rx="2" fill="#744210"/>
+  <ellipse cx="200" cy="204" rx="18" ry="5" fill="#744210"/>
+  <ellipse cx="193" cy="148" rx="5" ry="3" fill="#f5e6d3" opacity="0.35"/>
+  <!-- Left goblet -->
+  <polygon points="108,168 122,168 128,210 102,210" fill="#8B6914"/>
+  <ellipse cx="115" cy="168" rx="15" ry="5.5" fill="#744210"/>
+  <ellipse cx="115" cy="168" rx="11" ry="3.5" fill="#8B6914"/>
+  <ellipse cx="115" cy="170" rx="10" ry="3" fill="#744210" opacity="0.7"/>
+  <rect x="112" y="196" width="6" height="8" rx="1" fill="#744210"/>
+  <ellipse cx="115" cy="206" rx="13" ry="4" fill="#744210"/>
+  <!-- Right goblet -->
+  <polygon points="278,168 292,168 298,210 272,210" fill="#8B6914"/>
+  <ellipse cx="285" cy="168" rx="15" ry="5.5" fill="#744210"/>
+  <ellipse cx="285" cy="168" rx="11" ry="3.5" fill="#8B6914"/>
+  <ellipse cx="285" cy="170" rx="10" ry="3" fill="#744210" opacity="0.7"/>
+  <rect x="282" y="196" width="6" height="8" rx="1" fill="#744210"/>
+  <ellipse cx="285" cy="206" rx="13" ry="4" fill="#744210"/>
+  <!-- Left platter -->
+  <ellipse cx="75" cy="208" rx="32" ry="8" fill="#744210" opacity="0.7"/>
+  <ellipse cx="75" cy="205" rx="28" ry="6" fill="#8B6914" opacity="0.8"/>
+  <ellipse cx="68" cy="203" rx="8" ry="5" fill="#744210"/>
+  <ellipse cx="82" cy="203" rx="7" ry="4" fill="#744210"/>
+  <!-- Right platter -->
+  <ellipse cx="325" cy="208" rx="32" ry="8" fill="#744210" opacity="0.7"/>
+  <ellipse cx="325" cy="205" rx="28" ry="6" fill="#8B6914" opacity="0.8"/>
+  <ellipse cx="318" cy="203" rx="8" ry="5" fill="#744210"/>
+  <ellipse cx="332" cy="203" rx="7" ry="4" fill="#744210"/>
+  <!-- Left candle -->
+  <rect x="52" y="155" width="10" height="50" rx="3" fill="#f5e6d3"/>
+  <ellipse cx="57" cy="135" rx="5" ry="8" fill="#8B6914"/>
+  <ellipse cx="57" cy="136" rx="3" ry="5" fill="#f5e6d3" opacity="0.7"/>
+  <!-- Right candle -->
+  <rect x="338" y="155" width="10" height="50" rx="3" fill="#f5e6d3"/>
+  <ellipse cx="343" cy="135" rx="5" ry="8" fill="#8B6914"/>
+  <ellipse cx="343" cy="136" rx="3" ry="5" fill="#f5e6d3" opacity="0.7"/>
+  <!-- Hanging banner arch -->
+  <path d="M 50 80 Q 200 40 350 80" stroke="#1a365d" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- Pendants -->
+  <line x1="80" y1="78" x2="80" y2="108" stroke="#8B6914" stroke-width="2.5"/>
+  <polygon points="74,108 86,108 80,122" fill="#8B6914"/>
+  <line x1="140" y1="58" x2="140" y2="88" stroke="#8B6914" stroke-width="2.5"/>
+  <polygon points="134,88 146,88 140,102" fill="#8B6914"/>
+  <line x1="200" y1="48" x2="200" y2="78" stroke="#8B6914" stroke-width="2.5"/>
+  <polygon points="194,78 206,78 200,92" fill="#8B6914"/>
+  <line x1="260" y1="58" x2="260" y2="88" stroke="#8B6914" stroke-width="2.5"/>
+  <polygon points="254,88 266,88 260,102" fill="#8B6914"/>
+  <line x1="320" y1="78" x2="320" y2="108" stroke="#8B6914" stroke-width="2.5"/>
+  <polygon points="314,108 326,108 320,122" fill="#8B6914"/>
+  <!-- Decorative dots -->
+  <circle cx="160" cy="70" r="3" fill="#8B6914" opacity="0.4"/>
+  <circle cx="240" cy="65" r="3" fill="#8B6914" opacity="0.4"/>
+  <circle cx="110" cy="100" r="2" fill="#8B6914" opacity="0.3"/>
+  <circle cx="290" cy="100" r="2" fill="#8B6914" opacity="0.3"/>
+  <ellipse cx="200" cy="265" rx="150" ry="8" fill="#744210" opacity="0.12"/>
+</svg>

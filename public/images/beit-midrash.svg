@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#FDF6E3"/>
+
+  <!-- Floor -->
+  <rect x="0" y="240" width="400" height="60" fill="#D4A574" opacity="0.3"/>
+  <line x1="0" y1="240" x2="400" y2="240" stroke="#8B6914" stroke-width="1" opacity="0.5"/>
+
+  <!-- Back wall with arch -->
+  <rect x="40" y="60" width="320" height="180" fill="#F5E6D3" stroke="#8B6914" stroke-width="1.5" rx="4"/>
+
+  <!-- Central arch (Aron Kodesh) -->
+  <path d="M160 60 L160 120 Q200 80 240 120 L240 60" fill="#E8D5B7" stroke="#8B6914" stroke-width="1.5"/>
+  <rect x="170" y="100" width="60" height="80" fill="#C4956A" stroke="#8B6914" stroke-width="1" rx="2"/>
+  <line x1="200" y1="100" x2="200" y2="180" stroke="#8B6914" stroke-width="1"/>
+
+  <!-- Windows -->
+  <rect x="70" y="85" width="50" height="70" rx="25" fill="#87CEEB" stroke="#8B6914" stroke-width="1" opacity="0.6"/>
+  <rect x="280" y="85" width="50" height="70" rx="25" fill="#87CEEB" stroke="#8B6914" stroke-width="1" opacity="0.6"/>
+
+  <!-- Bookshelves left -->
+  <rect x="55" y="170" width="80" height="60" fill="#B8860B" stroke="#8B6914" stroke-width="1" rx="2"/>
+  <line x1="55" y1="185" x2="135" y2="185" stroke="#8B6914" stroke-width="0.5"/>
+  <line x1="55" y1="200" x2="135" y2="200" stroke="#8B6914" stroke-width="0.5"/>
+  <line x1="55" y1="215" x2="135" y2="215" stroke="#8B6914" stroke-width="0.5"/>
+  <!-- Book spines -->
+  <rect x="60" y="172" width="6" height="12" fill="#8B0000" rx="1"/>
+  <rect x="68" y="172" width="5" height="12" fill="#006400" rx="1"/>
+  <rect x="75" y="172" width="7" height="12" fill="#00008B" rx="1"/>
+  <rect x="84" y="172" width="5" height="12" fill="#8B4513" rx="1"/>
+  <rect x="91" y="172" width="6" height="12" fill="#4B0082" rx="1"/>
+
+  <!-- Bookshelves right -->
+  <rect x="265" y="170" width="80" height="60" fill="#B8860B" stroke="#8B6914" stroke-width="1" rx="2"/>
+  <line x1="265" y1="185" x2="345" y2="185" stroke="#8B6914" stroke-width="0.5"/>
+  <line x1="265" y1="200" x2="345" y2="200" stroke="#8B6914" stroke-width="0.5"/>
+  <line x1="265" y1="215" x2="345" y2="215" stroke="#8B6914" stroke-width="0.5"/>
+  <rect x="270" y="172" width="6" height="12" fill="#8B0000" rx="1"/>
+  <rect x="278" y="172" width="5" height="12" fill="#006400" rx="1"/>
+  <rect x="285" y="172" width="7" height="12" fill="#00008B" rx="1"/>
+  <rect x="294" y="172" width="5" height="12" fill="#8B4513" rx="1"/>
+  <rect x="301" y="172" width="6" height="12" fill="#4B0082" rx="1"/>
+
+  <!-- Study table -->
+  <rect x="100" y="210" width="200" height="8" fill="#8B6914" rx="2"/>
+  <rect x="110" y="218" width="6" height="30" fill="#8B6914" rx="1"/>
+  <rect x="284" y="218" width="6" height="30" fill="#8B6914" rx="1"/>
+
+  <!-- Open books on table -->
+  <path d="M160 205 L175 200 L190 205 L175 210 Z" fill="#FFF8DC" stroke="#8B6914" stroke-width="0.5"/>
+  <path d="M210 205 L225 200 L240 205 L225 210 Z" fill="#FFF8DC" stroke="#8B6914" stroke-width="0.5"/>
+
+  <!-- Scholar left (sitting) -->
+  <circle cx="140" cy="190" r="12" fill="#F5DEB3" stroke="#8B6914" stroke-width="1"/>
+  <rect x="132" y="202" width="16" height="20" fill="#2F4F4F" rx="3"/>
+  <circle cx="140" cy="184" r="4" fill="#333" opacity="0.3"/>
+
+  <!-- Scholar right (sitting) -->
+  <circle cx="260" cy="190" r="12" fill="#F5DEB3" stroke="#8B6914" stroke-width="1"/>
+  <rect x="252" y="202" width="16" height="20" fill="#2F4F4F" rx="3"/>
+  <circle cx="260" cy="184" r="4" fill="#333" opacity="0.3"/>
+
+  <!-- Ner Tamid (eternal lamp) -->
+  <line x1="200" y1="45" x2="200" y2="55" stroke="#8B6914" stroke-width="1"/>
+  <ellipse cx="200" cy="42" rx="8" ry="5" fill="#FFD700" stroke="#DAA520" stroke-width="0.5"/>
+  <ellipse cx="200" cy="38" rx="3" ry="5" fill="#FF6347" opacity="0.7"/>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <!-- Sky -->
+  <rect width="400" height="180" fill="#87CEEB"/>
+  <circle cx="320" cy="60" r="30" fill="#FFD700" opacity="0.8"/>
+
+  <!-- Clouds -->
+  <ellipse cx="100" cy="50" rx="40" ry="15" fill="white" opacity="0.7"/>
+  <ellipse cx="80" cy="45" rx="25" ry="12" fill="white" opacity="0.6"/>
+
+  <!-- Mountains in background -->
+  <path d="M0 160 L60 100 L120 140 L180 90 L240 130 L300 80 L360 120 L400 100 L400 180 L0 180 Z" fill="#9B8B6E" opacity="0.4"/>
+
+  <!-- Sea of Galilee -->
+  <rect x="0" y="170" width="400" height="80" fill="#4682B4" opacity="0.7"/>
+  <path d="M0 185 Q50 180 100 185 Q150 190 200 185 Q250 180 300 185 Q350 190 400 185" stroke="#5F9EA0" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M0 195 Q50 190 100 195 Q150 200 200 195 Q250 190 300 195 Q350 200 400 195" stroke="#5F9EA0" stroke-width="1" fill="none" opacity="0.4"/>
+
+  <!-- Shore / Land -->
+  <rect x="0" y="240" width="400" height="60" fill="#C4A265"/>
+  <path d="M0 240 Q100 235 200 240 Q300 245 400 240 L400 250 Q300 255 200 250 Q100 245 0 250 Z" fill="#D4B27A"/>
+
+  <!-- Ancient stone buildings -->
+  <rect x="50" y="150" width="50" height="90" fill="#D4A574" stroke="#8B6914" stroke-width="1" rx="2"/>
+  <rect x="55" y="160" width="15" height="20" rx="7" fill="#87CEEB" stroke="#8B6914" stroke-width="0.5" opacity="0.6"/>
+  <rect x="80" y="160" width="15" height="20" rx="7" fill="#87CEEB" stroke="#8B6914" stroke-width="0.5" opacity="0.6"/>
+  <rect x="55" y="210" width="12" height="25" fill="#8B6914" rx="1"/>
+
+  <rect x="110" y="130" width="60" height="110" fill="#D4A574" stroke="#8B6914" stroke-width="1" rx="2"/>
+  <!-- Dome -->
+  <path d="M110 130 Q140 100 170 130" fill="#C4956A" stroke="#8B6914" stroke-width="1"/>
+  <rect x="120" y="145" width="15" height="20" rx="7" fill="#87CEEB" stroke="#8B6914" stroke-width="0.5" opacity="0.6"/>
+  <rect x="145" y="145" width="15" height="20" rx="7" fill="#87CEEB" stroke="#8B6914" stroke-width="0.5" opacity="0.6"/>
+
+  <!-- Tower/Minaret -->
+  <rect x="180" y="110" width="25" height="130" fill="#D4A574" stroke="#8B6914" stroke-width="1" rx="2"/>
+  <rect x="178" y="105" width="29" height="10" fill="#C4956A" stroke="#8B6914" stroke-width="0.5" rx="2"/>
+
+  <!-- Palm trees -->
+  <rect x="248" y="200" width="4" height="45" fill="#8B6914" rx="1"/>
+  <path d="M250 200 Q260 180 275 185" stroke="#228B22" stroke-width="3" fill="none"/>
+  <path d="M250 200 Q240 180 225 185" stroke="#228B22" stroke-width="3" fill="none"/>
+  <path d="M250 200 Q255 175 265 175" stroke="#228B22" stroke-width="2.5" fill="none"/>
+  <path d="M250 200 Q245 175 235 175" stroke="#228B22" stroke-width="2.5" fill="none"/>
+
+  <rect x="308" y="205" width="4" height="40" fill="#8B6914" rx="1"/>
+  <path d="M310 205 Q320 185 335 190" stroke="#228B22" stroke-width="3" fill="none"/>
+  <path d="M310 205 Q300 185 285 190" stroke="#228B22" stroke-width="3" fill="none"/>
+  <path d="M310 205 Q315 180 325 180" stroke="#228B22" stroke-width="2.5" fill="none"/>
+
+  <!-- Small boat on water -->
+  <path d="M280 195 Q290 200 310 195 Q300 205 280 195 Z" fill="#8B4513" stroke="#5C3317" stroke-width="0.5"/>
+  <line x1="295" y1="185" x2="295" y2="195" stroke="#5C3317" stroke-width="1"/>
+  <path d="M295 185 L305 190 L295 192" fill="#FFF8DC" stroke="#8B6914" stroke-width="0.3"/>
+</svg>

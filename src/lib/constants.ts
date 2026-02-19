@@ -22,10 +22,6 @@ export const ALT_TEXT = {
   beitMidrash: "בית המדרש",
 } as const;
 
-const API_PATHS = {
-  images: "/api/images",
-} as const;
-
 export function getImagePath(imageId: string): string {
-  return `${API_PATHS.images}/${imageId}`;
+  return `/images/${imageId}.svg`;
 }

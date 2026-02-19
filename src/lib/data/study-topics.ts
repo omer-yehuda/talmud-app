@@ -5,7 +5,7 @@ export const studyTopics: StudyTopic[] = [
     id: 2,
     page: "ב",
     title: "חלוקת ימי הקריאה – י״א–ט״ו",
-    image: "/api/images/calendar",
+    image: "/images/calendar.svg",
     caption: "הרחבת ימי הקריאה ליישובים שונים",
     gemara:
       "המשנה קובעת שאפשר לקרוא את המגילה בי״א, י״ב, י״ג, י״ד וט״ו — בהתאם לכפרים, עיירות ומוקפות חומה. הגמרא מבררת כיצד ניתן להקדים את המצווה לפני זמן הנס, לומדת מן הפסוקים ומבהירה שהכפרים סמכו על הערים 'מפני שמספקים מים ומזון'.",
@@ -26,7 +26,7 @@ export const studyTopics: StudyTopic[] = [
     id: 3,
     page: "ג",
     title: "מוקפות חומה – מימות יהושע ולא מימות אחשוורוש",
-    image: "/api/images/walls",
+    image: "/images/walls.svg",
     caption: "מקור ההבחנה בין פרזים למוקפים",
     gemara:
       "הגמרא דורשת מן הפסוקים ומבררת מדוע מוקפות קוראות בט״ו דווקא אם חומתן מימות יהושע (ולא מהתקופה של פורים). הסיבה: לכבד את ארץ ישראל שהייתה חרבה בימי אחשוורוש. הדיון ממשיך בזיהוי חומות קדומות ובחשש לשינוי מדור לדור.",
@@ -47,7 +47,7 @@ export const studyTopics: StudyTopic[] = [
     id: 4,
     page: "ד",
     title: "עשרה בטלנים – הגדרת עיר גדולה",
-    image: "/api/images/minyan",
+    image: "/images/minyan.svg",
     caption: "מה הופך מקום לעיר?",
     gemara:
       "הגמרא מסבירה שעיר גדולה מוגדרת לפי עשרה 'בטלנים' — אנשים שזמנם מופקד לתפילה ולצרכי הציבור כדי שלא יתבטל המניין. לפי זה נקבעת חובת הקריאה ביום רגיל ולא ביום הכניסה.",
@@ -68,7 +68,7 @@ export const studyTopics: StudyTopic[] = [
     id: 5,
     page: "ה",
     title: "דיני י״ד וט״ו – מה תלוי בזמן הקריאה?",
-    image: "/api/images/mishloachmanot",
+    image: "/images/mishloachmanot.svg",
     caption: "הקשר בין זמן הקריאה למצוות היום",
     gemara:
       "הגמרא בוחנת האם מצוות פורים (משלוח מנות, מתנות לאביונים, משתה ושמחה) תלויות ביום הקריאה. הסיכום: כל מצוות היום נמשכות אחרי יום הקריאה של כל קהילה — י״ד לפרזים וט״ו למוקפים.",
@@ -89,7 +89,7 @@ export const studyTopics: StudyTopic[] = [
     id: 6,
     page: "ו",
     title: "רקת–טבריה: האם הים נחשב חומה?",
-    image: "/api/images/tiberias",
+    image: "/images/tiberias.svg",
     caption: "זיהוי טבריה ושאלת חומת הים",
     gemara:
       "הגמרא מזהה 'רקת' כטבריה ושואלת האם הים העוטף אותה נחשב כחומה לעניין מקרא מגילה. חזקיה היה קורא גם בי\"ד וגם בט\"ו מספק. הדיון ממשיך לגבי ערים נוספות.",
@@ -110,7 +110,7 @@ export const studyTopics: StudyTopic[] = [
     id: 7,
     page: "ז",
     title: "כתיבת המגילה – רוח הקודש",
-    image: "/api/images/megillah",
+    image: "/images/megillah.svg",
     caption: "האם נכתבה ברוח הקודש?",
     gemara:
       "הגמרא מביאה כמה ראיות לכך שמגילת אסתר נכתבה ברוח הקודש, כגון ידיעת מחשבותיו של המן. מובאת גם הברייתא על תרגום השבעים ונס ההשוואה בין הזקנים.",
@@ -131,7 +131,7 @@ export const studyTopics: StudyTopic[] = [
     id: 8,
     page: "ח",
     title: "אין בין – הבדלים הלכתיים",
-    image: "/api/images/compare",
+    image: "/images/compare.svg",
     caption: "תחילת סדרת ההשוואות",
     gemara:
       "המשנה מציינת הבדלים בין מוציא שם רע לבין שאר קנסות, ובין כהן משוח בשמן למרובה בגדים. הגמרא מפרטת מהו ההבדל הממשי ומהו שאינו שונה.",
@@ -152,7 +152,7 @@ export const studyTopics: StudyTopic[] = [
     id: 9,
     page: "ט",
     title: "המשך 'אין בין' – כהן משוח מלחמה",
-    image: "/api/images/warrior",
+    image: "/images/warrior.svg",
     caption: "הבדלים בין סמכויות ותפקידים",
     gemara:
       "הגמרא ממשיכה לברר את ההבדלים בין כהן משוח מלחמה למרובה בגדים — מתי הוא משמש, מה סמכויותיו ומתי הוא מחליף.",
@@ -173,7 +173,7 @@ export const studyTopics: StudyTopic[] = [
     id: 10,
     page: "י",
     title: "'ויהי בימי' – לשון צער",
-    image: "/api/images/ahasuerus",
+    image: "/images/ahasuerus.svg",
     caption: "פתיחת הסיפור בממד של צער",
     gemara:
       "הגמרא קובעת שכל מקום שנאמר 'ויהי בימי' – לשון צער. מובאות דרשות על פסוקי הפתיחה ועל דמותו של אחשוורוש.",
@@ -194,7 +194,7 @@ export const studyTopics: StudyTopic[] = [
     id: 11,
     page: "יא",
     title: "שלושה מלכו בכיפה – אחשוורוש ואחרים",
-    image: "/api/images/crown",
+    image: "/images/crown.svg",
     caption: "היקף שלטונו של אחשוורוש",
     gemara:
       "הגמרא מביאה את הדעה שאחשוורוש היה אחד משלושה שמלכו על העולם כולו — יחד עם אחאב ונבוכדנצר. נידונות ראיות מן הפסוקים.",
@@ -215,7 +215,7 @@ export const studyTopics: StudyTopic[] = [
     id: 12,
     page: "יב",
     title: "משתה אחשוורוש – ושתי והגזירה",
-    image: "/api/images/vashti",
+    image: "/images/vashti.svg",
     caption: "העימות שהוביל להדחת ושתי",
     gemara:
       "הגמרא דנה בשכרותו של אחשוורוש, בדרישתו מוושתי ובכך שנענשה במידה כנגד מידה על שביזתה בנות ישראל.",
@@ -236,7 +236,7 @@ export const studyTopics: StudyTopic[] = [
     id: 13,
     page: "יג",
     title: "המן – מידה כנגד מידה",
-    image: "/api/images/justice",
+    image: "/images/justice.svg",
     caption: "סיפור המן חוזר עליו כבומרנג",
     gemara:
       "הגמרא מתארת כיצד כל מעשה שתכנן המן נגד מרדכי חזר עליו עצמו — העץ, בגדי המלכות, הריצה ברחוב.",
@@ -257,7 +257,7 @@ export const studyTopics: StudyTopic[] = [
     id: 14,
     page: "יד",
     title: "תקנת הנביאים – קריאת המגילה",
-    image: "/api/images/prophets",
+    image: "/images/prophets.svg",
     caption: "מי תקן את מצוות פורים?",
     gemara:
       "הגמרא שואלת מי תיקן את קריאת המגילה — נביאים הראשונים, משה עצמו או אנשי כנסת הגדולה. מסקנה: הנביאים שבאותו דור תקנו לציין את הנס.",
@@ -278,7 +278,7 @@ export const studyTopics: StudyTopic[] = [
     id: 15,
     page: "טו",
     title: "שבע נביאות – מי הן ומה נתנבאו",
-    image: "/api/images/prophetesses",
+    image: "/images/prophetesses.svg",
     caption: "שרה, מרים, דבורה, חנה, אביגיל, חולדה ואסתר",
     gemara:
       "הגמרא מונה שבע נביאות: שרה, מרים, דבורה, חנה, אביגיל, חולדה ואסתר. לכל אחת מובאת ראיה מהכתובים לכך שנתנבאה, ונידונים פרטי נבואותיהן.",
@@ -299,7 +299,7 @@ export const studyTopics: StudyTopic[] = [
     id: 16,
     page: "טז",
     title: "קריאת המגילה – זמנה ודיניה",
-    image: "/api/images/reading",
+    image: "/images/reading.svg",
     caption: "הלכות קריאת המגילה",
     gemara:
       "הגמרא דנה בזמן קריאת המגילה – בלילה וביום, בציבור וביחיד. נקבע שחייב לקרוא את כולה, ואם דילג אפילו פסוק אחד – לא יצא.",
@@ -320,7 +320,7 @@ export const studyTopics: StudyTopic[] = [
     id: 17,
     page: "יז",
     title: "קריאה על פה ובלשונות שונות",
-    image: "/api/images/languages",
+    image: "/images/languages.svg",
     caption: "בעל פה, תרגום ולשון הקודש",
     gemara:
       "הגמרא קובעת שהקורא את המגילה על פה – לא יצא. נידון גם דין הקורא בלשון אחרת: לדעת רבי – יצא, ולחכמים – רק בלשון הקודש.",
@@ -341,7 +341,7 @@ export const studyTopics: StudyTopic[] = [
     id: 18,
     page: "יח",
     title: "פסולי המגילה – חסר ויתר",
-    image: "/api/images/scroll",
+    image: "/images/scroll.svg",
     caption: "דיני כשרות המגילה",
     gemara:
       "הגמרא מפרטת מה פוסל את המגילה: כתובה בסירוס, חסר אות, יתר אות, כתובה על נייר או עור שאינו מעובד כהלכה.",
@@ -362,7 +362,7 @@ export const studyTopics: StudyTopic[] = [
     id: 19,
     page: "יט",
     title: "מי קורא ומי שומע",
-    image: "/api/images/congregation",
+    image: "/images/congregation.svg",
     caption: "חיוב נשים, עבדים וקטנים",
     gemara:
       "הגמרא דנה במי חייב בקריאת המגילה: נשים חייבות שאף הן היו באותו הנס. קטן אינו מוציא את הגדולים, ועבד – מחלוקת.",
@@ -383,7 +383,7 @@ export const studyTopics: StudyTopic[] = [
     id: 20,
     page: "כ",
     title: "ברכות המגילה",
-    image: "/api/images/blessing",
+    image: "/images/blessing.svg",
     caption: "הברכות לפני ואחרי הקריאה",
     gemara:
       "הגמרא מביאה את נוסח הברכות: לפני הקריאה – 'על מקרא מגילה' ו'שהחיינו', ולאחריה – 'הרב את ריבנו'. נידון האם מברכים ביום כבלילה.",
@@ -404,7 +404,7 @@ export const studyTopics: StudyTopic[] = [
     id: 21,
     page: "כא",
     title: "דיני קריאת התורה",
-    image: "/api/images/torah",
+    image: "/images/torah.svg",
     caption: "עליות, קריאה והפטרה",
     gemara:
       "הגמרא עוברת לדיני קריאת התורה: כמה עולים בכל יום, מי קורא ראשון (כהן, לוי, ישראל), ומה ההפטרה בכל שבת.",
@@ -425,7 +425,7 @@ export const studyTopics: StudyTopic[] = [
     id: 22,
     page: "כב",
     title: "סדר הקריאה בימים מיוחדים",
-    image: "/api/images/special_days",
+    image: "/images/special_days.svg",
     caption: "ראש חודש, חנוכה ופורים",
     gemara:
       "הגמרא מפרטת מה קוראים בראש חודש, בחנוכה, בפורים ובתעניות. נקבע סדר הפרשיות והעליות לכל יום.",
@@ -446,7 +446,7 @@ export const studyTopics: StudyTopic[] = [
     id: 23,
     page: "כג",
     title: "מפטיר והפטרה",
-    image: "/api/images/haftara",
+    image: "/images/haftara.svg",
     caption: "דיני ההפטרה בנביאים",
     gemara:
       "הגמרא דנה בדיני ההפטרה: מי רשאי להפטיר, כמה פסוקים מינימום, מה הקשר בין ההפטרה לפרשה, והאם צריך לגלול את הספר.",
@@ -467,7 +467,7 @@ export const studyTopics: StudyTopic[] = [
     id: 24,
     page: "כד",
     title: "מעמדות ומושבות",
-    image: "/api/images/standing",
+    image: "/images/standing.svg",
     caption: "עמידה וישיבה בקריאה",
     gemara:
       "הגמרא דנה מתי עומדים ומתי יושבים: בקריאת התורה, בברכות, בקדיש. נידונים כללי כבוד הציבור והספר.",
@@ -488,7 +488,7 @@ export const studyTopics: StudyTopic[] = [
     id: 25,
     page: "כה",
     title: "כבוד בית הכנסת",
-    image: "/api/images/synagogue",
+    image: "/images/synagogue.svg",
     caption: "קדושת המקום ושימושיו",
     gemara:
       "הגמרא דנה בקדושת בית הכנסת: אין אוכלים בו, אין ישנים בו, אין נכנסים בו להינצל מחמה או מגשם. ומה הדין אם נחרב.",
@@ -509,7 +509,7 @@ export const studyTopics: StudyTopic[] = [
     id: 26,
     page: "כו",
     title: "מכירת בית הכנסת",
-    image: "/api/images/sale",
+    image: "/images/sale.svg",
     caption: "דיני מכירה ושימוש בדמים",
     gemara:
       "הגמרא דנה באיזה תנאים מותר למכור בית כנסת, ומה עושים בדמים: מעלים בקודש ולא מורידים – יכולים לקנות ארון קודש אך לא להיפך.",
@@ -530,7 +530,7 @@ export const studyTopics: StudyTopic[] = [
     id: 27,
     page: "כז",
     title: "קדושת ספרים וכתבי קודש",
-    image: "/api/images/books",
+    image: "/images/books.svg",
     caption: "דיני גניזה ושימוש",
     gemara:
       "הגמרא דנה בקדושת ספרי תורה, נביאים וכתובים: מתי גונזים, מתי שורפים, והאם מותר למכור ספר תורה.",
@@ -551,7 +551,7 @@ export const studyTopics: StudyTopic[] = [
     id: 28,
     page: "כח",
     title: "דיני בית המדרש",
-    image: "/api/images/beit-midrash",
+    image: "/images/beit-midrash.svg",
     caption: "קדושת בית המדרש וחומרותיו",
     gemara:
       "הגמרא קובעת שקדושת בית המדרש חמורה מבית הכנסת – כי בו לומדים תורה. לכן דיניו חמורים יותר לעניין מכירה ושימוש.",
@@ -572,7 +572,7 @@ export const studyTopics: StudyTopic[] = [
     id: 29,
     page: "כט",
     title: "ארבע פרשיות – שקלים וזכור",
-    image: "/api/images/four_portions",
+    image: "/images/four_portions.svg",
     caption: "פרשיות מיוחדות לפני פסח",
     gemara:
       "הגמרא מפרטת את ארבע הפרשיות שקוראים לפני פסח: שקלים, זכור, פרה והחודש. נידונים זמניהן ומקורותיהן.",
@@ -593,7 +593,7 @@ export const studyTopics: StudyTopic[] = [
     id: 30,
     page: "ל",
     title: "פרשת פרה והחודש",
-    image: "/api/images/red_heifer",
+    image: "/images/red_heifer.svg",
     caption: "טהרה והכנה לפסח",
     gemara:
       "הגמרא ממשיכה בדיני פרשת פרה (להיטהר לפסח) ופרשת החודש (הלכות ניסן וקרבן פסח). נידון סדר הקריאות כשחלים בשבתות סמוכות.",
@@ -614,7 +614,7 @@ export const studyTopics: StudyTopic[] = [
     id: 31,
     page: "לא",
     title: "קריאות המועדים",
-    image: "/api/images/holidays",
+    image: "/images/holidays.svg",
     caption: "מה קוראים בכל חג",
     gemara:
       "הגמרא מפרטת מה קוראים בכל מועד: בפסח, בשבועות, בראש השנה, ביום הכיפורים ובסוכות. נקבע גם מה מפטירים בכל חג.",
@@ -635,7 +635,7 @@ export const studyTopics: StudyTopic[] = [
     id: 32,
     page: "לב",
     title: "סיום המסכת – כבוד התורה",
-    image: "/api/images/conclusion",
+    image: "/images/conclusion.svg",
     caption: "סיום מסכת מגילה",
     gemara:
       "הגמרא מסיימת בדיני כבוד התורה ולומדיה, חשיבות קריאת התורה בציבור, ומסרים על ערך הלימוד והשמירה על מסורת ישראל.",

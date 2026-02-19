@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Background parchment -->
+  <rect width="400" height="300" fill="#f5e6d3" rx="8"/>
+
+  <!-- Calendar body shadow -->
+  <rect x="58" y="42" width="290" height="222" rx="10" fill="#2d3748" fill-opacity="0.15"/>
+
+  <!-- Calendar body -->
+  <rect x="54" y="38" width="290" height="222" rx="10" fill="#f5e6d3" stroke="#8B6914" stroke-width="2"/>
+
+  <!-- Calendar header band -->
+  <rect x="54" y="38" width="290" height="44" rx="10" fill="#1a365d"/>
+  <rect x="54" y="60" width="290" height="22" fill="#1a365d"/>
+
+  <!-- Calendar ring holes (top) -->
+  <circle cx="110" cy="38" r="6" fill="#f5e6d3" stroke="#8B6914" stroke-width="1.5"/>
+  <circle cx="160" cy="38" r="6" fill="#f5e6d3" stroke="#8B6914" stroke-width="1.5"/>
+  <circle cx="210" cy="38" r="6" fill="#f5e6d3" stroke="#8B6914" stroke-width="1.5"/>
+  <circle cx="260" cy="38" r="6" fill="#f5e6d3" stroke="#8B6914" stroke-width="1.5"/>
+  <circle cx="310" cy="38" r="6" fill="#f5e6d3" stroke="#8B6914" stroke-width="1.5"/>
+
+  <!-- Ring binder arcs (gold wire loops) -->
+  <path d="M110 32 Q118 22 126 32" stroke="#8B6914" stroke-width="2" fill="none"/>
+  <path d="M160 32 Q168 22 176 32" stroke="#8B6914" stroke-width="2" fill="none"/>
+  <path d="M210 32 Q218 22 226 32" stroke="#8B6914" stroke-width="2" fill="none"/>
+  <path d="M260 32 Q268 22 276 32" stroke="#8B6914" stroke-width="2" fill="none"/>
+  <path d="M310 32 Q318 22 326 32" stroke="#8B6914" stroke-width="2" fill="none"/>
+
+  <!-- Day-of-week header labels (7 columns, represented as dots) -->
+  <!-- Using small gold lines as column headers -->
+  <rect x="66"  y="47" width="24" height="4" rx="2" fill="#8B6914" fill-opacity="0.7"/>
+  <rect x="98"  y="47" width="24" height="4" rx="2" fill="#8B6914" fill-opacity="0.7"/>
+  <rect x="130" y="47" width="24" height="4" rx="2" fill="#8B6914" fill-opacity="0.7"/>
+  <rect x="162" y="47" width="24" height="4" rx="2" fill="#8B6914" fill-opacity="0.7"/>
+  <rect x="194" y="47" width="24" height="4" rx="2" fill="#8B6914" fill-opacity="0.7"/>
+  <rect x="226" y="47" width="24" height="4" rx="2" fill="#8B6914" fill-opacity="0.7"/>
+  <rect x="258" y="47" width="24" height="4" rx="2" fill="#8B6914" fill-opacity="0.7"/>
+
+  <!-- Divider line below header -->
+  <line x1="54" y1="82" x2="344" y2="82" stroke="#8B6914" stroke-width="1" stroke-opacity="0.4"/>
+
+  <!-- === CALENDAR GRID (5 weeks x 7 days) === -->
+  <!-- Week 1 -->
+  <rect x="66"  y="90" width="24" height="20" rx="3" fill="#e8d5bc"/>
+  <rect x="98"  y="90" width="24" height="20" rx="3" fill="#e8d5bc"/>
+  <rect x="130" y="90" width="24" height="20" rx="3" fill="#e8d5bc"/>
+  <!-- SPECIAL DAY: Rosh Chodesh highlighted (deep blue) -->
+  <rect x="162" y="90" width="24" height="20" rx="3" fill="#1a365d"/>
+  <circle cx="174" cy="100" r="5" fill="#8B6914"/>
+  <rect x="194" y="90" width="24" height="20" rx="3" fill="#e8d5bc"/>
+  <rect x="226" y="90" width="24" height="20" rx="3" fill="#e8d5bc"/>
+  <!-- Shabbat (last column, brown-gold) -->
+  <rect x="258" y="90" width="24" height="20" rx="3" fill="#744210" fill-opacity="0.6"/>
+
+  <!-- Week 2 -->
+  <rect x="66"  y="116" width="24" height="20" rx="3" fill="#e8d5bc"/>
+  <rect x="98"  y="116" width="24" height="20" rx="3" fill="#e8d5bc"/>
+  <rect x="130" y="116" width="24" height="20" rx="3" fill="#e8d5bc"/>
+  <rect x="162" y="116" width="24" height="20" rx="3" fill="#e8d5bc"/>
+  <!-- SPECIAL DAY: Purim (bright gold star) -->
+  <rect x="194" y="116" width="24" height="20" rx="3" fill="#8B6914"/>
+  <!-- Star of David shape as highlight -->
+  <polygon points="206,120 208,124 212,124 209,127 210,131 206,129 202,131 203,127 200,124 204,124" fill="#f5e6d3"/>
+  <rect x="226" y="116" width="24" height="20" rx="3" fill="#e8d5bc"/>
+  <rect x="258" y="116" width="24" height="20" rx="3" fill="#744210" fill-opacity="0.6"/>
+
+  <!-- Week 3 -->
+  <rect x="66"  y="142" width="24" height="20" rx="3" fill="#e8d5bc"/>
+  <rect x="98"  y="142" width="24" height="20" rx="3" fill="#e8d5bc"/>
+  <!-- SPECIAL DAY: another holiday -->
+  <rect x="130" y="142" width="24" height="20" rx="3" fill="#1a365d"/>
+  <circle cx="142" cy="152" r="5" fill="#8B6914"/>
+  <rect x="162" y="142" width="24" height="20" rx="3" fill="#e8d5bc"/>
+  <rect x="194" y="142" width="24" height="20" rx="3" fill="#e8d5bc"/>
+  <rect x="226" y="142" width="24" height="20" rx="3" fill="#e8d5bc"/>
+  <rect x="258" y="142" width="24" height="20" rx="3" fill="#744210" fill-opacity="0.6"/>
+
+  <!-- Week 4 -->
+  <rect x="66"  y="168" width="24" height="20" rx="3" fill="#e8d5bc"/>
+  <rect x="98"  y="168" width="24" height="20" rx="3" fill="#e8d5bc"/>
+  <rect x="130" y="168" width="24" height="20" rx="3" fill="#e8d5bc"/>
+  <rect x="162" y="168" width="24" height="20" rx="3" fill="#e8d5bc"/>
+  <!-- SPECIAL DAY: Fast day (dark circle) -->
+  <rect x="194" y="168" width="24" height="20" rx="3" fill="#2d3748"/>
+  <circle cx="206" cy="178" r="4" fill="#8B6914" fill-opacity="0.7"/>
+  <rect x="226" y="168" width="24" height="20" rx="3" fill="#e8d5bc"/>
+  <rect x="258" y="168" width="24" height="20" rx="3" fill="#744210" fill-opacity="0.6"/>
+
+  <!-- Week 5 -->
+  <rect x="66"  y="194" width="24" height="20" rx="3" fill="#e8d5bc"/>
+  <rect x="98"  y="194" width="24" height="20" rx="3" fill="#e8d5bc"/>
+  <!-- SPECIAL DAY: holiday highlight -->
+  <rect x="130" y="194" width="24" height="20" rx="3" fill="#8B6914"/>
+  <circle cx="142" cy="204" r="5" fill="#f5e6d3"/>
+  <rect x="162" y="194" width="24" height="20" rx="3" fill="#e8d5bc"/>
+  <rect x="194" y="194" width="24" height="20" rx="3" fill="#e8d5bc"/>
+  <rect x="226" y="194" width="24" height="20" rx="3" fill="#e8d5bc"/>
+  <rect x="258" y="194" width="24" height="20" rx="3" fill="#744210" fill-opacity="0.6"/>
+
+  <!-- Horizontal grid lines -->
+  <line x1="54"  y1="114" x2="344" y2="114" stroke="#8B6914" stroke-width="0.5" stroke-opacity="0.3"/>
+  <line x1="54"  y1="140" x2="344" y2="140" stroke="#8B6914" stroke-width="0.5" stroke-opacity="0.3"/>
+  <line x1="54"  y1="166" x2="344" y2="166" stroke="#8B6914" stroke-width="0.5" stroke-opacity="0.3"/>
+  <line x1="54"  y1="192" x2="344" y2="192" stroke="#8B6914" stroke-width="0.5" stroke-opacity="0.3"/>
+  <line x1="54"  y1="218" x2="344" y2="218" stroke="#8B6914" stroke-width="0.5" stroke-opacity="0.3"/>
+
+  <!-- Vertical grid lines -->
+  <line x1="92"  y1="82" x2="92"  y2="220" stroke="#8B6914" stroke-width="0.5" stroke-opacity="0.25"/>
+  <line x1="124" y1="82" x2="124" y2="220" stroke="#8B6914" stroke-width="0.5" stroke-opacity="0.25"/>
+  <line x1="156" y1="82" x2="156" y2="220" stroke="#8B6914" stroke-width="0.5" stroke-opacity="0.25"/>
+  <line x1="188" y1="82" x2="188" y2="220" stroke="#8B6914" stroke-width="0.5" stroke-opacity="0.25"/>
+  <line x1="220" y1="82" x2="220" y2="220" stroke="#8B6914" stroke-width="0.5" stroke-opacity="0.25"/>
+  <line x1="252" y1="82" x2="252" y2="220" stroke="#8B6914" stroke-width="0.5" stroke-opacity="0.25"/>
+
+  <!-- Legend dots below calendar -->
+  <circle cx="72"  cy="242" r="6" fill="#1a365d"/>
+  <rect x="82"  y="238" width="46" height="4" rx="2" fill="#2d3748" fill-opacity="0.5"/>
+  <rect x="82"  y="244" width="38" height="4" rx="2" fill="#2d3748" fill-opacity="0.5"/>
+
+  <circle cx="160" cy="242" r="6" fill="#8B6914"/>
+  <rect x="170" y="238" width="46" height="4" rx="2" fill="#2d3748" fill-opacity="0.5"/>
+  <rect x="170" y="244" width="38" height="4" rx="2" fill="#2d3748" fill-opacity="0.5"/>
+
+  <circle cx="248" cy="242" r="6" fill="#2d3748"/>
+  <rect x="258" y="238" width="46" height="4" rx="2" fill="#2d3748" fill-opacity="0.5"/>
+  <rect x="258" y="244" width="38" height="4" rx="2" fill="#2d3748" fill-opacity="0.5"/>
+
+  <!-- Gold border frame -->
+  <rect x="2" y="2" width="396" height="296" rx="8" fill="none" stroke="#8B6914" stroke-width="2.5"/>
+  <rect x="6" y="6" width="388" height="288" rx="6" fill="none" stroke="#8B6914" stroke-width="0.8" stroke-opacity="0.4"/>
+</svg>

@@ -1,0 +1,43 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f5e6d3"/>
+  <!-- Sky panel -->
+  <rect x="0" y="0" width="400" height="180" fill="#e8d5bc"/>
+  <!-- Ground -->
+  <rect x="0" y="240" width="400" height="60" fill="#c4a882"/>
+  <!-- Main building body -->
+  <rect x="80" y="130" width="240" height="115" fill="#8B6914" rx="4"/>
+  <!-- Main roof pediment -->
+  <polygon points="60,130 200,50 340,130" fill="#744210"/>
+  <polygon points="80,130 200,65 320,130" fill="#8B6914"/>
+  <!-- Dome -->
+  <ellipse cx="200" cy="60" rx="30" ry="22" fill="#1a365d"/>
+  <ellipse cx="200" cy="58" rx="22" ry="16" fill="#2d5a9e"/>
+  <!-- Star of David on dome -->
+  <polygon points="200,42 205,52 216,52 207,58 211,69 200,63 189,69 193,58 184,52 195,52" fill="#f5e6d3" opacity="0.9"/>
+  <!-- Left tower -->
+  <rect x="55" y="100" width="50" height="145" fill="#744210" rx="2"/>
+  <polygon points="45,100 80,65 115,100" fill="#2d3748"/>
+  <rect x="67" y="140" width="26" height="28" fill="#1a365d" rx="13 13 0 0"/>
+  <!-- Right tower -->
+  <rect x="295" y="100" width="50" height="145" fill="#744210" rx="2"/>
+  <polygon points="285,100 320,65 355,100" fill="#2d3748"/>
+  <rect x="307" y="140" width="26" height="28" fill="#1a365d" rx="13 13 0 0"/>
+  <!-- Main entrance arch -->
+  <rect x="165" y="175" width="70" height="70" fill="#1a365d" rx="35 35 0 0"/>
+  <rect x="175" y="200" width="50" height="45" fill="#0d2447" rx="25 25 0 0"/>
+  <!-- Left arched window -->
+  <rect x="100" y="150" width="40" height="50" fill="#1a365d" rx="20 20 0 0"/>
+  <rect x="108" y="158" width="24" height="34" fill="#2d5a9e" rx="12 12 0 0"/>
+  <!-- Right arched window -->
+  <rect x="260" y="150" width="40" height="50" fill="#1a365d" rx="20 20 0 0"/>
+  <rect x="268" y="158" width="24" height="34" fill="#2d5a9e" rx="12 12 0 0"/>
+  <!-- Steps -->
+  <rect x="140" y="242" width="120" height="8" fill="#c4a882" rx="2"/>
+  <rect x="150" y="238" width="100" height="6" fill="#d4b892" rx="2"/>
+  <rect x="160" y="234" width="80" height="6" fill="#e4c8a2" rx="2"/>
+  <!-- Cornice lines -->
+  <rect x="80" y="128" width="240" height="5" fill="#2d3748" rx="1"/>
+  <rect x="55" y="128" width="50" height="4" fill="#2d3748" rx="1"/>
+  <rect x="295" y="128" width="50" height="4" fill="#2d3748" rx="1"/>
+</svg>

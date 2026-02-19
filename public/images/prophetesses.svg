@@ -1,0 +1,83 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <!-- Background parchment -->
+  <rect width="400" height="300" fill="#f5e6d3" rx="12"/>
+  <ellipse cx="200" cy="155" rx="120" ry="110" fill="#8B6914" opacity="0.05"/>
+
+  <!-- Ground shadow -->
+  <ellipse cx="200" cy="278" rx="75" ry="9" fill="#744210" opacity="0.15"/>
+
+  <!-- Flowing outer robe - wide and elegant -->
+  <path d="M 140,260 Q 145,200 175,168 L 225,168 Q 255,200 260,260 Z" fill="#1a365d"/>
+  <!-- Robe flowing sides -->
+  <path d="M 148,258 Q 138,230 145,195" stroke="#8B6914" stroke-width="2" fill="none" opacity="0.4"/>
+  <path d="M 252,258 Q 262,230 255,195" stroke="#8B6914" stroke-width="2" fill="none" opacity="0.4"/>
+  <!-- Robe hem decorative border -->
+  <path d="M 140,260 Q 200,248 260,260" stroke="#8B6914" stroke-width="3" fill="none"/>
+  <!-- Inner robe lighter -->
+  <polygon points="183,258 188,170 212,170 217,258" fill="#1a365d" opacity="0.5"/>
+
+  <!-- Torso -->
+  <ellipse cx="200" cy="162" rx="30" ry="20" fill="#1a365d"/>
+  <!-- Neckline / collar decoration -->
+  <path d="M 178,158 Q 200,168 222,158" stroke="#8B6914" stroke-width="2.5" fill="none"/>
+
+  <!-- Belt / sash -->
+  <rect x="178" y="176" width="44" height="7" rx="3" fill="#8B6914"/>
+  <circle cx="200" cy="179" r="4" fill="#744210"/>
+  <circle cx="200" cy="179" r="2.5" fill="#8B6914"/>
+
+  <!-- Neck -->
+  <rect x="194" y="145" width="12" height="17" rx="4" fill="#f5e6d3"/>
+
+  <!-- Head / face -->
+  <ellipse cx="200" cy="122" rx="24" ry="27" fill="#f5e6d3"/>
+
+  <!-- Hair / veil - flowing feminine head covering -->
+  <ellipse cx="200" cy="105" rx="30" ry="18" fill="#744210"/>
+  <!-- Veil draping down sides -->
+  <path d="M 172,108 Q 162,140 165,165" stroke="#744210" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <path d="M 228,108 Q 238,140 235,165" stroke="#744210" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <!-- Veil highlight -->
+  <path d="M 175,108 Q 167,135 170,160" stroke="#8B6914" stroke-width="3" fill="none" opacity="0.4"/>
+  <path d="M 225,108 Q 233,135 230,160" stroke="#8B6914" stroke-width="3" fill="none" opacity="0.4"/>
+  <!-- Head covering detail -->
+  <path d="M 172,102 Q 200,94 228,102" stroke="#8B6914" stroke-width="2" fill="none"/>
+
+  <!-- Left arm holding scroll -->
+  <path d="M 178,170 Q 152,182 142,205" stroke="#f5e6d3" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <path d="M 178,170 Q 152,182 142,205" stroke="#1a365d" stroke-width="10" fill="none" stroke-linecap="round"/>
+
+  <!-- Right arm outstretched gracefully -->
+  <path d="M 222,170 Q 252,165 268,148" stroke="#f5e6d3" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <path d="M 222,170 Q 252,165 268,148" stroke="#1a365d" stroke-width="10" fill="none" stroke-linecap="round"/>
+
+  <!-- Scroll in left hand -->
+  <rect x="110" y="200" width="62" height="36" rx="6" fill="#f5e6d3"/>
+  <!-- Scroll rollers -->
+  <ellipse cx="110" cy="218" rx="7" ry="18" fill="#8B6914"/>
+  <ellipse cx="172" cy="218" rx="7" ry="18" fill="#8B6914"/>
+  <!-- Roller knobs -->
+  <ellipse cx="110" cy="201" rx="7" ry="4.5" fill="#744210"/>
+  <ellipse cx="172" cy="201" rx="7" ry="4.5" fill="#744210"/>
+  <ellipse cx="110" cy="235" rx="7" ry="4.5" fill="#744210"/>
+  <ellipse cx="172" cy="235" rx="7" ry="4.5" fill="#744210"/>
+  <!-- Scroll text lines -->
+  <line x1="120" y1="208" x2="162" y2="208" stroke="#744210" stroke-width="1.8" opacity="0.6"/>
+  <line x1="120" y1="216" x2="162" y2="216" stroke="#744210" stroke-width="1.8" opacity="0.6"/>
+  <line x1="120" y1="224" x2="162" y2="224" stroke="#744210" stroke-width="1.8" opacity="0.6"/>
+  <line x1="120" y1="232" x2="162" y2="232" stroke="#744210" stroke-width="1.2" opacity="0.4"/>
+
+  <!-- Right hand -->
+  <ellipse cx="270" cy="146" rx="10" ry="7" fill="#f5e6d3"/>
+
+  <!-- Decorative stars -->
+  <circle cx="65" cy="55" r="4" fill="#8B6914" opacity="0.3"/>
+  <circle cx="335" cy="48" r="4" fill="#8B6914" opacity="0.3"/>
+  <circle cx="348" cy="125" r="3" fill="#1a365d" opacity="0.2"/>
+  <circle cx="52" cy="130" r="3" fill="#1a365d" opacity="0.2"/>
+  <circle cx="200" cy="38" r="5" fill="#8B6914" opacity="0.25"/>
+  <!-- Decorative sparkles around figure -->
+  <circle cx="130" cy="80" r="3" fill="#8B6914" opacity="0.25"/>
+  <circle cx="270" cy="75" r="3" fill="#8B6914" opacity="0.25"/>
+  <circle cx="300" cy="160" r="2.5" fill="#8B6914" opacity="0.2"/>
+</svg>

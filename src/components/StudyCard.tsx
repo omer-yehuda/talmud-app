@@ -86,6 +86,7 @@ export function StudyCard({ topic }: StudyCardProps): React.ReactElement {
             src={topic.image}
             alt={topic.caption}
             fill
+            unoptimized
             style={{ objectFit: "cover" }}
             sizes="(max-width: 768px) 100vw, 33vw"
           />
