@@ -7,16 +7,22 @@ interface IconProps {
   name: string;
   className?: string;
   sx?: SxProps<Theme>;
+  label?: string;
 }
 
-export function Icon({ name, className = "", sx }: IconProps): React.ReactElement {
+export const Icon = ({ name, className = "", sx, label }: IconProps): React.ReactElement => {
+  const ariaProps = label
+    ? { "aria-label": label, role: "img" as const }
+    : { "aria-hidden": true as const };
+
   return (
     <Box
       component="span"
       className={`material-symbols-outlined ${className}`}
       sx={sx}
+      {...ariaProps}
     >
       {name}
     </Box>
   );
-}
+};

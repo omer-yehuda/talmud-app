@@ -4,17 +4,11 @@ import { useState } from "react";
 import Image from "next/image";
 import type { StudyTopic } from "@/types";
 import { CommentaryBox } from "./CommentaryBox";
-import { Icon } from "./ui";
-import { motion, AnimatePresence } from "framer-motion";
+import { Icon, MotionCard, MotionBox, MotionButton } from "./ui";
+import { AnimatePresence } from "framer-motion";
 import Box from "@mui/material/Box";
-import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
-
-const MotionCard = motion(Card);
-const MotionBox = motion(Box);
-const MotionButton = motion(Button);
 
 interface StudyCardProps {
   topic: StudyTopic;
@@ -172,10 +166,10 @@ export function StudyCard({ topic }: StudyCardProps): React.ReactElement {
               display: "flex",
             }}
           >
-            <Icon name="help_outline" sx={{ fontSize: "1.25rem", color: "#4f46e5" }} />
+            <Icon name="help_outline" sx={{ fontSize: "1.25rem", color: "accent.main" }} />
           </Box>
           <Box>
-            <Typography sx={{ fontWeight: 700, color: "#312e81", mb: 0.5, fontSize: "0.95rem" }}>
+            <Typography sx={{ fontWeight: 700, color: "accent.dark", mb: 0.5, fontSize: "0.95rem" }}>
               שאלה לעיון
             </Typography>
             <Typography sx={{ color: "text.secondary", fontSize: "0.9rem", lineHeight: 1.7 }}>
@@ -231,7 +225,7 @@ export function StudyCard({ topic }: StudyCardProps): React.ReactElement {
                     display: "flex",
                     alignItems: "center",
                     gap: 1,
-                    bgcolor: "#4f46e5",
+                    bgcolor: "accent.main",
                     "&:hover": { bgcolor: "#4338ca" },
                     color: "white",
                     px: 3.5,

@@ -1,19 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { MASECHET, LABELS, WELCOME_TEXT, ALT_TEXT, getImagePath } from "@/lib/constants";
-import { Icon } from "./ui";
+import { MASECHET, LABELS, WELCOME_TEXT, ALT_TEXT } from "@/lib/constants";
+import { getImagePath } from "@/lib/utils";
+import { Icon, MotionCard, MotionBox, MotionButton } from "./ui";
 import type { PageInfo } from "@/types";
-import { motion } from "framer-motion";
 import Box from "@mui/material/Box";
-import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
-
-const MotionCard = motion(Card);
-const MotionBox = motion(Box);
-const MotionButton = motion(Button);
 
 const containerVariants = {
   hidden: { opacity: 0 },

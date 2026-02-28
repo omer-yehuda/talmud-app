@@ -3,15 +3,13 @@
 import type { PageInfo } from "@/types";
 import { MASECHET, LABELS } from "@/lib/constants";
 import { useNavigationState } from "@/hooks";
-import { Icon } from "./ui";
-import { motion, AnimatePresence } from "framer-motion";
+import { Icon, MotionBox } from "./ui";
+import { AnimatePresence } from "framer-motion";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import MenuItem from "@mui/material/MenuItem";
-
-const MotionBox = motion(Box);
 
 interface HeaderProps {
   pages: PageInfo[];
@@ -77,7 +75,7 @@ export function Header({ pages, activePageId, onPageChange, onGoHome }: HeaderPr
                 fontSize: "1.1rem",
               }}
             >
-              {MASECHET.title}
+              {MASECHET.fullName}
             </Typography>
             <Typography
               variant="caption"

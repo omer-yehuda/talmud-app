@@ -2,17 +2,11 @@
 
 import { useState } from "react";
 import type { ComparisonItem } from "@/types";
-import { Icon } from "./ui";
-import { motion, AnimatePresence } from "framer-motion";
+import { Icon, MotionCard, MotionBox, MotionButton } from "./ui";
+import { AnimatePresence } from "framer-motion";
 import Box from "@mui/material/Box";
-import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
-
-const MotionCard = motion(Card);
-const MotionBox = motion(Box);
-const MotionButton = motion(Button);
 
 interface ComparisonViewProps {
   items: ComparisonItem[];
@@ -65,7 +59,7 @@ export function ComparisonView({ items }: ComparisonViewProps): React.ReactEleme
               display: "flex",
             }}
           >
-            <Icon name="compare_arrows" sx={{ color: "#4f46e5" }} />
+            <Icon name="compare_arrows" sx={{ color: "accent.main" }} />
           </Box>
           אין בין... ל... אלא...
         </Typography>
@@ -108,7 +102,7 @@ export function ComparisonView({ items }: ComparisonViewProps): React.ReactEleme
                     p: 2.5,
                     borderRadius: 3,
                     border: "2px solid",
-                    borderColor: isSelected ? "#818cf8" : "grey.200",
+                    borderColor: isSelected ? "accent.light" : "grey.200",
                     bgcolor: isSelected ? "rgba(238, 242, 255, 0.6)" : "white",
                     boxShadow: isSelected
                       ? "0 4px 14px rgba(99, 102, 241, 0.15)"
@@ -117,17 +111,17 @@ export function ComparisonView({ items }: ComparisonViewProps): React.ReactEleme
                     height: "100%",
                     width: "100%",
                     "&:hover": {
-                      borderColor: "#818cf8",
+                      borderColor: "accent.light",
                       bgcolor: "rgba(238, 242, 255, 0.4)",
                     },
                   }}
                 >
-                  <Icon name={item.icon} sx={{ fontSize: "1.75rem", color: "#4f46e5" }} />
+                  <Icon name={item.icon} sx={{ fontSize: "1.75rem", color: "accent.main" }} />
                   <Typography
                     component="span"
                     sx={{
                       fontWeight: 700,
-                      color: isSelected ? "#312e81" : "text.secondary",
+                      color: isSelected ? "accent.dark" : "text.secondary",
                       fontSize: "0.85rem",
                     }}
                   >
@@ -173,7 +167,7 @@ function SelectedItemDisplay({ item }: { item: ComparisonItem }): React.ReactEle
       transition={{ duration: 0.3 }}
       sx={{ textAlign: "center", width: "100%" }}
     >
-      <Typography sx={{ fontSize: "1.2rem", fontWeight: 700, color: "#312e81", mb: 1.5 }}>
+      <Typography sx={{ fontSize: "1.2rem", fontWeight: 700, color: "accent.dark", mb: 1.5 }}>
         {item.label}
       </Typography>
       <Typography

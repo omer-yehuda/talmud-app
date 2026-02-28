@@ -1,7 +1,6 @@
 export const MASECHET = {
   name: "מגילה",
   fullName: "מסכת מגילה",
-  title: "מסכת מגילה",
   firstPage: 2,
   lastPage: 32,
   pageRange: "דפים ב' - ל\"ב",
@@ -21,7 +20,3 @@ export const WELCOME_TEXT = {
 export const ALT_TEXT = {
   beitMidrash: "בית המדרש",
 } as const;
-
-export function getImagePath(imageId: string): string {
-  return `/images/${imageId}.svg`;
-}

@@ -1,6 +1,13 @@
-"use client";
-
 import { createTheme } from "@mui/material/styles";
+
+declare module "@mui/material/styles" {
+  interface Palette {
+    accent: Palette["primary"];
+  }
+  interface PaletteOptions {
+    accent?: PaletteOptions["primary"];
+  }
+}
 
 const theme = createTheme({
   direction: "rtl",
@@ -14,6 +21,12 @@ const theme = createTheme({
       main: "#2563eb",
       light: "#3b82f6",
       dark: "#1d4ed8",
+    },
+    accent: {
+      main: "#4f46e5",
+      light: "#818cf8",
+      dark: "#312e81",
+      contrastText: "#ffffff",
     },
     background: {
       default: "#faf3e7",

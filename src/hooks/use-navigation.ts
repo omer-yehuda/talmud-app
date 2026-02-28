@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useRef, useEffect, useCallback, useMemo } from "react";
 import type { PageInfo } from "@/types";
 
 interface UseNavigationStateOptions {
@@ -28,7 +28,7 @@ export function useNavigationState({
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  const activePage = pages.find((p) => p.id === activePageId);
+  const activePage = useMemo(() => pages.find((p) => p.id === activePageId), [pages, activePageId]);
 
   const toggleOpen = useCallback(() => {
     setIsOpen((prev) => !prev);

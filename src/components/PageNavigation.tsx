@@ -1,14 +1,9 @@
 "use client";
 
 import type { PageInfo } from "@/types";
-import { Icon } from "./ui";
-import { motion } from "framer-motion";
+import { Icon, MotionBox, MotionButton } from "./ui";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-
-const MotionButton = motion(Button);
-const MotionBox = motion(Box);
 
 interface PageNavigationProps {
   pages: PageInfo[];

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import {
   Header,
   MobileNav,
@@ -15,10 +15,9 @@ import {
 } from "@/components";
 import { usePages, usePageContent } from "@/hooks/use-pages";
 import { isStudyPage, isComparisonPage } from "@/types";
-import { AnimatePresence, motion } from "framer-motion";
+import { MotionBox } from "@/components/ui";
+import { AnimatePresence } from "framer-motion";
 import Box from "@mui/material/Box";
-
-const MotionBox = motion(Box);
 
 export default function HomePage(): React.ReactElement {
   const { pages, isLoading: loadingPages, error: pagesError } = usePages();
@@ -31,9 +30,9 @@ export default function HomePage(): React.ReactElement {
     refetch,
   } = usePageContent(activePageId);
 
-  const handleGoHome = (): void => {
+  const handleGoHome = useCallback((): void => {
     setActivePageId(null);
-  };
+  }, []);
 
   if (loadingPages) {
     return <LoadingPage />;
